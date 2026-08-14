@@ -1,0 +1,90 @@
+/* ==========================================================================
+   Pulse Admin — Premium Modern — responsive behavior
+   Breakpoints tested: 1440 / 1024 / 900 / 768 / 480 / 375 / 320
+   ========================================================================== */
+
+@media (max-width: 1440px) {
+  main#main-content { padding: 28px; }
+  .metric-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 1200px) {
+  .chart-grid--triple { grid-template-columns: repeat(2, 1fr); }
+  .profile-layout { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 1024px) {
+  .container { padding: 0 24px; }
+  .metric-grid { grid-template-columns: repeat(2, 1fr); }
+  .chart-grid { grid-template-columns: 1fr; }
+  .chart-grid--triple { grid-template-columns: 1fr; }
+  .form-grid { grid-template-columns: 1fr; }
+  .stat-tiles { grid-template-columns: repeat(2, 1fr); }
+  .table-toolbar .search-field { width: 240px; }
+}
+
+/* ---- sidebar becomes an off-canvas drawer below ~900px ---- */
+@media (max-width: 900px) {
+  .sidebar {
+    position: fixed;
+    top: 0; left: 0;
+    height: 100vh;
+    width: 280px;
+    transform: translateX(-100%);
+    transition: transform 0.25s var(--ease);
+    box-shadow: var(--shadow);
+  }
+  .sidebar.is-open { transform: translateX(0); }
+  .sidebar-collapse-btn { display: none; }
+  .dashboard--collapsed .sidebar { width: 280px; }
+  .dashboard--collapsed .logo-text,
+  .dashboard--collapsed .nav-link__label { display: block; }
+  .dashboard--collapsed .nav-link { justify-content: flex-start; }
+  .dashboard--collapsed .sidebar__brand { justify-content: flex-start; padding: 22px 22px 20px; }
+
+  .topbar__toggle { display: flex; }
+  .topbar { padding: 0 20px; gap: 14px; }
+  .user-menu__info { display: none; }
+}
+
+@media (max-width: 768px) {
+  main#main-content { padding: 20px; }
+  .page-header { flex-direction: column; align-items: flex-start; }
+  .metric-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .stat-tiles { grid-template-columns: 1fr; }
+  .filter-bar { padding: 16px; }
+  .filter-bar .field { flex: 1 1 45%; }
+  .filter-bar__actions { margin-left: 0; width: 100%; }
+  .table-toolbar { align-items: flex-start; }
+  .table-toolbar .search-field { width: 100%; }
+  .profile-header { text-align: left; }
+}
+
+@media (max-width: 480px) {
+  .topbar { padding: 0 14px; }
+  .topbar__search { max-width: none; }
+  .search-field input::placeholder { color: transparent; }
+  .icon-btn { width: 38px; height: 38px; }
+  .metric-grid { grid-template-columns: 1fr; }
+  .metric-card__value { font-size: 1.45rem; }
+  .filter-bar .field { flex: 1 1 100%; }
+  .filter-bar__actions { flex-direction: column; }
+  .filter-bar__actions .btn { width: 100%; justify-content: center; }
+  .chart-card { padding: 18px; }
+  .form-card { padding: 20px; }
+  .profile-header { flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 375px) {
+  main#main-content { padding: 16px; }
+  .page-header h1 { font-size: 1.35rem; }
+  .sidebar { width: 240px; }
+  .user-menu__btn { padding: 6px; }
+}
+
+@media (max-width: 320px) {
+  .topbar__actions { gap: 8px; }
+  .metric-card { padding: 16px; }
+  .btn { width: 100%; justify-content: center; }
+  .page-actions { width: 100%; flex-direction: column; }
+}

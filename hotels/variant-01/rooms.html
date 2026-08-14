@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rooms & Suites — Aurelia Hotel</title>
+<meta name="description" content="Explore Aurelia Hotel's rooms and suites — Classic Rooms, Deluxe Sea View rooms, and the Aurelia Suite with its private plunge pool.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Aurelia <span>Hotel</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="rooms.html" class="nav-link" aria-current="page">Rooms</a></li>
+        <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="booking.html" class="nav-link">Booking</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a href="booking.html" class="btn btn--accent btn--sm">Check Availability</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section--tight container" style="padding-bottom:0;">
+    <p class="eyebrow" data-reveal>Rooms &amp; Suites</p>
+    <h1 style="font-size:clamp(2.2rem,4vw,3.2rem); max-width:20ch;" data-reveal>Every room faces the water.</h1>
+    <p class="text-muted" style="margin-top:16px; max-width:60ch;" data-reveal>All 64 rooms and suites were renovated in 2023 — hand-glazed terracotta floors, linen bedding, and a private balcony or terrace in every category.</p>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="room-filters" data-reveal>
+        <button type="button" class="room-filter-btn" data-filter="all" aria-pressed="true">All Rooms</button>
+        <button type="button" class="room-filter-btn" data-filter="classic" aria-pressed="false">Classic</button>
+        <button type="button" class="room-filter-btn" data-filter="deluxe" aria-pressed="false">Deluxe Sea View</button>
+        <button type="button" class="room-filter-btn" data-filter="suite" aria-pressed="false">Suites</button>
+      </div>
+
+      <div class="grid-3" id="roomGrid">
+        <article class="room-card" data-type="classic" data-reveal>
+          <div class="room-card__media"><img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=500&q=75" alt="Classic room with a queen bed and terracotta floor tiles"></div>
+          <div class="room-card__body">
+            <h3>Classic Room</h3>
+            <div class="room-card__meta"><span>24 m²</span><span>Queen bed</span><span>Garden view</span></div>
+            <p>A quieter, garden-facing room with hand-tiled floors, linen bedding and a Juliet balcony.</p>
+            <div class="room-card__footer"><div class="room-card__price">€290 <span>/ night</span></div><a href="booking.html" class="btn btn--ghost btn--sm">Book</a></div>
+          </div>
+        </article>
+        <article class="room-card" data-type="classic" data-reveal>
+          <div class="room-card__media"><img src="https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=500&q=75" alt="Classic twin room with two beds and shuttered windows"></div>
+          <div class="room-card__body">
+            <h3>Classic Twin</h3>
+            <div class="room-card__meta"><span>26 m²</span><span>Twin beds</span><span>Courtyard view</span></div>
+            <p>Two queen beds facing our lemon-terrace courtyard — a favorite with friends traveling together.</p>
+            <div class="room-card__footer"><div class="room-card__price">€310 <span>/ night</span></div><a href="booking.html" class="btn btn--ghost btn--sm">Book</a></div>
+          </div>
+        </article>
+        <article class="room-card" data-type="deluxe" data-reveal>
+          <div class="room-card__media"><span class="room-card__badge">Most booked</span><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=500&q=75" alt="Deluxe sea view room with a balcony and king bed"></div>
+          <div class="room-card__body">
+            <h3>Deluxe Sea View</h3>
+            <div class="room-card__meta"><span>32 m²</span><span>King bed</span><span>Balcony</span></div>
+            <p>Floor-to-ceiling views of the coastline, with a private balcony for morning coffee.</p>
+            <div class="room-card__footer"><div class="room-card__price">€420 <span>/ night</span></div><a href="booking.html" class="btn btn--ghost btn--sm">Book</a></div>
+          </div>
+        </article>
+        <article class="room-card" data-type="deluxe" data-reveal>
+          <div class="room-card__media"><img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=500&q=75" alt="Deluxe corner room with wraparound sea-view windows"></div>
+          <div class="room-card__body">
+            <h3>Deluxe Corner</h3>
+            <div class="room-card__meta"><span>36 m²</span><span>King bed</span><span>Corner balcony</span></div>
+            <p>A corner room with wraparound windows and two exposures over the water.</p>
+            <div class="room-card__footer"><div class="room-card__price">€460 <span>/ night</span></div><a href="booking.html" class="btn btn--ghost btn--sm">Book</a></div>
+          </div>
+        </article>
+        <article class="room-card" data-type="suite" data-reveal>
+          <div class="room-card__media"><span class="room-card__badge">Top rated</span><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=500&q=75&sat=-40" alt="Aurelia Suite with a private plunge pool"></div>
+          <div class="room-card__body">
+            <h3>Aurelia Suite</h3>
+            <div class="room-card__meta"><span>58 m²</span><span>King bed</span><span>Plunge pool</span></div>
+            <p>Our largest suite, with a private plunge pool and a living area open to the terrace.</p>
+            <div class="room-card__footer"><div class="room-card__price">€680 <span>/ night</span></div><a href="booking.html" class="btn btn--ghost btn--sm">Book</a></div>
+          </div>
+        </article>
+        <article class="room-card" data-type="suite" data-reveal>
+          <div class="room-card__media"><img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=500&q=75" alt="Panorama Suite living room with sea-facing sofa"></div>
+          <div class="room-card__body">
+            <h3>Panorama Suite</h3>
+            <div class="room-card__meta"><span>64 m²</span><span>King bed + sofa bed</span><span>Wraparound terrace</span></div>
+            <p>A two-room suite with a wraparound terrace, ideal for a family of four.</p>
+            <div class="room-card__footer"><div class="room-card__price">€740 <span>/ night</span></div><a href="booking.html" class="btn btn--ghost btn--sm">Book</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--surface">
+    <div class="container" style="max-width:640px; text-align:center;" data-reveal>
+      <h2 style="margin-bottom:16px;">Not sure which room is right for you?</h2>
+      <p class="text-muted" style="margin-bottom:26px;">Our reservations team can help you choose based on view, occasion and budget.</p>
+      <a href="booking.html" class="btn btn--accent">Check Availability</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">Aurelia <span>Hotel</span></a><p>A clifftop retreat on the Amalfi Coast — 64 rooms and suites, family-run since 1974.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="rooms.html">Rooms</a></li><li><a href="amenities.html">Amenities</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="booking.html">Booking</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:reservations@aureliahotel.it">reservations@aureliahotel.it</a></li><li>+39 089 555 0148</li><li>Praiano, Amalfi Coast, Italy</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">Instagram</a></li><li><a href="#">Facebook</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 Aurelia Hotel.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

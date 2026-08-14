@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Vow &amp; Co.</title>
+<meta name="description" content="Real weddings planned by Vow & Co. — browse ceremony, reception and detail photos, or click any photo to see it full size.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Vow<span>&amp;Co.</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="story.html" class="nav-link">Story</a></li>
+        <li><a href="packages.html" class="nav-link">Packages</a></li>
+        <li><a href="gallery.html" class="nav-link" aria-current="page">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="btn btn--primary header__cta">Start planning</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" style="padding-bottom: 20px;">
+    <div class="container">
+      <p class="eyebrow" data-reveal>Real weddings</p>
+      <h1 class="hero__title" style="max-width: 15ch;" data-reveal>Proof it doesn't have to look like everyone else's.</h1>
+      <p class="hero__lead" data-reveal>A look at ceremonies, receptions and the small details from weddings
+        we've planned. Click any photo to see it full size.</p>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="filter-bar" role="group" aria-label="Filter gallery by category" data-reveal>
+        <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">All photos</button>
+        <button type="button" class="filter-btn" data-filter="ceremony" aria-pressed="false">Ceremony</button>
+        <button type="button" class="filter-btn" data-filter="reception" aria-pressed="false">Reception</button>
+        <button type="button" class="filter-btn" data-filter="details" aria-pressed="false">Details</button>
+      </div>
+
+      <div class="masonry" data-reveal>
+
+        <button type="button" class="masonry__item masonry__item--tall" data-category="ceremony"
+          data-full="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1400&q=70"
+          data-caption="An outdoor ceremony arch woven with greenery and dried florals.">
+          <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=600&q=70" alt="Outdoor wedding ceremony arch decorated with greenery and dried florals">
+          <span class="masonry__cap">The ceremony arch, built from scratch</span>
+        </button>
+
+        <button type="button" class="masonry__item" data-category="details"
+          data-full="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=1400&q=70"
+          data-caption="A pair of wedding rings resting on a bed of seasonal flowers.">
+          <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=600&q=70" alt="Two wedding rings resting on a bed of seasonal flowers">
+          <span class="masonry__cap">The rings, five minutes before</span>
+        </button>
+
+        <button type="button" class="masonry__item" data-category="reception"
+          data-full="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1400&q=70"
+          data-caption="A reception tent strung wall-to-wall with warm string lights.">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=70" alt="Reception tent strung wall-to-wall with warm string lights">
+          <span class="masonry__cap">A thousand warm bulbs, one tent</span>
+        </button>
+
+        <button type="button" class="masonry__item masonry__item--wide" data-category="reception"
+          data-full="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1400&q=70"
+          data-caption="A long farm-style reception dinner table set with candles and greenery.">
+          <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=900&q=70" alt="Long farm-style reception dinner table set with candles and greenery">
+          <span class="masonry__cap">Family-style, always</span>
+        </button>
+
+        <button type="button" class="masonry__item" data-category="details"
+          data-full="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1400&q=70"
+          data-caption="A hand-tied bridal bouquet of seasonal, unfussy flowers.">
+          <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=600&q=70" alt="Hand-tied bridal bouquet of seasonal, unfussy flowers">
+          <span class="masonry__cap">Grown-not-flown florals</span>
+        </button>
+
+        <button type="button" class="masonry__item masonry__item--tall" data-category="ceremony"
+          data-full="https://images.unsplash.com/photo-1587271636175-90d58cdad458?auto=format&fit=crop&w=1400&q=70"
+          data-caption="A couple exchanging vows in front of their closest people.">
+          <img src="https://images.unsplash.com/photo-1587271636175-90d58cdad458?auto=format&fit=crop&w=600&q=70" alt="Couple exchanging vows in front of their closest people">
+          <span class="masonry__cap">The vows, unscripted</span>
+        </button>
+
+        <button type="button" class="masonry__item" data-category="ceremony"
+          data-full="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1400&q=70"
+          data-caption="Mismatched chairs lining the ceremony aisle at a garden wedding.">
+          <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=600&q=70" alt="Mismatched chairs lining the ceremony aisle at a garden wedding">
+          <span class="masonry__cap">No two chairs matched. On purpose.</span>
+        </button>
+
+        <button type="button" class="masonry__item" data-category="details"
+          data-full="https://images.unsplash.com/photo-1470753937643-efeb931202a9?auto=format&fit=crop&w=1400&q=70"
+          data-caption="A wedding dress hanging in soft window light before the ceremony.">
+          <img src="https://images.unsplash.com/photo-1470753937643-efeb931202a9?auto=format&fit=crop&w=600&q=70" alt="Wedding dress hanging in soft window light before the ceremony">
+          <span class="masonry__cap">The dress, an hour before</span>
+        </button>
+
+        <button type="button" class="masonry__item masonry__item--wide" data-category="reception"
+          data-full="https://images.unsplash.com/photo-1533073526757-2c8ca1df9f1c?auto=format&fit=crop&w=1400&q=70"
+          data-caption="Guests dancing on a lit-up reception dance floor late into the night.">
+          <img src="https://images.unsplash.com/photo-1533073526757-2c8ca1df9f1c?auto=format&fit=crop&w=900&q=70" alt="Guests dancing on a lit-up reception dance floor late into the night">
+          <span class="masonry__cap">Still dancing at midnight</span>
+        </button>
+
+        <button type="button" class="masonry__item" data-category="reception"
+          data-full="https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=1400&q=70"
+          data-caption="A tiered wedding cake on the dessert table, ready to be cut.">
+          <img src="https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=600&q=70" alt="Tiered wedding cake on the dessert table, ready to be cut">
+          <span class="masonry__cap">Three tiers, zero fondant</span>
+        </button>
+
+        <button type="button" class="masonry__item masonry__item--tall" data-category="details"
+          data-full="https://images.unsplash.com/photo-1509927083803-4bd519298ac4?auto=format&fit=crop&w=1400&q=70"
+          data-caption="A bride getting ready, veil pinned in place, moments before the ceremony.">
+          <img src="https://images.unsplash.com/photo-1509927083803-4bd519298ac4?auto=format&fit=crop&w=600&q=70" alt="Bride getting ready with her veil pinned in place moments before the ceremony">
+          <span class="masonry__cap">Veil on, nerves gone</span>
+        </button>
+
+        <button type="button" class="masonry__item" data-category="ceremony"
+          data-full="https://images.unsplash.com/photo-1522200002945-15243d6b8f04?auto=format&fit=crop&w=1400&q=70"
+          data-caption="The wedding party gathered around the couple right after the ceremony.">
+          <img src="https://images.unsplash.com/photo-1522200002945-15243d6b8f04?auto=format&fit=crop&w=600&q=70" alt="Wedding party gathered around the couple right after the ceremony">
+          <span class="masonry__cap">The whole crew, seconds after</span>
+        </button>
+
+        <button type="button" class="masonry__item" data-category="reception"
+          data-full="https://images.unsplash.com/photo-1543087903-1ac2ec7aa8c5?auto=format&fit=crop&w=1400&q=70"
+          data-caption="Guests raising their glasses during a toast to the newlyweds.">
+          <img src="https://images.unsplash.com/photo-1543087903-1ac2ec7aa8c5?auto=format&fit=crop&w=600&q=70" alt="Guests raising their glasses during a toast to the newlyweds">
+          <span class="masonry__cap">The best-man toast</span>
+        </button>
+
+        <button type="button" class="masonry__item" data-category="details"
+          data-full="https://images.unsplash.com/photo-1550005809-91ad75fb315f?auto=format&fit=crop&w=1400&q=70"
+          data-caption="A reception centerpiece of candles and loose seasonal flowers."
+        >
+          <img src="https://images.unsplash.com/photo-1550005809-91ad75fb315f?auto=format&fit=crop&w=600&q=70" alt="Reception table centerpiece of candles and loose seasonal flowers">
+          <span class="masonry__cap">The centerpiece, table 4</span>
+        </button>
+
+        <button type="button" class="masonry__item masonry__item--wide" data-category="ceremony"
+          data-full="https://images.unsplash.com/photo-1546032996-6dfacbacbf3f?auto=format&fit=crop&w=1400&q=70"
+          data-caption="The couple's first portrait together, just after being pronounced married.">
+          <img src="https://images.unsplash.com/photo-1546032996-6dfacbacbf3f?auto=format&fit=crop&w=900&q=70" alt="Couple's first portrait together just after being pronounced married">
+          <span class="masonry__cap">Officially married, thirty seconds in</span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container"><div class="cta-banner" data-reveal><h2>Want photos like these from your own wedding?</h2><a href="contact.html" class="btn btn--ghost">Start planning</a></div></div>
+  </section>
+
+</main>
+
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <div class="lightbox__backdrop"></div>
+  <div class="lightbox__body">
+    <button type="button" class="lightbox__close" id="lightboxClose" aria-label="Close photo viewer">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+    </button>
+    <img id="lightboxImage" src="" alt="">
+    <p class="lightbox__caption" id="lightboxCaption"></p>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a href="index.html" class="logo">Vow<span>&amp;Co.</span></a>
+      <p>Bold, unapologetically-you weddings — planned by a crew who ditched the rulebook in 2016.</p>
+    </div>
+    <nav class="footer__col" aria-label="Sitemap">
+      <h3>Sitemap</h3>
+      <ul><li><a href="index.html">Home</a></li><li><a href="story.html">Story</a></li><li><a href="packages.html">Packages</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </nav>
+    <div class="footer__col">
+      <h3>Contact</h3>
+      <ul><li><a href="mailto:hello@vowandco.com">hello@vowandco.com</a></li><li><a href="tel:+15035550142">+1 (503) 555-0142</a></li><li>Portland, OR · planning nationwide</li></ul>
+    </div>
+    <div class="footer__col">
+      <h3>Follow</h3>
+      <ul><li><a href="#">Instagram</a></li><li><a href="#">Pinterest</a></li><li><a href="#">TikTok</a></li></ul>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <p>© 2026 Vow &amp; Co. All rights reserved.</p>
+    <p><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

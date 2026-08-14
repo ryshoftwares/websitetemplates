@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pulse Admin — Dashboard</title>
+<meta name="description" content="Pulse Admin dashboard overview: revenue, user, order and conversion metrics with weekly trends and recent order activity.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div class="dashboard" id="dashboardRoot">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__brand">
+      <span class="logo-mark" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 12h4l2 6 4-14 3 8h5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="logo-text">Pulse <span>Admin</span></span>
+    </div>
+
+    <nav aria-label="Primary">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" aria-current="page">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/></svg>
+            <span class="nav-link__label">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="users.html">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="9" cy="8" r="3.2" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 20c0-3.3 2.7-5.6 5.5-5.6s5.5 2.3 5.5 5.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="17" cy="9" r="2.4" stroke="currentColor" stroke-width="1.8"/><path d="M15.5 14.6c2.4.3 4.5 2.2 4.5 5.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <span class="nav-link__label">Users</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reports.html">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 20V10M12 20V4M20 20v-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M3 20h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <span class="nav-link__label">Reports</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="settings.html">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.8"/><path d="M12 3v2.2M12 18.8V21M4.6 6.6l1.6 1.6M17.8 15.8l1.6 1.6M3 12h2.2M18.8 12H21M4.6 17.4l1.6-1.6M17.8 8.2l1.6-1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <span class="nav-link__label">Settings</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.8"/><path d="M6.5 18.2c1-2.3 3.1-3.6 5.5-3.6s4.5 1.3 5.5 3.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <span class="nav-link__label">Profile</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="sidebar__footer">
+      <button type="button" class="sidebar-collapse-btn" id="sidebarCollapseToggle" aria-expanded="true" aria-label="Collapse sidebar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5l-6 7 6 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="sidebar-collapse-btn__label">Collapse sidebar</span>
+      </button>
+    </div>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <div class="dashboard__main">
+    <header class="topbar">
+      <button type="button" class="topbar__toggle" id="sidebarMobileToggle" aria-expanded="false" aria-controls="sidebar" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <form class="topbar__search" role="search">
+        <label for="topbarSearch" class="visually-hidden">Search anything</label>
+        <div class="search-field">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M20 20l-3.2-3.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <input type="text" id="topbarSearch" name="q" placeholder="Search anything…" autocomplete="off">
+        </div>
+      </form>
+
+      <div class="topbar__actions">
+        <button type="button" class="icon-btn" aria-label="Notifications, 3 unread">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9a6 6 0 1 1 12 0c0 3.6 1.2 5.2 2 6.4a1 1 0 0 1-.8 1.6H4.8a1 1 0 0 1-.8-1.6C4.8 14.2 6 12.6 6 9z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9.5 19.5a2.5 2.5 0 0 0 5 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <span class="topbar__badge">3</span>
+        </button>
+
+        <div class="user-menu">
+          <button type="button" class="user-menu__btn" id="userMenuToggle" aria-haspopup="menu" aria-expanded="false" aria-controls="userMenuPanel">
+            <span class="avatar-initials" aria-hidden="true">AK</span>
+            <span class="user-menu__info">
+              <span class="user-menu__name">Amara Klein</span>
+              <span class="user-menu__role">Senior Product Manager</span>
+            </span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 8l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="user-menu__panel" id="userMenuPanel" role="menu">
+            <a href="profile.html" role="menuitem">Profile</a>
+            <a href="settings.html" role="menuitem">Settings</a>
+            <hr>
+            <button type="button" role="menuitem">Log out</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <div class="page-header">
+        <div>
+          <h1>Dashboard</h1>
+          <p>Here's how Pulse Admin is performing today, Aug 13, 2026.</p>
+        </div>
+        <div class="page-actions">
+          <button type="button" class="btn btn--ghost">Last 30 days</button>
+          <button type="button" class="btn btn--primary">Export report</button>
+        </div>
+      </div>
+
+      <section class="metric-grid" aria-label="Key metrics">
+        <div class="metric-card">
+          <div class="metric-card__label">Revenue</div>
+          <div class="metric-card__value">$284,650</div>
+          <div class="metric-card__trend metric-card__trend--up">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 17l6-6 4 4 6-8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 6h5v5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            +12.4% <span class="metric-card__trend-note">vs last month</span>
+          </div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-card__label">Users</div>
+          <div class="metric-card__value">12,489</div>
+          <div class="metric-card__trend metric-card__trend--up">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 17l6-6 4 4 6-8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 6h5v5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            +6.8% <span class="metric-card__trend-note">vs last month</span>
+          </div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-card__label">Orders</div>
+          <div class="metric-card__value">1,927</div>
+          <div class="metric-card__trend metric-card__trend--down">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7l6 6 4-4 6 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 18h5v-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            −2.4% <span class="metric-card__trend-note">vs last month</span>
+          </div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-card__label">Conversion</div>
+          <div class="metric-card__value">4.8%</div>
+          <div class="metric-card__trend metric-card__trend--up">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 17l6-6 4 4 6-8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 6h5v5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            +0.6 pts <span class="metric-card__trend-note">vs last month</span>
+          </div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-card__label">Traffic</div>
+          <div class="metric-card__value">58,204</div>
+          <div class="metric-card__trend metric-card__trend--down">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7l6 6 4-4 6 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 18h5v-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            −3.1% <span class="metric-card__trend-note">vs last month</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="chart-grid" aria-label="Performance charts">
+        <div class="chart-card">
+          <div class="chart-card__head">
+            <h2>Revenue this week</h2>
+            <p class="chart-card__caption">Daily revenue, Mon–Sun · trending up 9.3% over the prior week</p>
+          </div>
+          <svg class="chart-svg" viewBox="0 0 620 220" role="img" aria-label="Line chart of daily revenue from Monday to Sunday, rising from about $38,200 on Monday to $49,850 on Sunday">
+            <line class="chart-gridline" x1="40" y1="20" x2="600" y2="20"></line>
+            <line class="chart-gridline" x1="40" y1="70" x2="600" y2="70"></line>
+            <line class="chart-gridline" x1="40" y1="120" x2="600" y2="120"></line>
+            <line class="chart-gridline" x1="40" y1="170" x2="600" y2="170"></line>
+            <text class="chart-axis-label" x="4" y="24">$50k</text>
+            <text class="chart-axis-label" x="4" y="74">$40k</text>
+            <text class="chart-axis-label" x="4" y="124">$30k</text>
+            <text class="chart-axis-label" x="4" y="174">$20k</text>
+
+            <polyline points="40,146 133,124 227,136 320,101 413,79 507,92 600,64" fill="none" stroke="#2f6fed" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
+            <circle cx="40" cy="146" r="4" fill="#2f6fed" stroke="#ffffff" stroke-width="2"></circle>
+            <circle cx="133" cy="124" r="4" fill="#2f6fed" stroke="#ffffff" stroke-width="2"></circle>
+            <circle cx="227" cy="136" r="4" fill="#2f6fed" stroke="#ffffff" stroke-width="2"></circle>
+            <circle cx="320" cy="101" r="4" fill="#2f6fed" stroke="#ffffff" stroke-width="2"></circle>
+            <circle cx="413" cy="79" r="4" fill="#2f6fed" stroke="#ffffff" stroke-width="2"></circle>
+            <circle cx="507" cy="92" r="4" fill="#2f6fed" stroke="#ffffff" stroke-width="2"></circle>
+            <circle cx="600" cy="64" r="4" fill="#2f6fed" stroke="#ffffff" stroke-width="2"></circle>
+            <text x="592" y="52" text-anchor="end" font-size="12" font-weight="600" fill="#0f1729">$49.9k</text>
+
+            <text class="chart-axis-label" x="40" y="208" text-anchor="middle">Mon</text>
+            <text class="chart-axis-label" x="133" y="208" text-anchor="middle">Tue</text>
+            <text class="chart-axis-label" x="227" y="208" text-anchor="middle">Wed</text>
+            <text class="chart-axis-label" x="320" y="208" text-anchor="middle">Thu</text>
+            <text class="chart-axis-label" x="413" y="208" text-anchor="middle">Fri</text>
+            <text class="chart-axis-label" x="507" y="208" text-anchor="middle">Sat</text>
+            <text class="chart-axis-label" x="600" y="208" text-anchor="middle">Sun</text>
+          </svg>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-card__head">
+            <h2>Orders by month</h2>
+            <p class="chart-card__caption">Order volume, Mar–Aug 2026 · steady month-over-month growth</p>
+          </div>
+          <svg class="chart-svg" viewBox="0 0 620 220" role="img" aria-label="Bar chart of monthly orders from March to August 2026, growing from 1,480 to 1,927 orders">
+            <line class="chart-gridline" x1="40" y1="20" x2="600" y2="20"></line>
+            <line class="chart-gridline" x1="40" y1="70" x2="600" y2="70"></line>
+            <line class="chart-gridline" x1="40" y1="120" x2="600" y2="120"></line>
+            <line class="chart-gridline" x1="40" y1="170" x2="600" y2="170"></line>
+            <text class="chart-axis-label" x="4" y="24">2,000</text>
+            <text class="chart-axis-label" x="4" y="74">1,500</text>
+            <text class="chart-axis-label" x="4" y="124">1,000</text>
+            <text class="chart-axis-label" x="4" y="174">500</text>
+
+            <rect x="58" y="76" width="24" height="94" rx="4" fill="#2f6fed"></rect>
+            <rect x="140" y="63" width="24" height="107" rx="4" fill="#2f6fed"></rect>
+            <rect x="222" y="55" width="24" height="115" rx="4" fill="#2f6fed"></rect>
+            <rect x="304" y="45" width="24" height="125" rx="4" fill="#2f6fed"></rect>
+            <rect x="386" y="39" width="24" height="131" rx="4" fill="#2f6fed"></rect>
+            <rect x="468" y="34" width="24" height="136" rx="4" fill="#2f6fed"></rect>
+            <text x="480" y="24" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1729">1,927</text>
+
+            <text class="chart-axis-label" x="70" y="192" text-anchor="middle">Mar</text>
+            <text class="chart-axis-label" x="152" y="192" text-anchor="middle">Apr</text>
+            <text class="chart-axis-label" x="234" y="192" text-anchor="middle">May</text>
+            <text class="chart-axis-label" x="316" y="192" text-anchor="middle">Jun</text>
+            <text class="chart-axis-label" x="398" y="192" text-anchor="middle">Jul</text>
+            <text class="chart-axis-label" x="480" y="192" text-anchor="middle">Aug</text>
+          </svg>
+        </div>
+      </section>
+
+      <section aria-label="Recent orders">
+        <div class="chart-card__head" style="margin-bottom:16px;">
+          <h2>Recent orders</h2>
+          <p class="chart-card__caption">The 10 most recent orders placed across all plans</p>
+        </div>
+        <div class="table-scroll">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Order</th>
+                <th>Customer</th>
+                <th>Plan</th>
+                <th class="is-numeric">Amount</th>
+                <th>Status</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#10482</td>
+                <td>Priya Anand</td>
+                <td>Growth Plan (Annual)</td>
+                <td class="is-numeric">$1,240.00</td>
+                <td><span class="badge badge--success">Paid</span></td>
+                <td>Aug 11, 2026</td>
+              </tr>
+              <tr>
+                <td>#10481</td>
+                <td>Marcus Webb</td>
+                <td>Pro Plan (Monthly)</td>
+                <td class="is-numeric">$89.00</td>
+                <td><span class="badge badge--success">Paid</span></td>
+                <td>Aug 11, 2026</td>
+              </tr>
+              <tr>
+                <td>#10480</td>
+                <td>Sofia Iyer</td>
+                <td>Starter Plan</td>
+                <td class="is-numeric">$29.00</td>
+                <td><span class="badge badge--warning">Pending</span></td>
+                <td>Aug 10, 2026</td>
+              </tr>
+              <tr>
+                <td>#10479</td>
+                <td>Devon Clarke</td>
+                <td>Growth Plan (Annual)</td>
+                <td class="is-numeric">$1,240.00</td>
+                <td><span class="badge badge--success">Paid</span></td>
+                <td>Aug 9, 2026</td>
+              </tr>
+              <tr>
+                <td>#10478</td>
+                <td>Renee Okafor</td>
+                <td>Pro Plan (Monthly)</td>
+                <td class="is-numeric">$89.00</td>
+                <td><span class="badge badge--danger">Refunded</span></td>
+                <td>Aug 8, 2026</td>
+              </tr>
+              <tr>
+                <td>#10477</td>
+                <td>Tariq Malik</td>
+                <td>Enterprise Plan</td>
+                <td class="is-numeric">$3,600.00</td>
+                <td><span class="badge badge--success">Paid</span></td>
+                <td>Aug 7, 2026</td>
+              </tr>
+              <tr>
+                <td>#10476</td>
+                <td>Lena Fischer</td>
+                <td>Starter Plan</td>
+                <td class="is-numeric">$29.00</td>
+                <td><span class="badge badge--success">Paid</span></td>
+                <td>Aug 6, 2026</td>
+              </tr>
+              <tr>
+                <td>#10475</td>
+                <td>Owen Bardot</td>
+                <td>Pro Plan (Monthly)</td>
+                <td class="is-numeric">$89.00</td>
+                <td><span class="badge badge--warning">Pending</span></td>
+                <td>Aug 5, 2026</td>
+              </tr>
+              <tr>
+                <td>#10474</td>
+                <td>Ines Duarte</td>
+                <td>Growth Plan (Annual)</td>
+                <td class="is-numeric">$1,240.00</td>
+                <td><span class="badge badge--success">Paid</span></td>
+                <td>Aug 4, 2026</td>
+              </tr>
+              <tr>
+                <td>#10473</td>
+                <td>Callum Rhodes</td>
+                <td>Starter Plan</td>
+                <td class="is-numeric">$29.00</td>
+                <td><span class="badge badge--danger">Refunded</span></td>
+                <td>Aug 3, 2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

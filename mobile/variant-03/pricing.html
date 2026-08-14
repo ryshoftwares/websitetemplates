@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing — Plainly</title>
+<meta name="description" content="Plainly is free for one account. Plainly Plus adds unlimited accounts and bill reminders.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Plainly</a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul><li><a href="index.html" class="nav-link">Home</a></li><li><a href="features.html" class="nav-link">Features</a></li><li><a href="pricing.html" class="nav-link" aria-current="page">Pricing</a></li><li><a href="download.html" class="nav-link">Download</a></li><li><a href="contact.html" class="nav-link">Contact</a></li></ul>
+    </nav>
+    <a href="download.html" class="btn btn--primary">Get Plainly</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" style="padding-bottom:0; text-align:center;">
+    <div class="container">
+      <p class="eyebrow" style="justify-content:center;" data-reveal>Pricing</p>
+      <h1 style="font-size: clamp(2rem, 3.6vw, 2.8rem);" data-reveal>Free for one account. Simple to upgrade.</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="pricing-toggle" data-reveal>
+        <span id="labelMonthly" class="is-active">Monthly</span>
+        <button type="button" class="switch" id="pricingSwitch" role="switch" aria-checked="false" aria-label="Toggle yearly pricing"></button>
+        <span id="labelYearly">Yearly <span class="pricing-toggle__save">Save 20%</span></span>
+      </div>
+      <div class="grid-3" data-reveal>
+        <div class="price-card">
+          <h3>Free</h3>
+          <div class="price-card__amount">$0<span>/ forever</span></div>
+          <ul class="price-card__list">
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 1 connected account</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Automatic categorization</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> One monthly budget</li>
+          </ul>
+          <a href="download.html" class="btn btn--ghost">Get started</a>
+        </div>
+        <div class="price-card price-card--featured">
+          <span class="price-card__ribbon">Most popular</span>
+          <h3>Plainly Plus</h3>
+          <div class="price-card__amount" data-period="monthly">$5<span>/ month</span></div>
+          <div class="price-card__amount" data-period="yearly" style="display:none;">$48<span>/ year</span></div>
+          <ul class="price-card__list">
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Unlimited accounts</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Bill reminders</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Custom budget categories</li>
+          </ul>
+          <a href="download.html" class="btn btn--accent">Start free trial</a>
+        </div>
+        <div class="price-card">
+          <h3>Household</h3>
+          <div class="price-card__amount" data-period="monthly">$9<span>/ month</span></div>
+          <div class="price-card__amount" data-period="yearly" style="display:none;">$86<span>/ year</span></div>
+          <ul class="price-card__list">
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Everything in Plus</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Shared household budget</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Up to 4 people</li>
+          </ul>
+          <a href="download.html" class="btn btn--ghost">Get started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">Plainly</a><p>Simple budgeting, without the spreadsheet.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="download.html">Download</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:hello@plainlyapp.com">hello@plainlyapp.com</a></li><li>Denver, CO</li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 Plainly, Inc.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nova Dash — Users</title>
+<meta name="description" content="Nova Dash user management: search and sort every teammate by name, email, role, status and join date.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800&amp;family=Rubik:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div class="dashboard">
+  <div class="sidebar-overlay"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__brand">
+      <span class="sidebar__brand-mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 16L10 6L14 13L20 4" stroke="#0b0b12" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="logo">Nova<span>Dash</span></span>
+    </div>
+    <p class="sidebar__nav-label">Menu</p>
+    <nav aria-label="Primary">
+      <ul class="nav-list">
+        <li>
+          <a class="nav-link" href="index.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="users.html" aria-current="page">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20c0-3.5 2.5-5.5 5.5-5.5s5.5 2 5.5 5.5"/><circle cx="17" cy="9" r="2.6"/><path d="M15.5 14.2c2.6.2 4.5 2 4.5 5.3"/></svg>
+            <span>Users</span>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="reports.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="12" width="4" height="8" rx="1"/><rect x="10" y="7" width="4" height="13" rx="1"/><rect x="16" y="3" width="4" height="17" rx="1"/></svg>
+            <span>Reports</span>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="settings.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"/><circle cx="9" cy="6" r="2"/><line x1="4" y1="12" x2="20" y2="12"/><circle cx="15" cy="12" r="2"/><line x1="4" y1="18" x2="20" y2="18"/><circle cx="9" cy="18" r="2"/></svg>
+            <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="profile.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+            <span>Profile</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="sidebar__footer">
+      <button class="sidebar-collapse-toggle" type="button" id="sidebarCollapseToggle" aria-expanded="true" aria-label="Collapse sidebar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/><path d="M9 6l-6 6 6 6"/></svg>
+        <span>Collapse</span>
+      </button>
+    </div>
+  </aside>
+
+  <div class="dashboard__main">
+    <header class="topbar">
+      <button class="mobile-toggle" type="button" id="sidebarMobileToggle" aria-expanded="false" aria-controls="sidebar" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <form class="topbar__search" role="search">
+        <label class="visually-hidden" for="topbarSearch">Search anything</label>
+        <div class="topbar__search-field">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" id="topbarSearch" name="q" placeholder="Search anything…">
+        </div>
+      </form>
+      <div class="topbar__actions">
+        <button class="icon-btn" type="button" aria-label="Notifications, 5 unread">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 1112 0c0 4 1.5 5.5 1.5 5.5H4.5S6 12 6 8z"/><path d="M9.5 17a2.5 2.5 0 005 0"/></svg>
+          <span class="topbar__badge">5</span>
+        </button>
+        <div class="user-menu">
+          <button class="user-menu__btn" type="button" aria-haspopup="menu" aria-expanded="false">
+            <span class="avatar" aria-hidden="true">MK</span>
+            <span class="user-menu__meta">
+              <span class="user-menu__name">Maya Kapoor</span>
+              <span class="user-menu__role">Product Admin</span>
+            </span>
+            <svg class="user-menu__caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="user-menu__dropdown" role="menu">
+            <a href="profile.html" role="menuitem">View profile</a>
+            <a href="settings.html" role="menuitem">Account settings</a>
+            <button type="button" role="menuitem">Sign out</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <div class="page-head">
+        <div>
+          <h1>Users</h1>
+          <p>Manage teammate access, roles and account status.</p>
+        </div>
+        <button class="btn btn--primary" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          Invite user
+        </button>
+      </div>
+
+      <section class="card" aria-labelledby="usersHeading">
+        <h2 class="visually-hidden" id="usersHeading">User directory</h2>
+        <div class="table-toolbar">
+          <div class="field">
+            <label for="userSearch">Search users</label>
+            <input type="search" id="userSearch" placeholder="Search by name or email…">
+          </div>
+          <p class="results-count" id="usersResultsCount" aria-live="polite">Showing 10 of 10 users</p>
+        </div>
+        <div class="table-scroll">
+          <table id="usersTable">
+            <thead>
+              <tr>
+                <th scope="col" data-sort-key="name" data-sort-type="text" aria-sort="none">
+                  <button class="sort-btn" type="button">Name
+                    <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8l4-4 4 4"/></svg>
+                  </button>
+                </th>
+                <th scope="col" data-sort-key="email" data-sort-type="text" aria-sort="none">
+                  <button class="sort-btn" type="button">Email
+                    <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8l4-4 4 4"/></svg>
+                  </button>
+                </th>
+                <th scope="col" data-sort-key="role" data-sort-type="text" aria-sort="none">
+                  <button class="sort-btn" type="button">Role
+                    <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8l4-4 4 4"/></svg>
+                  </button>
+                </th>
+                <th scope="col" data-sort-key="status" data-sort-type="text" aria-sort="none">
+                  <button class="sort-btn" type="button">Status
+                    <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8l4-4 4 4"/></svg>
+                  </button>
+                </th>
+                <th scope="col" data-sort-key="joined" data-sort-type="date" aria-sort="none">
+                  <button class="sort-btn" type="button">Joined
+                    <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8l4-4 4 4"/></svg>
+                  </button>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-name="Maya Kapoor" data-email="maya.kapoor@novadash.io" data-joined="2024-02-14">
+                <td class="cell-strong" data-cell="name">Maya Kapoor</td>
+                <td data-cell="email">maya.kapoor@novadash.io</td>
+                <td data-cell="role">Admin</td>
+                <td data-cell="status"><span class="badge badge--success">Active</span></td>
+                <td class="cell-muted">Feb 14, 2024</td>
+              </tr>
+              <tr data-name="Ethan Brooks" data-email="ethan.brooks@novadash.io" data-joined="2024-05-03">
+                <td class="cell-strong" data-cell="name">Ethan Brooks</td>
+                <td data-cell="email">ethan.brooks@novadash.io</td>
+                <td data-cell="role">Editor</td>
+                <td data-cell="status"><span class="badge badge--success">Active</span></td>
+                <td class="cell-muted">May 3, 2024</td>
+              </tr>
+              <tr data-name="Priya Sharma" data-email="priya.sharma@brightloop.co" data-joined="2024-07-22">
+                <td class="cell-strong" data-cell="name">Priya Sharma</td>
+                <td data-cell="email">priya.sharma@brightloop.co</td>
+                <td data-cell="role">Billing</td>
+                <td data-cell="status"><span class="badge badge--success">Active</span></td>
+                <td class="cell-muted">Jul 22, 2024</td>
+              </tr>
+              <tr data-name="Oliver Nakamura" data-email="oliver.nakamura@novadash.io" data-joined="2025-01-09">
+                <td class="cell-strong" data-cell="name">Oliver Nakamura</td>
+                <td data-cell="email">oliver.nakamura@novadash.io</td>
+                <td data-cell="role">Viewer</td>
+                <td data-cell="status"><span class="badge badge--warning">Invited</span></td>
+                <td class="cell-muted">Jan 9, 2025</td>
+              </tr>
+              <tr data-name="Sofia Marchetti" data-email="sofia.marchetti@fernwaylabs.com" data-joined="2023-11-30">
+                <td class="cell-strong" data-cell="name">Sofia Marchetti</td>
+                <td data-cell="email">sofia.marchetti@fernwaylabs.com</td>
+                <td data-cell="role">Editor</td>
+                <td data-cell="status"><span class="badge badge--danger">Suspended</span></td>
+                <td class="cell-muted">Nov 30, 2023</td>
+              </tr>
+              <tr data-name="Daniel Okafor" data-email="daniel.okafor@novadash.io" data-joined="2023-08-17">
+                <td class="cell-strong" data-cell="name">Daniel Okafor</td>
+                <td data-cell="email">daniel.okafor@novadash.io</td>
+                <td data-cell="role">Admin</td>
+                <td data-cell="status"><span class="badge badge--success">Active</span></td>
+                <td class="cell-muted">Aug 17, 2023</td>
+              </tr>
+              <tr data-name="Aiko Tanaka" data-email="aiko.tanaka@quillwork.io" data-joined="2025-03-12">
+                <td class="cell-strong" data-cell="name">Aiko Tanaka</td>
+                <td data-cell="email">aiko.tanaka@quillwork.io</td>
+                <td data-cell="role">Viewer</td>
+                <td data-cell="status"><span class="badge badge--success">Active</span></td>
+                <td class="cell-muted">Mar 12, 2025</td>
+              </tr>
+              <tr data-name="Liam O'Connor" data-email="liam.oconnor@novadash.io" data-joined="2025-06-01">
+                <td class="cell-strong" data-cell="name">Liam O'Connor</td>
+                <td data-cell="email">liam.oconnor@novadash.io</td>
+                <td data-cell="role">Billing</td>
+                <td data-cell="status"><span class="badge badge--warning">Invited</span></td>
+                <td class="cell-muted">Jun 1, 2025</td>
+              </tr>
+              <tr data-name="Nadia Petrova" data-email="nadia.petrova@brightloop.co" data-joined="2022-12-05">
+                <td class="cell-strong" data-cell="name">Nadia Petrova</td>
+                <td data-cell="email">nadia.petrova@brightloop.co</td>
+                <td data-cell="role">Editor</td>
+                <td data-cell="status"><span class="badge badge--success">Active</span></td>
+                <td class="cell-muted">Dec 5, 2022</td>
+              </tr>
+              <tr data-name="Carlos Mendes" data-email="carlos.mendes@fernwaylabs.com" data-joined="2024-09-19">
+                <td class="cell-strong" data-cell="name">Carlos Mendes</td>
+                <td data-cell="email">carlos.mendes@fernwaylabs.com</td>
+                <td data-cell="role">Viewer</td>
+                <td data-cell="status"><span class="badge badge--danger">Suspended</span></td>
+                <td class="cell-muted">Sep 19, 2024</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

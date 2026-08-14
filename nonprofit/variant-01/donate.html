@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate — Haven Trust</title>
+<meta name="description" content="Make a one-time or monthly gift to Haven Trust. See exactly where your donation goes toward housing families across the Pacific Northwest. Front-end demo only — no real charge.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Haven<span>Trust</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="programs.html" class="nav-link">Programs</a></li>
+        <li><a href="impact.html" class="nav-link">Impact</a></li>
+        <li><a href="donate.html" class="nav-link" aria-current="page">Donate</a></li>
+      </ul>
+    </nav>
+    <a href="donate.html" class="btn btn--primary header__cta">Donate now</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" style="padding-bottom: 40px;">
+    <div class="container">
+      <p class="eyebrow" data-reveal>Donate</p>
+      <h1 class="hero__title" style="max-width: 20ch;" data-reveal>Your gift moves a family closer to move-in day.</h1>
+      <p class="hero__lead" data-reveal>Roughly 70 cents of every dollar goes directly to rental assistance
+        and move-in costs. The rest funds the caseworkers, mentors and Neighbors Table gatherings that keep a
+        family connected once they're housed.</p>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container contact-grid">
+
+      <div data-reveal>
+        <div class="contact-info__item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 11.5L12 4l9 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10v9a1 1 0 001 1h4v-6h4v6h4a1 1 0 001-1v-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h3>70% — Rental &amp; move-in assistance</h3><p>Direct deposits, first month's rent and moving costs for families entering housing.</p></div>
+        </div>
+        <div class="contact-info__item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M14.5 14.2c2.6.4 4.5 2.6 4.5 5.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <div><h3>20% — Casework &amp; mentorship</h3><p>Salaries for caseworkers and coordinators who support New Keys mentors and families.</p></div>
+        </div>
+        <div class="contact-info__item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7.5-4.6-10-9.3C.6 8.4 2.3 5 5.7 5c2 0 3.4 1.1 4.3 2.4C10.9 6.1 12.3 5 14.3 5c3.4 0 5.1 3.4 3.7 6.7C15.5 16.4 12 21 12 21z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <div><h3>10% — Neighbors Table</h3><p>Shared meals, pantry stock and community events that welcome families into their block.</p></div>
+        </div>
+        <div class="contact-info__item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l7 3v6c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V6l7-3z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h3>Tax-deductible</h3><p>Haven Trust is a registered 501(c)(3) nonprofit. A receipt is emailed after every real gift.</p></div>
+        </div>
+      </div>
+
+      <div data-reveal>
+        <form class="form" id="donateForm" novalidate>
+          <div class="form__success" id="donateSuccess" role="status">Thank you — in a real deployment this
+            would now hand off to a payment processor. No charge has been made; this is a demo confirmation only.</div>
+
+          <div class="demo-notice">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 8v.01M12 11v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <p><strong>This is a front-end demo only.</strong> No real payment processor is connected to this
+              form and no real charge will occur — submitting it only shows a sample confirmation message.</p>
+          </div>
+
+          <div class="amount-field">
+            <label id="amountLabel">Choose an amount (USD)</label>
+            <div class="amount-grid" role="group" aria-labelledby="amountLabel">
+              <button type="button" class="amount-btn" data-amount="25">$25</button>
+              <button type="button" class="amount-btn" data-amount="50">$50</button>
+              <button type="button" class="amount-btn" data-amount="100">$100</button>
+              <button type="button" class="amount-btn" data-amount="250">$250</button>
+            </div>
+            <div class="field custom-amount">
+              <label for="customAmount">Or enter a custom amount</label>
+              <span aria-hidden="true">$</span>
+              <input type="number" id="customAmount" name="amount" min="1" step="1" inputmode="numeric" required>
+              <small class="error">Please enter a donation amount of at least $1.</small>
+            </div>
+          </div>
+
+          <div class="amount-field">
+            <label id="freqLabel">Frequency</label>
+            <div class="freq-toggle" role="radiogroup" aria-labelledby="freqLabel">
+              <label><input type="radio" name="frequency" value="once" checked><span>One-time</span></label>
+              <label><input type="radio" name="frequency" value="monthly"><span>Monthly</span></label>
+            </div>
+          </div>
+
+          <hr class="field-divider">
+
+          <div class="field">
+            <label for="donorName">Full name</label>
+            <input type="text" id="donorName" name="donorName" required autocomplete="name">
+            <small class="error">Please enter your name.</small>
+          </div>
+
+          <div class="field">
+            <label for="donorEmail">Email address</label>
+            <input type="email" id="donorEmail" name="donorEmail" required autocomplete="email">
+            <small class="error">Please enter a valid email address.</small>
+          </div>
+
+          <div class="field">
+            <label for="donorPhone">Phone (optional)</label>
+            <input type="tel" id="donorPhone" name="donorPhone" autocomplete="tel">
+          </div>
+
+          <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center;">Complete donation (demo)</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta-banner" data-reveal>
+        <h2>Prefer to give your time instead?</h2>
+        <p style="color: rgba(255,255,255,0.75); max-width: 44ch; margin: 0 auto 28px;">Move-in crews, mentors
+          and Neighbors Table hosts are always welcome — no donation required.</p>
+        <a href="about.html#volunteer" class="btn btn--accent">Volunteer with us</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a href="index.html" class="logo">Haven<span>Trust</span></a>
+      <p>Helping families across the Pacific Northwest find and keep stable housing since 2009.</p>
+    </div>
+    <nav class="footer__col" aria-label="Sitemap">
+      <h3>Sitemap</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </ul>
+    </nav>
+    <div class="footer__col">
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="mailto:hello@haventrust.org">hello@haventrust.org</a></li>
+        <li><a href="tel:+15035550176">+1 (503) 555-0176</a></li>
+        <li>Portland, OR · Serving the Pacific Northwest</li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h3>Follow</h3>
+      <ul class="social">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <p>© 2026 Haven Trust. All rights reserved.</p>
+    <p><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

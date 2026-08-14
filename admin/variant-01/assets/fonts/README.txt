@@ -1,0 +1,1 @@
+Fonts are loaded from the Google Fonts CDN by default (see the <link> tags in each .html file): Lexend for display type and Work Sans for body copy. To self-host, download the font files, place them here, and add matching @font-face rules to css/style.css referencing this folder.

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Your Stay — Aurelia Hotel</title>
+<meta name="description" content="Check availability and book your stay at Aurelia Hotel on the Amalfi Coast.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Aurelia <span>Hotel</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+        <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="booking.html" class="nav-link" aria-current="page">Booking</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="booking-hero container">
+    <p class="eyebrow" style="justify-content:center;" data-reveal>Booking</p>
+    <h1 data-reveal>Reserve your stay.</h1>
+    <p class="text-muted" style="margin-top:14px;" data-reveal>Best-rate guarantee when you book directly with us — no third-party fees.</p>
+  </section>
+
+  <section class="container booking-layout">
+    <div data-reveal>
+      <form class="booking-form" id="bookingForm" novalidate>
+        <div class="form__success" id="formSuccess" role="status">Thank you — your request has been received. Our reservations team will confirm availability by email within 24 hours.</div>
+
+        <div class="booking-form__row">
+          <div class="field">
+            <label for="checkIn">Check in</label>
+            <input type="date" id="checkIn" name="checkIn" required>
+            <small class="error">Please choose a check-in date.</small>
+          </div>
+          <div class="field">
+            <label for="checkOut">Check out</label>
+            <input type="date" id="checkOut" name="checkOut" required>
+            <small class="error">Check-out must be after check-in.</small>
+          </div>
+        </div>
+
+        <div class="booking-form__row">
+          <div class="field">
+            <label for="roomType">Room type</label>
+            <select id="roomType" name="roomType" required>
+              <option value="">Select a room</option>
+              <option value="classic">Classic Room — €290/night</option>
+              <option value="classic-twin">Classic Twin — €310/night</option>
+              <option value="deluxe">Deluxe Sea View — €420/night</option>
+              <option value="deluxe-corner">Deluxe Corner — €460/night</option>
+              <option value="suite">Aurelia Suite — €680/night</option>
+              <option value="panorama">Panorama Suite — €740/night</option>
+            </select>
+            <small class="error">Please select a room type.</small>
+          </div>
+          <div class="field">
+            <label id="guestLabelBooking">Guests</label>
+            <div class="guest-stepper" data-min="1" data-max="6" role="group" aria-labelledby="guestLabelBooking">
+              <button type="button" data-step="down" aria-label="Decrease guests">−</button>
+              <span>2</span>
+              <button type="button" data-step="up" aria-label="Increase guests">+</button>
+              <input type="hidden" name="guests" value="2">
+            </div>
+          </div>
+        </div>
+
+        <div class="booking-form__row">
+          <div class="field"><label for="firstName">First name</label><input type="text" id="firstName" name="firstName" required autocomplete="given-name"><small class="error">Required.</small></div>
+          <div class="field"><label for="lastName">Last name</label><input type="text" id="lastName" name="lastName" required autocomplete="family-name"><small class="error">Required.</small></div>
+        </div>
+        <div class="booking-form__row">
+          <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" required autocomplete="email"><small class="error">Please enter a valid email.</small></div>
+          <div class="field"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" required autocomplete="tel"><small class="error">Required.</small></div>
+        </div>
+
+        <div class="field">
+          <label for="requests">Special requests (optional)</label>
+          <textarea id="requests" name="requests" placeholder="Anniversary, dietary needs, early check-in…"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--accent btn--block">Request Reservation</button>
+        <p class="text-muted" style="margin-top:16px; font-size:0.85rem;">This is a request, not an instant confirmation. No payment is collected here — our team will follow up by email to confirm availability and take payment details securely by phone.</p>
+      </form>
+    </div>
+
+    <aside class="booking-summary" data-reveal>
+      <h3>Why book direct</h3>
+      <div class="booking-summary__row"><span>Best rate</span><span>Guaranteed</span></div>
+      <div class="booking-summary__row"><span>Free cancellation</span><span>Up to 7 days before</span></div>
+      <div class="booking-summary__row"><span>Room upgrade</span><span>Subject to availability</span></div>
+      <div class="booking-summary__row"><span>Welcome drink</span><span>Included</span></div>
+      <div class="booking-summary__row total"><span>Questions?</span><span>+39 089 555 0148</span></div>
+    </aside>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">Aurelia <span>Hotel</span></a><p>A clifftop retreat on the Amalfi Coast — 64 rooms and suites, family-run since 1974.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="rooms.html">Rooms</a></li><li><a href="amenities.html">Amenities</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="booking.html">Booking</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:reservations@aureliahotel.it">reservations@aureliahotel.it</a></li><li>+39 089 555 0148</li><li>Praiano, Amalfi Coast, Italy</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">Instagram</a></li><li><a href="#">Facebook</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 Aurelia Hotel.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

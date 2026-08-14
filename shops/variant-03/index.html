@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Goods Shop — Considered Home Essentials</title>
+<meta name="description" content="The Goods Shop is a minimal online shop for lighting, kitchen, bed & bath, decor and outdoor goods — fewer, better things for a quieter home.">
+<meta property="og:title" content="The Goods Shop — Considered Home Essentials">
+<meta property="og:description" content="Lighting, kitchen, bed &amp; bath, decor and outdoor — chosen for how they're made.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">The Goods <span>Shop</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+        <li><a href="categories.html" class="nav-link">Categories</a></li>
+        <li><a href="products.html" class="nav-link">Shop</a></li>
+        <li><a href="offers.html" class="nav-link">Offers</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a href="products.html" class="cart-btn" id="cartBtn" aria-label="View cart, 0 items">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 6h15l-1.5 9h-12z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M6 6L5 3H2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="9" cy="20" r="1.4" fill="currentColor"/><circle cx="18" cy="20" r="1.4" fill="currentColor"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="container hero__grid">
+      <div data-reveal>
+        <p class="eyebrow">Minimal home shop</p>
+        <h1 class="hero__title">Fewer, better things for a quieter home.</h1>
+        <p class="hero__lead">The Goods Shop brings together lighting, kitchen, bed &amp; bath, decor and outdoor
+          pieces from small, independent makers — edited down to what holds up, priced without the markup.</p>
+        <div class="hero__actions">
+          <a href="products.html" class="btn btn--primary">Shop all products</a>
+          <a href="categories.html" class="btn btn--ghost">Browse categories</a>
+        </div>
+      </div>
+      <div class="hero__art" data-reveal>
+        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=70" alt="A quiet, minimal living room with a simple table lamp and linen sofa">
+        <div class="hero__badge"><span>―</span><div><strong>180+</strong>hand-selected goods</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="marquee">
+    <div class="container">
+      <p class="marquee__label">Noticed by</p>
+      <div class="marquee__logos">
+        <span>Kinfolk</span><span>Cereal</span><span>Apartment Therapy</span><span>Remodelista</span><span>The Spruce</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head" data-reveal><p class="eyebrow">Shop by category</p><h2>Five departments, kept small on purpose.</h2></div>
+      <div class="grid-3">
+        <div class="card" data-reveal>
+          <div class="card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 21h6M12 3a6 6 0 00-3.5 10.9c.5.4.8 1 .8 1.6v.5h5.4v-.5c0-.6.3-1.2.8-1.6A6 6 0 0012 3z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Lighting</h3><p>Table lamps and pendants built from honest materials, made to last well past the trend cycle.</p>
+        </div>
+        <div class="card" data-reveal>
+          <div class="card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 3v8a4 4 0 004 4v6M4 7h4M17 3v18M17 3a3 3 0 013 3v3a3 3 0 01-3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Kitchen &amp; Table</h3><p>Stoneware, glassware and linens for everyday meals, not just the ones you photograph.</p>
+        </div>
+        <div class="card" data-reveal>
+          <div class="card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="10" width="18" height="8" rx="1" stroke="currentColor" stroke-width="1.6"/><path d="M5 10V7a2 2 0 012-2h10a2 2 0 012 2v3M3 18v2M21 18v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <h3>Bed &amp; Bath</h3><p>Undyed cotton sheets, waffle towels and the quiet basics that make a home feel finished.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section__head section__head--split" data-reveal>
+        <div><p class="eyebrow">Featured products</p><h2>New this month.</h2></div>
+        <a href="products.html" class="btn btn--ghost">View all</a>
+      </div>
+      <div class="featured-grid">
+        <article class="product-card" data-reveal>
+          <div class="product-card__media">
+            <span class="badge badge--new">New</span>
+            <button class="wishlist-btn" data-product-id="p1" aria-pressed="false" aria-label="Save Cylinder Table Lamp to wishlist"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9C.7 8 2 4.5 5.5 4.5 8 4.5 10 6 12 8.5c2-2.5 4-4 6.5-4 3.5 0 4.8 3.5 3 7.5-2.5 4.5-9.5 9-9.5 9z"/></svg></button>
+            <a href="products.html"><img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=420&q=70" alt="Cylinder table lamp with a plain linen shade"></a>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__category">Lighting</span>
+            <h3 class="product-card__name"><a href="products.html">Cylinder Table Lamp</a></h3>
+            <div class="rating"><span class="stars">★★★★★</span> (72)</div>
+            <div class="product-card__price">$118</div>
+          </div>
+          <button class="add-mini" type="button">Add to cart</button>
+        </article>
+        <article class="product-card" data-reveal>
+          <div class="product-card__media">
+            <a href="products.html"><img src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=420&q=70" alt="Hand-thrown stoneware bowls stacked on a wooden table"></a>
+            <button class="wishlist-btn" data-product-id="p3" aria-pressed="false" aria-label="Save Hand-Thrown Stoneware Bowl Set to wishlist"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9C.7 8 2 4.5 5.5 4.5 8 4.5 10 6 12 8.5c2-2.5 4-4 6.5-4 3.5 0 4.8 3.5 3 7.5-2.5 4.5-9.5 9-9.5 9z"/></svg></button>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__category">Kitchen &amp; Table</span>
+            <h3 class="product-card__name"><a href="products.html">Hand-Thrown Stoneware Bowl Set</a></h3>
+            <div class="rating"><span class="stars">★★★★★</span> (48)</div>
+            <div class="product-card__price">$68</div>
+          </div>
+          <button class="add-mini" type="button">Add to cart</button>
+        </article>
+        <article class="product-card" data-reveal>
+          <div class="product-card__media">
+            <span class="badge badge--sale">Sale</span>
+            <a href="products.html"><img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=420&q=70" alt="Organic cotton percale bedding folded on a bed"></a>
+            <button class="wishlist-btn" data-product-id="p6" aria-pressed="false" aria-label="Save Organic Cotton Percale Sheet Set to wishlist"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9C.7 8 2 4.5 5.5 4.5 8 4.5 10 6 12 8.5c2-2.5 4-4 6.5-4 3.5 0 4.8 3.5 3 7.5-2.5 4.5-9.5 9-9.5 9z"/></svg></button>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__category">Bed &amp; Bath</span>
+            <h3 class="product-card__name"><a href="products.html">Organic Cotton Percale Sheet Set</a></h3>
+            <div class="rating"><span class="stars">★★★★☆</span> (33)</div>
+            <div class="product-card__price">$138 <span class="price--was">$168</span></div>
+          </div>
+          <button class="add-mini" type="button">Add to cart</button>
+        </article>
+        <article class="product-card" data-reveal>
+          <div class="product-card__media">
+            <a href="products.html"><img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=420&q=70" alt="Matte ceramic vessel on a shelf"></a>
+            <button class="wishlist-btn" data-product-id="p8" aria-pressed="false" aria-label="Save Matte Ceramic Vessel to wishlist"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9C.7 8 2 4.5 5.5 4.5 8 4.5 10 6 12 8.5c2-2.5 4-4 6.5-4 3.5 0 4.8 3.5 3 7.5-2.5 4.5-9.5 9-9.5 9z"/></svg></button>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__category">Decor &amp; Objects</span>
+            <h3 class="product-card__name"><a href="products.html">Matte Ceramic Vessel</a></h3>
+            <div class="rating"><span class="stars">★★★★★</span> (21)</div>
+            <div class="product-card__price">$52</div>
+          </div>
+          <button class="add-mini" type="button">Add to cart</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container stats" data-reveal style="display:grid; grid-template-columns:repeat(4,1fr); gap:26px; text-align:center;">
+      <div><div class="hero__title" style="font-size:2.1rem;" data-count="180" data-suffix="+">0</div><p class="text-muted">Hand-selected goods</p></div>
+      <div><div class="hero__title" style="font-size:2.1rem;" data-count="21" data-suffix="">0</div><p class="text-muted">Independent makers</p></div>
+      <div><div class="hero__title" style="font-size:2.1rem;" data-count="4.9" data-suffix="/5">0</div><p class="text-muted">Average review rating</p></div>
+      <div><div class="hero__title" style="font-size:2.1rem;" data-count="9" data-suffix="k+">0</div><p class="text-muted">Homes furnished</p></div>
+    </div>
+  </section>
+
+  <section class="section section--surface">
+    <div class="container quote" data-reveal>
+      <blockquote>"Everything I've ordered from The Goods Shop looks exactly as plain and well-made as it did in the photos — no surprises, just good pieces that hold up."</blockquote>
+      <cite>— Renata Cole, customer since 2023</cite>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width:560px; text-align:center;" data-reveal>
+      <p class="eyebrow" style="justify-content:center;">Stay in the loop</p>
+      <h2 style="margin-bottom:18px;">New arrivals and offers, twice a month.</h2>
+      <form id="newsletterForm" class="newsletter-form">
+        <label for="newsletterEmail" class="visually-hidden">Email address</label>
+        <input type="email" id="newsletterEmail" placeholder="you@email.com" required>
+        <button type="submit" class="btn btn--accent">Subscribe</button>
+      </form>
+      <p class="newsletter-note" id="newsletterNote"></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">The Goods <span>Shop</span></a><p>Minimal lighting, kitchen, bed &amp; bath, decor and outdoor goods — considered design, honest prices.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="categories.html">Categories</a></li><li><a href="products.html">Shop</a></li><li><a href="offers.html">Offers</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:hello@thegoodsshop.com">hello@thegoodsshop.com</a></li><li>Asheville, NC</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">Instagram</a></li><li><a href="#">Pinterest</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 The Goods Shop.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

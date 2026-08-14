@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Maison Ives</title>
+<meta name="description" content="Book a private fitting or ask a question about the Maison Ives collections.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Maison <em>Ives</em></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="collections.html" class="nav-link">Collections</a></li>
+        <li><a href="products.html" class="nav-link">Shop</a></li>
+        <li><a href="lookbook.html" class="nav-link">Lookbook</a></li>
+        <li><a href="contact.html" class="nav-link" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="btn btn--primary header__cta">Book a fitting</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="section" style="padding-bottom: 20px;">
+    <div class="container" style="max-width: 700px;" data-reveal>
+      <p class="eyebrow">Get in touch</p>
+      <h1 style="font-size: clamp(2rem, 3.6vw, 2.8rem); margin-bottom: 18px;">Book a private fitting, or ask us anything.</h1>
+      <p style="color: var(--muted); max-width: 56ch;">Our atelier team replies within one business day — for sizing questions, custom orders, or to book a fitting at our Paris or New York locations.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 30px;">
+    <div class="container contact-grid" data-reveal>
+
+      <div>
+        <div class="contact-info__item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 7l9 6 9-6M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h3>Email</h3><a href="mailto:atelier@maisonives.com">atelier@maisonives.com</a></div>
+        </div>
+        <div class="contact-info__item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.99.36 1.96.68 2.89a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.19-1.27a2 2 0 012.11-.45c.93.32 1.9.55 2.89.68A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h3>Phone</h3><a href="tel:+33142607788">+33 1 42 60 77 88</a></div>
+        </div>
+        <div class="contact-info__item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1118 0z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.6"/></svg>
+          <div><h3>Ateliers</h3><p>Paris, France · New York, NY</p></div>
+        </div>
+        <div class="contact-info__item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <div><h3>Response time</h3><p>Within one business day.</p></div>
+        </div>
+      </div>
+
+      <div>
+        <form class="form" id="contactForm" novalidate>
+          <div class="form__success" id="formSuccess" role="status">Thank you — your message is in. We'll reply within one business day.</div>
+
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+            <small class="error">Please enter your name.</small>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+            <small class="error">Please enter a valid email address.</small>
+          </div>
+
+          <div class="field">
+            <label for="reason">Reason for inquiry</label>
+            <select id="reason" name="reason" required>
+              <option value="">Select one</option>
+              <option value="fitting">Book a private fitting</option>
+              <option value="custom">Custom order</option>
+              <option value="sizing">Sizing question</option>
+              <option value="other">Something else</option>
+            </select>
+            <small class="error">Please select a reason.</small>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Tell us how we can help."></textarea>
+            <small class="error">Please add a message.</small>
+          </div>
+
+          <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center;">Send message</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a href="index.html" class="logo">Maison <em>Ives</em></a>
+      <p>Considered luxury ready-to-wear, cut and finished by hand in Paris.</p>
+    </div>
+    <nav class="footer__col" aria-label="Sitemap">
+      <h3>Sitemap</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="products.html">Shop</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="footer__col">
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="mailto:atelier@maisonives.com">atelier@maisonives.com</a></li>
+        <li><a href="tel:+33142607788">+33 1 42 60 77 88</a></li>
+        <li>Paris · New York</li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h3>Follow</h3>
+      <ul class="social">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Pinterest</a></li>
+        <li><a href="#">Substack</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <p>© 2026 Maison Ives. All rights reserved.</p>
+    <p><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

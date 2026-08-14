@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate — Fund a Mentor at RISE Collective</title>
+<meta name="description" content="Give to RISE Collective. Your gift funds mentor training, Streetlight Nights meals, and Launchpad Fellowship stipends for young people ages 13-24 in Atlanta.">
+<meta property="og:title" content="Donate — RISE Collective">
+<meta property="og:description" content="Fund the mentor. Or become one. Either way, show up.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">RISE<span>Collective</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="programs.html" class="nav-link">Programs</a></li>
+        <li><a href="impact.html" class="nav-link">Impact</a></li>
+        <li><a href="donate.html" class="nav-link" aria-current="page">Donate</a></li>
+      </ul>
+    </nav>
+    <a href="donate.html" class="btn btn--primary header__cta">Donate Now</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" style="padding-bottom: 30px;">
+    <div class="container">
+      <p class="eyebrow" data-reveal>Give now</p>
+      <h1 class="hero__title" style="max-width: 15ch;" data-reveal>Fund the mentor. Or become one. Either way, show up.</h1>
+      <p class="hero__lead" data-reveal>$20 covers a Streetlight Nights meal. $75 covers a week of a
+        mentor's training. $150 helps fund a Launchpad Fellowship stipend. Every gift moves a young
+        person forward.</p>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container donate-grid">
+
+      <div data-reveal>
+        <div class="demo-note">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 8v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="16" r="1" fill="currentColor"/></svg>
+          <p><strong>Front-end demo only.</strong> This donation form is a design demonstration — no
+            payment gateway is connected and no real transaction will be processed.</p>
+        </div>
+
+        <h2 style="font-size: 1.6rem; margin-bottom: 20px;">Where your gift goes</h2>
+        <div class="donate-impact__item"><strong>$20</strong><p>Feeds a teen at Streetlight Nights for an evening — meal, workshop and mentor time included.</p></div>
+        <div class="donate-impact__item"><strong>$40</strong><p>Covers a week of transportation stipends so mentees can actually get to their RISE Circle.</p></div>
+        <div class="donate-impact__item"><strong>$75</strong><p>Funds a full week of training for a new volunteer mentor before they're paired with a teen.</p></div>
+        <div class="donate-impact__item"><strong>$150</strong><p>Helps fund a week of stipend for a Launchpad Fellowship apprentice learning real job skills.</p></div>
+      </div>
+
+      <div data-reveal>
+        <form class="form" id="donateForm" data-validate novalidate>
+          <div class="form__success" role="status">Thank you — this is a demo, so no charge was made, but your generosity is noted. We'll be in touch.</div>
+
+          <label class="visually-hidden" for="donationFrequency">Donation frequency</label>
+          <input type="hidden" id="donationFrequency" name="frequency" value="once">
+          <div class="frequency-toggle">
+            <button type="button" class="frequency-btn is-active" data-frequency="once">One-time</button>
+            <button type="button" class="frequency-btn" data-frequency="monthly">Monthly</button>
+          </div>
+
+          <div class="amount-grid">
+            <button type="button" class="amount-btn" data-amount="20">$20</button>
+            <button type="button" class="amount-btn" data-amount="40">$40</button>
+            <button type="button" class="amount-btn" data-amount="75">$75</button>
+            <button type="button" class="amount-btn" data-amount="150">$150</button>
+          </div>
+
+          <div class="amount-custom">
+            <span>$</span>
+            <input type="number" id="customAmount" name="amount" min="1" step="1" placeholder="Custom amount" aria-label="Custom donation amount">
+          </div>
+
+          <div class="field"><label for="donorName">Full name</label><input type="text" id="donorName" name="donorName" required autocomplete="name"><small class="error">Please enter your name.</small></div>
+          <div class="field"><label for="donorEmail">Email</label><input type="email" id="donorEmail" name="donorEmail" required autocomplete="email"><small class="error">Please enter a valid email address.</small></div>
+          <div class="field"><label for="donorCard">Card number</label><input type="text" id="donorCard" name="donorCard" required placeholder="0000 0000 0000 0000" inputmode="numeric" autocomplete="off"><small class="error">Please enter a card number (demo field only).</small></div>
+
+          <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center;">Complete donation</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section section--surface">
+    <div class="container">
+      <div class="cta-banner" data-reveal>
+        <h2>Not ready to give? Give your time instead.</h2>
+        <p>Volunteer mentors are the backbone of every RISE program — no experience required.</p>
+        <div class="cta-banner__actions">
+          <a href="about.html#volunteer" class="btn btn--primary">Become a mentor</a>
+          <a href="programs.html" class="btn btn--ghost">See our programs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">RISE<span>Collective</span></a><p>A youth-led mentorship movement putting young people in charge of their own future.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="programs.html">Programs</a></li><li><a href="impact.html">Impact</a></li><li><a href="donate.html">Donate</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:hello@risecollective.org">hello@risecollective.org</a></li><li><a href="tel:+14045550142">+1 (404) 555-0142</a></li><li>Atlanta, GA</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">Instagram</a></li><li><a href="#">X / Twitter</a></li><li><a href="#">TikTok</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 RISE Collective. All rights reserved.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

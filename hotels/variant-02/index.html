@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solara Resort — Bold Beachfront Stays in Tulum, Mexico</title>
+<meta name="description" content="Solara Resort is a design-forward beachfront resort in Tulum, Mexico — 28 casitas, bungalows and rooftop suites, a jungle beach club, and a rooftop mezcal bar.">
+<meta property="og:title" content="Solara Resort — Bold Beachfront Stays in Tulum, Mexico">
+<meta property="og:description" content="28 color-drenched rooms between the jungle and the sea, a rooftop mezcal bar, and a beach club that never closes early.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Solara <span>Resort</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+        <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+        <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="booking.html" class="nav-link">Booking</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a href="booking.html" class="btn btn--accent btn--sm">Check Availability</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="hero__media">
+      <img src="https://images.unsplash.com/photo-1540202404-a2f29016b523?auto=format&fit=crop&w=1800&q=75" alt="Turquoise Caribbean water and palm-lined beach along the Tulum coastline at golden hour">
+    </div>
+    <div class="hero__sticker" aria-hidden="true">Book Direct &amp; Save 10%</div>
+    <div class="container hero__content">
+      <p class="eyebrow" data-reveal>Tulum, Mexico</p>
+      <h1 class="hero__title" data-reveal>Bold color, barefoot mornings, a sun that <em>means it.</em></h1>
+      <p class="hero__lead" data-reveal>28 casitas, bungalows and rooftop suites between the jungle and the sea, a beach club that never rushes last call, and murals painted by the artists who live next door.</p>
+      <div class="hero__actions" data-reveal>
+        <a href="rooms.html" class="btn btn--light">View Rooms</a>
+        <a href="booking.html" class="btn btn--accent">Book Your Stay</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <form class="booking-bar" id="quickBooking" data-reveal aria-label="Quick availability search">
+      <div class="field-inline">
+        <label for="qCheckIn">Check in</label>
+        <input type="date" id="qCheckIn" name="checkIn" required>
+      </div>
+      <div class="field-inline">
+        <label for="qCheckOut">Check out</label>
+        <input type="date" id="qCheckOut" name="checkOut" required>
+      </div>
+      <div class="field-inline">
+        <label id="guestLabel">Guests</label>
+        <div class="guest-stepper" data-min="1" data-max="6" role="group" aria-labelledby="guestLabel">
+          <button type="button" data-step="down" aria-label="Decrease guests">−</button>
+          <span>2</span>
+          <button type="button" data-step="up" aria-label="Increase guests">+</button>
+        </div>
+      </div>
+      <div class="field-inline">
+        <label for="qRoomType">Room type</label>
+        <select id="qRoomType" name="roomType">
+          <option value="">Any</option>
+          <option value="casita">Jungle Casita</option>
+          <option value="bungalow">Beach Bungalow</option>
+          <option value="suite">Sky Suite</option>
+        </select>
+      </div>
+      <a href="booking.html" class="btn btn--primary">Check Availability</a>
+    </form>
+  </div>
+
+  <section class="section">
+    <div class="container intro-split">
+      <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=75" alt="Sunlit casita terrace at Solara Resort with hammock and jungle view" data-reveal>
+      <div data-reveal>
+        <p class="eyebrow">Welcome to Solara</p>
+        <h2>A coconut farm turned color-drenched hideaway.</h2>
+        <p class="text-muted" style="margin-top:18px; font-size:1.05rem;">Solara opened in 2016 on what used to be a family coconut farm along Tulum's coastal road. We kept the palms,
+          added raw concrete and terrazzo, and asked local muralists to paint every casita a different mood. Breakfast starts at sunrise. The rooftop bar closes whenever the last person leaves.</p>
+        <div class="intro-split__stats">
+          <div><strong data-count="28">0</strong><span>Rooms &amp; Suites</span></div>
+          <div><strong data-count="4.8" data-suffix="/5">0</strong><span>Guest Rating</span></div>
+          <div><strong data-count="10" data-suffix="yrs">0</strong><span>On This Coast</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-strip__track">
+      <span>TULUM, MEXICO</span><span class="accent-text">•</span><span>BEACHFRONT CASITAS</span><span class="accent-text-2">•</span><span>ROOFTOP MEZCAL BAR</span><span class="accent-text">•</span><span>BOOK DIRECT &amp; SAVE</span><span class="accent-text-2">•</span><span>SUNRISE YOGA</span><span class="accent-text">•</span>
+      <span>TULUM, MEXICO</span><span class="accent-text">•</span><span>BEACHFRONT CASITAS</span><span class="accent-text-2">•</span><span>ROOFTOP MEZCAL BAR</span><span class="accent-text">•</span><span>BOOK DIRECT &amp; SAVE</span><span class="accent-text-2">•</span><span>SUNRISE YOGA</span><span class="accent-text">•</span>
+    </div>
+  </div>
+
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section__head section__head--split" data-reveal>
+        <div><p class="eyebrow">Rooms &amp; Suites</p><h2>A room for every kind of bold.</h2></div>
+        <a href="rooms.html" class="btn btn--ghost">View all rooms</a>
+      </div>
+      <div class="grid-3">
+        <article class="room-card" data-reveal>
+          <div class="room-card__media"><span class="room-card__badge">Most booked</span><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=500&q=75" alt="Beach Bungalow Frente al Mar with king bed and ocean-facing terrace"></div>
+          <div class="room-card__body">
+            <h3>Beach Bungalow Frente al Mar</h3>
+            <div class="room-card__meta"><span>34 m²</span><span>King bed</span><span>Steps to sand</span></div>
+            <p>The closest room to the water — walk out the door and your feet are in the sand.</p>
+            <div class="room-card__footer"><div class="room-card__price">$365 <span>/ night</span></div><a href="rooms.html" class="btn btn--ghost btn--sm">Details</a></div>
+          </div>
+        </article>
+        <article class="room-card" data-reveal>
+          <div class="room-card__media"><img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=500&q=75" alt="Jungle Casita Sencilla with queen bed and hand-painted mural"></div>
+          <div class="room-card__body">
+            <h3>Jungle Casita Sencilla</h3>
+            <div class="room-card__meta"><span>22 m²</span><span>Queen bed</span><span>Jungle view</span></div>
+            <p>Our entry-level casita, hand-painted by a Tulum muralist and shaded by palms.</p>
+            <div class="room-card__footer"><div class="room-card__price">$185 <span>/ night</span></div><a href="rooms.html" class="btn btn--ghost btn--sm">Details</a></div>
+          </div>
+        </article>
+        <article class="room-card" data-reveal>
+          <div class="room-card__media"><span class="room-card__badge">Top rated</span><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=500&q=75&sat=20" alt="Sky Suite Horizonte with private rooftop plunge pool"></div>
+          <div class="room-card__body">
+            <h3>Sky Suite Horizonte</h3>
+            <div class="room-card__meta"><span>46 m²</span><span>King bed</span><span>Rooftop plunge pool</span></div>
+            <p>Your own plunge pool above the treeline, with a hammock strung for sunset.</p>
+            <div class="room-card__footer"><div class="room-card__price">$520 <span>/ night</span></div><a href="rooms.html" class="btn btn--ghost btn--sm">Details</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head--center" data-reveal><p class="eyebrow">Amenities</p><h2>Everything a bold stay needs.</h2></div>
+      <div class="grid-4">
+        <div class="card" data-reveal><div class="card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 17h18M5 17V9a2 2 0 012-2h10a2 2 0 012 2v8M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Beach Club &amp; Pool</h3><p>A freeform pool, striped cabanas, and direct beach access with a bar that mixes serious mezcal.</p></div>
+        <div class="card" data-reveal><div class="card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3c-2 3-2 5 0 7s2 4 0 7M6 10c-2 3-2 4 0 6M18 10c2 3 2 4 0 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><h3>Cenote Spa</h3><p>Treatments inspired by the region's limestone cenotes, with a cold-plunge pool and steam room.</p></div>
+        <div class="card" data-reveal><div class="card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 19h16M6 19V9l6-4 6 4v10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Fuego Rooftop</h3><p>Wood-fired tacos, ceviche and a mezcal list twelve bottles deep, served under string lights.</p></div>
+        <div class="card" data-reveal><div class="card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Concierge &amp; Adventures</h3><p>Sunrise yoga, snorkeling at the reef, jungle bike tours and cenote day trips, booked at the front desk.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="container quote" data-reveal>
+      <blockquote>"Every other resort we've stayed at asked us to be quiet and beige. Solara handed us a mezcal and told us to paint outside the lines."</blockquote>
+      <cite>— Priya &amp; Sam Okafor-Reyes, Guests since 2022</cite>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head--center" data-reveal><p class="eyebrow">Gallery</p><h2>A glimpse of Solara.</h2></div>
+      <div class="grid-4" data-reveal>
+        <img src="https://images.unsplash.com/photo-1540202404-a2f29016b523?auto=format&fit=crop&w=420&q=70" alt="Turquoise water along the Tulum coastline" style="border-radius:var(--radius-sm); height:180px; object-fit:cover; border:3px solid var(--ink);">
+        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=420&q=70" alt="Casita terrace with hammock" style="border-radius:var(--radius-sm); height:180px; object-fit:cover; border:3px solid var(--ink);">
+        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=420&q=70" alt="Fuego Rooftop restaurant at night" style="border-radius:var(--radius-sm); height:180px; object-fit:cover; border:3px solid var(--ink);">
+        <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=420&q=70" alt="Cenote Spa treatment room" style="border-radius:var(--radius-sm); height:180px; object-fit:cover; border:3px solid var(--ink);">
+      </div>
+      <div style="text-align:center; margin-top:36px;"><a href="gallery.html" class="btn btn--ghost">View Full Gallery</a></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">Solara <span>Resort</span></a><p>A design-forward beach resort in Tulum, Mexico — 28 rooms between the jungle and the sea, open since 2016.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="rooms.html">Rooms</a></li><li><a href="amenities.html">Amenities</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="booking.html">Booking</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:reservations@solararesort.mx">reservations@solararesort.mx</a></li><li>+52 984 555 0182</li><li>Zona Costera, Tulum, Quintana Roo, Mexico</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">Instagram</a></li><li><a href="#">TikTok</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 Solara Resort.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

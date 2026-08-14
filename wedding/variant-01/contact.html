@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Inquiries — EverAfter Wedding Studio</title>
+<meta name="description" content="Start planning your wedding with EverAfter. Share your date, guest count and package interest, or reach our studio directly by phone or email.">
+<meta property="og:title" content="Contact & Inquiries — EverAfter Wedding Studio">
+<meta property="og:description" content="Begin your wedding planning inquiry with EverAfter.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Ever<span>After</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="story.html" class="nav-link">Our Story</a></li>
+        <li><a href="packages.html" class="nav-link">Packages</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="btn btn--primary header__cta">Begin your inquiry</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" style="padding-bottom: 40px;">
+    <div class="container" style="max-width: 780px;">
+      <div data-reveal>
+        <p class="eyebrow">Contact</p>
+        <h1 class="hero__title">Let's start planning your day.</h1>
+        <p class="hero__lead">Tell us a little about your wedding and we'll reply within two business days
+          with availability and next steps. No pressure, no obligation — just a real conversation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div data-reveal>
+          <div class="contact-info__item">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6l9 6 9-6M4 4h16a1 1 0 011 1v14a1 1 0 01-1 1H4a1 1 0 01-1-1V5a1 1 0 011-1z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            <div>
+              <h3>Email</h3>
+              <p><a href="mailto:hello@everafterweddings.com">hello@everafterweddings.com</a></p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014 2h3a2 2 0 012 1.7c.1 1 .3 2 .6 2.9a2 2 0 01-.5 2.1L8 10a16 16 0 006 6l1.3-1.1a2 2 0 012.1-.5c.9.3 1.9.5 2.9.6a2 2 0 011.7 2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            <div>
+              <h3>Phone</h3>
+              <p><a href="tel:+18885550193">+1 (888) 555-0193</a></p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1118 0z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+            <div>
+              <h3>Studio locations</h3>
+              <p>Sonoma Valley, California &amp; Charleston, South Carolina — travel-friendly, by appointment.</p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <div>
+              <h3>Response time</h3>
+              <p>We reply to every inquiry within two business days, often sooner.</p>
+            </div>
+          </div>
+        </div>
+
+        <div data-reveal>
+          <div class="form__success" id="formSuccess" role="status">
+            Thank you — your inquiry has been received. A member of our planning team will reach out within two business days.
+          </div>
+          <form class="form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="fullName">Full name</label>
+              <input type="text" id="fullName" name="fullName" required>
+              <small class="error">Please enter your full name.</small>
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" required>
+              <small class="error">Please enter a valid email address.</small>
+            </div>
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" required>
+              <small class="error">Please enter a phone number.</small>
+            </div>
+            <div class="field">
+              <label for="weddingDate">Wedding date (or estimated season)</label>
+              <input type="text" id="weddingDate" name="weddingDate" placeholder="e.g. June 2027 or Fall 2026" required>
+              <small class="error">Please share a date or season.</small>
+            </div>
+            <div class="field">
+              <label for="packageInterest">Package interest</label>
+              <select id="packageInterest" name="packageInterest" required>
+                <option value="">Select a package</option>
+                <option value="elopement">Elopement — $2,800</option>
+                <option value="signature">Signature Day — from $6,500</option>
+                <option value="estate">Full Estate Wedding — from $12,000+</option>
+                <option value="unsure">Not sure yet</option>
+              </select>
+              <small class="error">Please select a package.</small>
+            </div>
+            <div class="field">
+              <label for="guestCount">Estimated guest count</label>
+              <input type="number" id="guestCount" name="guestCount" min="1" placeholder="e.g. 120">
+            </div>
+            <div class="field">
+              <label for="message">Tell us about your day</label>
+              <textarea id="message" name="message" required placeholder="Your venue, vision, or any questions you have"></textarea>
+              <small class="error">Please tell us a little about your wedding.</small>
+            </div>
+            <button type="submit" class="btn btn--primary">Send inquiry</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a href="index.html" class="logo">Ever<span>After</span></a>
+      <p>A luxury wedding planning and design studio crafting romantic, editorial celebrations.</p>
+    </div>
+    <nav class="footer__col" aria-label="Sitemap">
+      <h3>Sitemap</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="footer__col">
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="mailto:hello@everafterweddings.com">hello@everafterweddings.com</a></li>
+        <li><a href="tel:+18885550193">+1 (888) 555-0193</a></li>
+        <li>Sonoma · Charleston · By appointment</li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h3>Follow</h3>
+      <ul class="social">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Pinterest</a></li>
+        <li><a href="#">The Knot</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <p>© 2026 EverAfter Weddings Studio. All rights reserved.</p>
+    <p><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amenities — The Stay</title>
+<meta name="description" content="The Stay's amenities in Nordhavn, Copenhagen: Kornet restaurant and bar, The Bathhouse wellness room, The Loading Bay workspace, and 24-hour concierge.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">The <span>Stay</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+        <li><a href="amenities.html" class="nav-link" aria-current="page">Amenities</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="booking.html" class="nav-link">Booking</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a href="booking.html" class="btn btn--accent btn--sm">Check Availability</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section--tight container" style="padding-bottom:0;">
+    <p class="eyebrow" data-reveal>Amenities</p>
+    <h1 style="font-size:clamp(2rem,3.8vw,2.9rem); max-width:22ch;" data-reveal>Everything a quiet stay needs.</h1>
+  </section>
+
+  <section class="section">
+    <div class="container intro-split">
+      <div data-reveal>
+        <div class="amenity-row">
+          <div class="amenity-row__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 19h16M6 19V9l6-4 6 4v10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div><h3>Kornet — Restaurant &amp; Bar</h3><p>A dining room and bar built into the original grain silos, serving a short, seasonal Danish menu and a bar list built around Nordic distillers.</p></div>
+        </div>
+        <div class="amenity-row">
+          <div class="amenity-row__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3c-2 3-2 5 0 7s2 4 0 7M6 10c-2 3-2 4 0 6M18 10c2 3 2 4 0 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <div><h3>The Bathhouse</h3><p>A wood-fired sauna, a cold plunge pool, and a small gym with free weights and two rowing machines. Open from 6am.</p></div>
+        </div>
+        <div class="amenity-row">
+          <div class="amenity-row__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="12" rx="1" stroke="currentColor" stroke-width="1.6"/><path d="M9 20h6M12 17v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <div><h3>The Loading Bay</h3><p>A quiet, plug-equipped workspace and two small meeting rooms, named for the dock this building once loaded grain from.</p></div>
+        </div>
+        <div class="amenity-row" style="border-bottom:none;">
+          <div class="amenity-row__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div><h3>Concierge &amp; Bike Rental</h3><p>Restaurant bookings, local guides and bicycles arranged at the front desk, 24 hours a day, or before you arrive.</p></div>
+        </div>
+      </div>
+      <img src="https://images.unsplash.com/photo-1518733057094-95b53143d2a7?auto=format&fit=crop&w=800&q=75" alt="Kornet bar with a poured concrete counter and brass rail" data-reveal>
+    </div>
+  </section>
+
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section__head--center" data-reveal><p class="eyebrow">Hours</p><h2>When to find us.</h2></div>
+      <div class="grid-2" data-reveal>
+        <div class="amenity-hours">
+          <table>
+            <tr><th>Facility</th><th>Hours</th></tr>
+            <tr><td>Kornet Restaurant</td><td>7:00am – 10:30pm</td></tr>
+            <tr><td>Kornet Bar</td><td>4:00pm – 12:00am</td></tr>
+            <tr><td>The Bathhouse</td><td>6:00am – 9:00pm</td></tr>
+            <tr><td>Front Desk &amp; Concierge</td><td>24 hours</td></tr>
+          </table>
+        </div>
+        <div class="amenity-hours">
+          <table>
+            <tr><th>Service</th><th>Notes</th></tr>
+            <tr><td>Meeting rooms</td><td>Book 24h in advance</td></tr>
+            <tr><td>Bike rental</td><td>Included, first come basis</td></tr>
+            <tr><td>Sauna sessions</td><td>Shared, no reservation</td></tr>
+            <tr><td>Late check-out</td><td>Subject to availability</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container cta-banner" data-reveal>
+      <h2>Ready to plan your stay?</h2>
+      <p>Check live availability and rates for your dates, or write to the front desk directly.</p>
+      <a href="booking.html" class="btn btn--accent">Check Availability</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">The <span>Stay</span></a><p>A 42-room hotel inside a restored 1921 grain warehouse on Copenhagen's harbour, open since 2019.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="rooms.html">Rooms</a></li><li><a href="amenities.html">Amenities</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="booking.html">Booking</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:hello@thestay.dk">hello@thestay.dk</a></li><li>+45 32 12 34 56</li><li>Sundkrogsgade 8, 2150 Nordhavn</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">Instagram</a></li><li><a href="#">LinkedIn</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 The Stay.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

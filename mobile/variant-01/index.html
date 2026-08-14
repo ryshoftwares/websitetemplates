@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orbit — The Habit Tracker That Sticks</title>
+<meta name="description" content="Orbit is a premium habit-tracking app that helps you build routines that actually last, with gentle streaks and weekly reviews.">
+<meta property="og:title" content="Orbit — The Habit Tracker That Sticks">
+<meta property="og:description" content="Build routines that actually last.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Orbit</a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+        <li><a href="features.html" class="nav-link">Features</a></li>
+        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+        <li><a href="download.html" class="nav-link">Download</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="download.html" class="btn btn--primary header__cta">Get Orbit</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="container hero__grid">
+      <div data-reveal>
+        <p class="eyebrow">Habit tracking, done gently</p>
+        <h1 class="hero__title" style="font-size: clamp(2.4rem, 4.6vw, 4rem); max-width: 14ch;">Build routines that actually last.</h1>
+        <p class="hero__lead" style="margin: 26px 0 32px; max-width: 46ch; color: var(--muted); font-size: 1.1rem;">Orbit tracks your habits without the guilt trips — gentle streaks, weekly reviews, and reminders that adapt to how your week actually goes.</p>
+        <div class="hero__actions" style="display:flex; gap:16px; flex-wrap:wrap; margin-bottom: 28px;">
+          <a href="download.html" class="btn btn--primary">Download free</a>
+          <a href="features.html" class="btn btn--ghost">See features</a>
+        </div>
+        <div class="store-badges">
+          <a href="#" class="store-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 12.5c0-2.2 1.8-3.3 1.9-3.3-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.7.8-3.4.8-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 3 2.3 1.2 0 1.6-.8 3-.8s1.8.8 3 .8 2.1-1.1 2.9-2.3c.6-.9.9-1.4 1.4-2.4-3.7-1.4-3-5.5-3-6.2z"/></svg><span><small>Download on the</small><strong>App Store</strong></span></a>
+          <a href="#" class="store-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3l11 9-11 9V3z"/><path d="M14 12l4-2.3L3 3l11 9z" opacity="0.7"/><path d="M14 12l4 2.3L3 21l11-9z" opacity="0.85"/></svg><span><small>Get it on</small><strong>Google Play</strong></span></a>
+        </div>
+      </div>
+      <div style="display:flex; justify-content:center; position:relative;" data-reveal>
+        <div class="hero__ring"></div>
+        <div class="hero__ring hero__ring--2"></div>
+        <div class="phone-mockup">
+          <div class="phone-mockup__frame">
+            <div class="phone-mockup__notch"></div>
+            <div class="phone-mockup__screen">
+              <svg viewBox="0 0 300 640" role="img" aria-label="Orbit app screen showing today's habits, a streak counter and a weekly progress ring">
+                <rect width="300" height="640" fill="#faf7f0"/>
+                <text x="24" y="60" font-size="14" fill="#6b7568" font-family="sans-serif">Good morning</text>
+                <text x="24" y="88" font-size="22" font-weight="700" fill="#16241c" font-family="sans-serif">Today's habits</text>
+                <circle cx="150" cy="190" r="70" fill="none" stroke="#eef1ea" stroke-width="14"/>
+                <circle cx="150" cy="190" r="70" fill="none" stroke="#d98a3d" stroke-width="14" stroke-dasharray="330" stroke-dashoffset="90" stroke-linecap="round" transform="rotate(-90 150 190)"/>
+                <text x="150" y="184" font-size="26" font-weight="700" fill="#16241c" text-anchor="middle" font-family="sans-serif">4/6</text>
+                <text x="150" y="206" font-size="12" fill="#6b7568" text-anchor="middle" font-family="sans-serif">complete</text>
+                <rect x="24" y="290" width="252" height="64" rx="16" fill="#ffffff"/>
+                <circle cx="52" cy="322" r="14" fill="#4f7a68"/>
+                <text x="78" y="318" font-size="14" font-weight="600" fill="#16241c" font-family="sans-serif">Morning meditation</text>
+                <text x="78" y="336" font-size="11" fill="#6b7568" font-family="sans-serif">12-day streak</text>
+                <rect x="24" y="366" width="252" height="64" rx="16" fill="#ffffff"/>
+                <circle cx="52" cy="398" r="14" fill="#eef1ea" stroke="#d98a3d" stroke-width="2"/>
+                <text x="78" y="394" font-size="14" font-weight="600" fill="#16241c" font-family="sans-serif">Read 20 minutes</text>
+                <text x="78" y="412" font-size="11" fill="#6b7568" font-family="sans-serif">Not yet today</text>
+                <rect x="24" y="442" width="252" height="64" rx="16" fill="#ffffff"/>
+                <circle cx="52" cy="474" r="14" fill="#4f7a68"/>
+                <text x="78" y="470" font-size="14" font-weight="600" fill="#16241c" font-family="sans-serif">Drink water</text>
+                <text x="78" y="488" font-size="11" fill="#6b7568" font-family="sans-serif">6-day streak</text>
+              </svg>
+            </div>
+          </div>
+          <div class="hero__badge"><span class="hero__badge-icon">🔥</span><div><strong>28 day</strong>average user streak</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="marquee">
+    <div class="container">
+      <p class="marquee__label">Featured in</p>
+      <div class="marquee__logos" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:24px;">
+        <span style="font-family: var(--font-display); font-weight:600; color:var(--muted); opacity:0.7;">TechCrunch</span>
+        <span style="font-family: var(--font-display); font-weight:600; color:var(--muted); opacity:0.7;">The Verge</span>
+        <span style="font-family: var(--font-display); font-weight:600; color:var(--muted); opacity:0.7;">Product Hunt</span>
+        <span style="font-family: var(--font-display); font-weight:600; color:var(--muted); opacity:0.7;">Lifehacker</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head" data-reveal><p class="eyebrow">Why people stick with it</p><h2>Four things Orbit gets right.</h2></div>
+      <div class="feature-teaser">
+        <div class="feature-teaser__item" data-reveal><div class="feature-teaser__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><h3>Gentle streaks</h3><p>Missing a day doesn't reset everything — Orbit tracks consistency, not perfection.</p></div>
+        <div class="feature-teaser__item" data-reveal><div class="feature-teaser__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 20V10M12 20V4M20 20v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><h3>Weekly reviews</h3><p>A Sunday-morning recap that shows what worked, without the guilt.</p></div>
+        <div class="feature-teaser__item" data-reveal><div class="feature-teaser__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><h3>Adaptive reminders</h3><p>Notifications that learn your patterns instead of pinging you at the same fixed time.</p></div>
+        <div class="feature-teaser__item" data-reveal><div class="feature-teaser__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="2"/></svg></div><h3>Widgets that work</h3><p>Home-screen widgets that show today's progress at a glance — no app-opening required.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section__head" data-reveal><p class="eyebrow">By the numbers</p><h2>People actually keep using Orbit.</h2></div>
+      <div class="stats" data-reveal>
+        <div class="stat"><div class="stat__num" data-count="480" data-suffix="K+">0</div><p class="stat__label">Habits tracked daily</p></div>
+        <div class="stat"><div class="stat__num" data-count="4.8" data-suffix="/5">0</div><p class="stat__label">App Store rating</p></div>
+        <div class="stat"><div class="stat__num" data-count="68" data-suffix="%">0</div><p class="stat__label">Still active after 90 days</p></div>
+        <div class="stat"><div class="stat__num" data-count="120" data-suffix="K+">0</div><p class="stat__label">Downloads</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--sage">
+    <div class="container" style="max-width: 700px; text-align:center;" data-reveal>
+      <blockquote style="font-family: var(--font-display); font-size: clamp(1.3rem, 2.4vw, 1.8rem); margin-bottom: 20px;">"Orbit is the first habit app that didn't make me feel bad about missing a day. I've kept a meditation streak going for three months."</blockquote>
+      <cite style="color: var(--muted); font-style:normal;">— Dana Ruiz, Orbit user since 2024</cite>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo" style="color:#fff;">Orbit</a><p>A habit tracker built around consistency, not guilt.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="download.html">Download</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:hello@orbithabits.app">hello@orbithabits.app</a></li><li>San Francisco, CA</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">Instagram</a></li><li><a href="#">X / Twitter</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 Orbit Habits, Inc.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pulse Admin — Users</title>
+<meta name="description" content="Manage Pulse Admin workspace members: search, sort, and review roles and account status for every user.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div class="dashboard" id="dashboardRoot">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__brand">
+      <span class="logo-mark" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 12h4l2 6 4-14 3 8h5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="logo-text">Pulse <span>Admin</span></span>
+    </div>
+
+    <nav aria-label="Primary">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/></svg>
+            <span class="nav-link__label">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="users.html" aria-current="page">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="9" cy="8" r="3.2" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 20c0-3.3 2.7-5.6 5.5-5.6s5.5 2.3 5.5 5.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="17" cy="9" r="2.4" stroke="currentColor" stroke-width="1.8"/><path d="M15.5 14.6c2.4.3 4.5 2.2 4.5 5.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <span class="nav-link__label">Users</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reports.html">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 20V10M12 20V4M20 20v-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M3 20h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <span class="nav-link__label">Reports</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="settings.html">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.8"/><path d="M12 3v2.2M12 18.8V21M4.6 6.6l1.6 1.6M17.8 15.8l1.6 1.6M3 12h2.2M18.8 12H21M4.6 17.4l1.6-1.6M17.8 8.2l1.6-1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <span class="nav-link__label">Settings</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.8"/><path d="M6.5 18.2c1-2.3 3.1-3.6 5.5-3.6s4.5 1.3 5.5 3.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <span class="nav-link__label">Profile</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="sidebar__footer">
+      <button type="button" class="sidebar-collapse-btn" id="sidebarCollapseToggle" aria-expanded="true" aria-label="Collapse sidebar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5l-6 7 6 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="sidebar-collapse-btn__label">Collapse sidebar</span>
+      </button>
+    </div>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <div class="dashboard__main">
+    <header class="topbar">
+      <button type="button" class="topbar__toggle" id="sidebarMobileToggle" aria-expanded="false" aria-controls="sidebar" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <form class="topbar__search" role="search">
+        <label for="topbarSearch" class="visually-hidden">Search anything</label>
+        <div class="search-field">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M20 20l-3.2-3.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <input type="text" id="topbarSearch" name="q" placeholder="Search anything…" autocomplete="off">
+        </div>
+      </form>
+
+      <div class="topbar__actions">
+        <button type="button" class="icon-btn" aria-label="Notifications, 3 unread">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9a6 6 0 1 1 12 0c0 3.6 1.2 5.2 2 6.4a1 1 0 0 1-.8 1.6H4.8a1 1 0 0 1-.8-1.6C4.8 14.2 6 12.6 6 9z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9.5 19.5a2.5 2.5 0 0 0 5 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <span class="topbar__badge">3</span>
+        </button>
+
+        <div class="user-menu">
+          <button type="button" class="user-menu__btn" id="userMenuToggle" aria-haspopup="menu" aria-expanded="false" aria-controls="userMenuPanel">
+            <span class="avatar-initials" aria-hidden="true">AK</span>
+            <span class="user-menu__info">
+              <span class="user-menu__name">Amara Klein</span>
+              <span class="user-menu__role">Senior Product Manager</span>
+            </span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 8l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="user-menu__panel" id="userMenuPanel" role="menu">
+            <a href="profile.html" role="menuitem">Profile</a>
+            <a href="settings.html" role="menuitem">Settings</a>
+            <hr>
+            <button type="button" role="menuitem">Log out</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <div class="page-header">
+        <div>
+          <h1>Users</h1>
+          <p>10 people have access to this workspace.</p>
+        </div>
+        <div class="page-actions">
+          <button type="button" class="btn btn--primary">Invite user</button>
+        </div>
+      </div>
+
+      <div class="table-toolbar">
+        <label for="userSearch" class="visually-hidden">Search users</label>
+        <div class="search-field">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M20 20l-3.2-3.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <input type="search" id="userSearch" placeholder="Search by name or email…" autocomplete="off">
+        </div>
+        <p class="table-toolbar__count" id="usersResultsCount">Showing 10 of 10 users</p>
+      </div>
+
+      <div class="table-scroll">
+        <table class="data-table" id="usersTable">
+          <thead>
+            <tr>
+              <th data-sort-key="name" aria-sort="none">
+                <button type="button" class="th-sort-btn">
+                  Name
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+              </th>
+              <th data-sort-key="email" aria-sort="none">
+                <button type="button" class="th-sort-btn">
+                  Email
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+              </th>
+              <th data-sort-key="role" aria-sort="none">
+                <button type="button" class="th-sort-btn">
+                  Role
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+              </th>
+              <th data-sort-key="status" aria-sort="none">
+                <button type="button" class="th-sort-btn">
+                  Status
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+              </th>
+              <th data-sort-key="joined" aria-sort="none">
+                <button type="button" class="th-sort-btn">
+                  Joined
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-name="Priya Anand" data-email="priya.anand@lumeninteractive.com" data-role="Admin" data-status="Active" data-joined="2024-11-02">
+              <td>Priya Anand</td>
+              <td>priya.anand@lumeninteractive.com</td>
+              <td>Admin</td>
+              <td><span class="badge badge--success">Active</span></td>
+              <td>Nov 2, 2024</td>
+            </tr>
+            <tr data-name="Marcus Webb" data-email="marcus.webb@brightfieldco.com" data-role="Editor" data-status="Active" data-joined="2025-01-18">
+              <td>Marcus Webb</td>
+              <td>marcus.webb@brightfieldco.com</td>
+              <td>Editor</td>
+              <td><span class="badge badge--success">Active</span></td>
+              <td>Jan 18, 2025</td>
+            </tr>
+            <tr data-name="Sofia Iyer" data-email="sofia.iyer@nordlyshealth.io" data-role="Viewer" data-status="Invited" data-joined="2025-06-30">
+              <td>Sofia Iyer</td>
+              <td>sofia.iyer@nordlyshealth.io</td>
+              <td>Viewer</td>
+              <td><span class="badge badge--warning">Invited</span></td>
+              <td>Jun 30, 2025</td>
+            </tr>
+            <tr data-name="Devon Clarke" data-email="devon.clarke@harborstack.com" data-role="Billing" data-status="Active" data-joined="2024-08-21">
+              <td>Devon Clarke</td>
+              <td>devon.clarke@harborstack.com</td>
+              <td>Billing</td>
+              <td><span class="badge badge--success">Active</span></td>
+              <td>Aug 21, 2024</td>
+            </tr>
+            <tr data-name="Renee Okafor" data-email="renee.okafor@quillwork.co" data-role="Editor" data-status="Suspended" data-joined="2024-05-09">
+              <td>Renee Okafor</td>
+              <td>renee.okafor@quillwork.co</td>
+              <td>Editor</td>
+              <td><span class="badge badge--danger">Suspended</span></td>
+              <td>May 9, 2024</td>
+            </tr>
+            <tr data-name="Tariq Malik" data-email="tariq.malik@brightfieldco.com" data-role="Admin" data-status="Active" data-joined="2023-12-14">
+              <td>Tariq Malik</td>
+              <td>tariq.malik@brightfieldco.com</td>
+              <td>Admin</td>
+              <td><span class="badge badge--success">Active</span></td>
+              <td>Dec 14, 2023</td>
+            </tr>
+            <tr data-name="Lena Fischer" data-email="lena.fischer@vertexplan.com" data-role="Viewer" data-status="Active" data-joined="2025-03-27">
+              <td>Lena Fischer</td>
+              <td>lena.fischer@vertexplan.com</td>
+              <td>Viewer</td>
+              <td><span class="badge badge--success">Active</span></td>
+              <td>Mar 27, 2025</td>
+            </tr>
+            <tr data-name="Owen Bardot" data-email="owen.bardot@harborstack.com" data-role="Editor" data-status="Invited" data-joined="2025-07-11">
+              <td>Owen Bardot</td>
+              <td>owen.bardot@harborstack.com</td>
+              <td>Editor</td>
+              <td><span class="badge badge--warning">Invited</span></td>
+              <td>Jul 11, 2025</td>
+            </tr>
+            <tr data-name="Ines Duarte" data-email="ines.duarte@nordlyshealth.io" data-role="Billing" data-status="Active" data-joined="2024-02-06">
+              <td>Ines Duarte</td>
+              <td>ines.duarte@nordlyshealth.io</td>
+              <td>Billing</td>
+              <td><span class="badge badge--success">Active</span></td>
+              <td>Feb 6, 2024</td>
+            </tr>
+            <tr data-name="Callum Rhodes" data-email="callum.rhodes@quillwork.co" data-role="Viewer" data-status="Suspended" data-joined="2023-10-30">
+              <td>Callum Rhodes</td>
+              <td>callum.rhodes@quillwork.co</td>
+              <td>Viewer</td>
+              <td><span class="badge badge--danger">Suspended</span></td>
+              <td>Oct 30, 2023</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

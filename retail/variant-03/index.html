@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic Goods — Essentials, Done Right</title>
+<meta name="description" content="Basic Goods makes minimalist essentials apparel — quality basics without the noise.">
+<meta property="og:title" content="Basic Goods — Essentials, Done Right">
+<meta property="og:description" content="Fewer, better things.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Basic Goods</a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul><li><a href="index.html" class="nav-link" aria-current="page">Home</a></li><li><a href="shop.html" class="nav-link">Shop</a></li><li><a href="product.html" class="nav-link">Product</a></li><li><a href="collections.html" class="nav-link">Collections</a></li><li><a href="contact.html" class="nav-link">Contact</a></li></ul>
+    </nav>
+    <div class="header__actions">
+      <a href="shop.html" class="cart-btn" id="cartBtn" aria-label="View cart, 0 items"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 6h15l-1.5 9h-12z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M6 6L5 3H2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="9" cy="20" r="1.4" fill="currentColor"/><circle cx="18" cy="20" r="1.4" fill="currentColor"/></svg><span class="cart-count" id="cartCount">0</span></a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero container">
+    <div class="hero__grid">
+      <p class="eyebrow" data-reveal>Essentials</p>
+      <h1 class="hero__title" data-reveal>Fewer, better things.</h1>
+      <p class="hero__lead" data-reveal>Basic Goods makes quality essentials apparel — tees, basics and layers built to last, without a logo shouting about it.</p>
+      <div class="hero__actions" data-reveal><a href="shop.html" class="btn btn--primary">Shop essentials</a><a href="collections.html" class="btn btn--ghost">View collections</a></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head" data-reveal><p class="eyebrow">Shop by category</p><h2>Built to be worn, not stored.</h2></div>
+      <div class="grid-3">
+        <div class="card" data-reveal><h3>Tees</h3><p>Heavyweight cotton tees in a handful of colors that go with everything.</p><a href="shop.html" class="card__link">Shop now →</a></div>
+        <div class="card" data-reveal><h3>Layers</h3><p>Crewnecks and quarter-zips built for the temperature in between.</p><a href="shop.html" class="card__link">Shop now →</a></div>
+        <div class="card" data-reveal><h3>Basics</h3><p>Underlayers and socks you'll actually reach for every day.</p><a href="shop.html" class="card__link">Shop now →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section__head section__head--split" data-reveal><div><p class="eyebrow">Best sellers</p><h2>What people reorder.</h2></div><a href="shop.html" class="btn btn--ghost">View all</a></div>
+      <div class="product-grid">
+        <article class="product-card" data-reveal><div class="product-card__media"><a href="product.html"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&q=70" alt="Charcoal essential crewneck tee"></a><button class="wishlist-btn" data-product-id="p1" aria-pressed="false" aria-label="Save to wishlist"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9C.7 8 2 4.5 5.5 4.5 8 4.5 10 6 12 8.5c2-2.5 4-4 6.5-4 3.5 0 4.8 3.5 3 7.5-2.5 4.5-9.5 9-9.5 9z"/></svg></button></div><div class="product-card__body"><span class="product-card__category">Tees</span><h3 class="product-card__name">Essential Crewneck Tee</h3><div class="rating"><span class="stars">★★★★★</span> (94)</div><div class="product-card__price">$28</div></div></article>
+        <article class="product-card" data-reveal><div class="product-card__media"><a href="product.html"><img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=400&q=70" alt="Heather grey quarter-zip pullover"></a><button class="wishlist-btn" data-product-id="p2" aria-pressed="false" aria-label="Save to wishlist"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9C.7 8 2 4.5 5.5 4.5 8 4.5 10 6 12 8.5c2-2.5 4-4 6.5-4 3.5 0 4.8 3.5 3 7.5-2.5 4.5-9.5 9-9.5 9z"/></svg></button></div><div class="product-card__body"><span class="product-card__category">Layers</span><h3 class="product-card__name">Heather Quarter-Zip</h3><div class="rating"><span class="stars">★★★★★</span> (61)</div><div class="product-card__price">$62</div></div></article>
+        <article class="product-card" data-reveal><div class="product-card__media"><a href="product.html"><img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=400&q=70" alt="Navy essential crewneck sweatshirt"></a><button class="wishlist-btn" data-product-id="p3" aria-pressed="false" aria-label="Save to wishlist"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9C.7 8 2 4.5 5.5 4.5 8 4.5 10 6 12 8.5c2-2.5 4-4 6.5-4 3.5 0 4.8 3.5 3 7.5-2.5 4.5-9.5 9-9.5 9z"/></svg></button></div><div class="product-card__body"><span class="product-card__category">Layers</span><h3 class="product-card__name">Navy Crewneck Sweatshirt</h3><div class="rating"><span class="stars">★★★★★</span> (47)</div><div class="product-card__price">$56</div></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section"><div class="container quote" data-reveal><blockquote>"I've replaced my entire drawer with Basic Goods. Nothing fancy, everything holds up."</blockquote><cite>— Marcus Webb, customer since 2023</cite></div></section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">Basic Goods</a><p>Minimalist essentials apparel, built to last.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li><li><a href="product.html">Product</a></li><li><a href="collections.html">Collections</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:hello@basicgoods.co">hello@basicgoods.co</a></li><li>Minneapolis, MN</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">Instagram</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 Basic Goods.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

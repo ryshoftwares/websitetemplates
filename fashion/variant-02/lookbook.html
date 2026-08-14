@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lookbook — RAW EDIT</title>
+<meta name="description" content="RAW EDIT Drop 04 lookbook — shot on location in Bushwick.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">RAW <em>EDIT</em></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul><li><a href="index.html" class="nav-link">Home</a></li><li><a href="collections.html" class="nav-link">Collections</a></li><li><a href="products.html" class="nav-link">Shop</a></li><li><a href="lookbook.html" class="nav-link" aria-current="page">Lookbook</a></li><li><a href="contact.html" class="nav-link">Contact</a></li></ul>
+    </nav>
+    <div class="header__actions"><a href="contact.html" class="btn btn--primary">Get in</a><button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button></div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section">
+    <div class="container">
+      <div class="lookbook-intro" data-reveal>
+        <p class="eyebrow" style="justify-content:center;">Lookbook</p>
+        <h1 style="font-size: clamp(2.2rem, 4vw, 3.2rem); margin-bottom: 16px;">Drop 04, in the field.</h1>
+        <p style="color: var(--ink-muted); text-transform:none; font-family: var(--font-body);">Shot on location in Bushwick. Click any frame to view it full-size.</p>
+      </div>
+
+      <div class="lookbook-grid" data-reveal>
+        <button class="look-item" data-caption="Look 01 — Raw Edge Denim Jacket, rooftop"><img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?auto=format&fit=crop&w=800&q=75" alt="Model wearing the Raw Edge Denim Jacket on a rooftop"></button>
+        <button class="look-item" data-caption="Look 02 — Deconstructed Cargo Pants, street"><img src="https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=500&q=75" alt="Model wearing deconstructed cargo pants on the street"></button>
+        <button class="look-item" data-caption="Look 03 — Asymmetric Zip Hoodie, alley"><img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=500&q=75" alt="Model wearing an asymmetric zip hoodie in an alley"></button>
+        <button class="look-item" data-caption="Look 04 — Raw-Seam Blazer, studio"><img src="https://images.unsplash.com/photo-1554141733-d8a2f9cad0f7?auto=format&fit=crop&w=500&q=75" alt="Model wearing a raw-seam blazer in studio light"></button>
+        <button class="look-item" data-caption="Look 05 — Distressed Leather Vest, group shot"><img src="https://images.unsplash.com/photo-1485462537746-965f33f7f6a7?auto=format&fit=crop&w=800&q=75" alt="Group of models wearing distressed leather outerwear"></button>
+        <button class="look-item" data-caption="Look 06 — Utility Crossbody detail"><img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=500&q=75" alt="Detail shot of the utility crossbody bag"></button>
+        <button class="look-item" data-caption="Look 07 — Raw-Hem Denim Skirt, walking"><img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=500&q=75" alt="Model walking in the raw-hem denim skirt"></button>
+        <button class="look-item" data-caption="Look 08 — Full Drop 04 lineup"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=500&q=75" alt="Three models wearing the full Drop 04 lineup"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section"><div class="container"><div class="cta-banner" data-reveal><h2>Want to see it in motion?</h2><a href="products.html" class="btn btn--ghost">Shop the drop</a></div></div></section>
+</main>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Lookbook image viewer">
+  <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous image"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  <figure class="lightbox__figure">
+    <img id="lightboxImage" src="" alt="">
+    <figcaption class="lightbox__caption" id="lightboxCaption"></figcaption>
+    <button class="lightbox__close" aria-label="Close lightbox"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+  </figure>
+  <button class="lightbox__nav lightbox__nav--next" aria-label="Next image"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">RAW <em>EDIT</em></a><p>Experimental streetwear out of Brooklyn.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="collections.html">Collections</a></li><li><a href="products.html">Shop</a></li><li><a href="lookbook.html">Lookbook</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:studio@rawedit.nyc">studio@rawedit.nyc</a></li><li>Brooklyn, NY</li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 RAW EDIT.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Categories — The Goods Shop</title>
+<meta name="description" content="Browse The Goods Shop by department: lighting, kitchen & table, bed & bath, decor & objects, and outdoor & garden.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">The Goods <span>Shop</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="categories.html" class="nav-link" aria-current="page">Categories</a></li>
+        <li><a href="products.html" class="nav-link">Shop</a></li>
+        <li><a href="offers.html" class="nav-link">Offers</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a href="products.html" class="cart-btn" id="cartBtn" aria-label="View cart, 0 items">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 6h15l-1.5 9h-12z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M6 6L5 3H2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="9" cy="20" r="1.4" fill="currentColor"/><circle cx="18" cy="20" r="1.4" fill="currentColor"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="categories-hero container">
+    <p class="eyebrow" data-reveal>Categories</p>
+    <h1 data-reveal>Five departments, kept small on purpose.</h1>
+    <p data-reveal>Every product at The Goods Shop passes the same test: is it made well enough to keep? Browse by department below.</p>
+  </section>
+
+  <section class="container category-grid">
+    <a href="products.html?category=lighting" class="category-tile" data-reveal>
+      <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=1200&q=70" alt="Simple pendant lights hanging over a dining table">
+      <div class="category-tile__body"><h3>Lighting</h3><span>34 products</span></div>
+    </a>
+    <a href="products.html?category=kitchen" class="category-tile" data-reveal>
+      <img src="https://images.unsplash.com/photo-1584990347526-b04cc218758b?auto=format&fit=crop&w=700&q=70" alt="Ceramic dinnerware and glassware arranged on a table">
+      <div class="category-tile__body"><h3>Kitchen &amp; Table</h3><span>41 products</span></div>
+    </a>
+    <a href="products.html?category=bedbath" class="category-tile" data-reveal>
+      <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=700&q=70" alt="Neatly folded plain bedding on a bed">
+      <div class="category-tile__body"><h3>Bed &amp; Bath</h3><span>28 products</span></div>
+    </a>
+    <a href="products.html?category=decor" class="category-tile" data-reveal>
+      <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=700&q=70" alt="Matte ceramic vessels and objects on a shelf">
+      <div class="category-tile__body"><h3>Decor &amp; Objects</h3><span>37 products</span></div>
+    </a>
+    <a href="products.html?category=outdoor" class="category-tile" data-reveal>
+      <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=700&q=70" alt="Outdoor folding stool and planters on a patio">
+      <div class="category-tile__body"><h3>Outdoor &amp; Garden</h3><span>19 products</span></div>
+    </a>
+  </section>
+
+  <section class="section section--surface">
+    <div class="container cta-banner" data-reveal>
+      <h2>Not sure where to start?</h2>
+      <p>Start with our best sellers — the pieces customers reorder and recommend most often, across every department.</p>
+      <a href="products.html" class="btn btn--accent">Shop best sellers</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">The Goods <span>Shop</span></a><p>Minimal lighting, kitchen, bed &amp; bath, decor and outdoor goods — considered design, honest prices.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="categories.html">Categories</a></li><li><a href="products.html">Shop</a></li><li><a href="offers.html">Offers</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:hello@thegoodsshop.com">hello@thegoodsshop.com</a></li><li>Asheville, NC</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">Instagram</a></li><li><a href="#">Pinterest</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 The Goods Shop.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

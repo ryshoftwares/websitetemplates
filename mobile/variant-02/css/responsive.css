@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Zapp — responsive behavior
+   Breakpoints tested: 1440 / 1024 / 768 / 375 / 320
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .hero__grid { grid-template-columns: 1fr; text-align: center; }
+  .hero__actions, .store-badges { justify-content: center; }
+  .phone-mockup { transform: none; }
+  .feature-teaser, .feature-row, .platform-grid { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .qr-panel { grid-template-columns: 1fr; text-align: center; }
+  .qr-panel__code { margin: 0 auto; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .footer__grid { grid-template-columns: 1fr 1fr; row-gap: 28px; }
+  .feature-block { transform: none !important; }
+}
+
+@media (max-width: 900px) {
+  .nav { display: none; position: fixed; inset: 82px 0 0 0; background: var(--bg); padding: 36px 28px; z-index: 90; overflow-y: auto; }
+  .nav.is-open { display: block; }
+  .nav ul { flex-direction: column; gap: 4px; }
+  .nav-link { display: block; padding: 16px 4px; font-size: 1.3rem; border-bottom: 2px solid var(--border); }
+  .nav-toggle { display: flex; }
+}
+
+@media (max-width: 768px) {
+  .section { padding: 60px 0; }
+  .section--tight { padding: 46px 0; }
+  .feature-teaser, .feature-row, .platform-grid, .grid-3 { grid-template-columns: 1fr; }
+  .price-card--featured { transform: none !important; }
+  .phone-mockup { width: 230px; }
+}
+
+@media (max-width: 480px) {
+  .hero__actions .btn, .store-badges { flex-direction: column; align-items: stretch; }
+  .store-badge { justify-content: center; }
+  .form { padding: 24px 18px; }
+  .footer__grid { grid-template-columns: 1fr; }
+  .pricing-toggle { flex-wrap: wrap; }
+}

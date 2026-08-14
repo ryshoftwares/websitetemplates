@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nova Dash — Reports</title>
+<meta name="description" content="Nova Dash reports: filter by date range and channel to explore signups, revenue by channel and conversion funnel performance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800&amp;family=Rubik:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div class="dashboard">
+  <div class="sidebar-overlay"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__brand">
+      <span class="sidebar__brand-mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 16L10 6L14 13L20 4" stroke="#0b0b12" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="logo">Nova<span>Dash</span></span>
+    </div>
+    <p class="sidebar__nav-label">Menu</p>
+    <nav aria-label="Primary">
+      <ul class="nav-list">
+        <li>
+          <a class="nav-link" href="index.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="users.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20c0-3.5 2.5-5.5 5.5-5.5s5.5 2 5.5 5.5"/><circle cx="17" cy="9" r="2.6"/><path d="M15.5 14.2c2.6.2 4.5 2 4.5 5.3"/></svg>
+            <span>Users</span>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="reports.html" aria-current="page">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="12" width="4" height="8" rx="1"/><rect x="10" y="7" width="4" height="13" rx="1"/><rect x="16" y="3" width="4" height="17" rx="1"/></svg>
+            <span>Reports</span>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="settings.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"/><circle cx="9" cy="6" r="2"/><line x1="4" y1="12" x2="20" y2="12"/><circle cx="15" cy="12" r="2"/><line x1="4" y1="18" x2="20" y2="18"/><circle cx="9" cy="18" r="2"/></svg>
+            <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="profile.html">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+            <span>Profile</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="sidebar__footer">
+      <button class="sidebar-collapse-toggle" type="button" id="sidebarCollapseToggle" aria-expanded="true" aria-label="Collapse sidebar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/><path d="M9 6l-6 6 6 6"/></svg>
+        <span>Collapse</span>
+      </button>
+    </div>
+  </aside>
+
+  <div class="dashboard__main">
+    <header class="topbar">
+      <button class="mobile-toggle" type="button" id="sidebarMobileToggle" aria-expanded="false" aria-controls="sidebar" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <form class="topbar__search" role="search">
+        <label class="visually-hidden" for="topbarSearch">Search anything</label>
+        <div class="topbar__search-field">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" id="topbarSearch" name="q" placeholder="Search anything…">
+        </div>
+      </form>
+      <div class="topbar__actions">
+        <button class="icon-btn" type="button" aria-label="Notifications, 5 unread">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 1112 0c0 4 1.5 5.5 1.5 5.5H4.5S6 12 6 8z"/><path d="M9.5 17a2.5 2.5 0 005 0"/></svg>
+          <span class="topbar__badge">5</span>
+        </button>
+        <div class="user-menu">
+          <button class="user-menu__btn" type="button" aria-haspopup="menu" aria-expanded="false">
+            <span class="avatar" aria-hidden="true">MK</span>
+            <span class="user-menu__meta">
+              <span class="user-menu__name">Maya Kapoor</span>
+              <span class="user-menu__role">Product Admin</span>
+            </span>
+            <svg class="user-menu__caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="user-menu__dropdown" role="menu">
+            <a href="profile.html" role="menuitem">View profile</a>
+            <a href="settings.html" role="menuitem">Account settings</a>
+            <button type="button" role="menuitem">Sign out</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <div class="page-head">
+        <div>
+          <h1>Reports</h1>
+          <p>Slice performance by date range and acquisition channel.</p>
+        </div>
+      </div>
+
+      <form class="filter-bar" aria-label="Report filters">
+        <div class="field">
+          <label for="filterRange">Date range</label>
+          <select id="filterRange" name="range">
+            <option value="7">Last 7 days</option>
+            <option value="30" selected>Last 30 days</option>
+            <option value="90">Last 90 days</option>
+            <option value="custom">Custom range</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="filterChannel">Channel</label>
+          <select id="filterChannel" name="channel">
+            <option value="all" selected>All channels</option>
+            <option value="organic">Organic</option>
+            <option value="paid">Paid</option>
+            <option value="social">Social</option>
+            <option value="referral">Referral</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="filterSegment">Segment</label>
+          <select id="filterSegment" name="segment">
+            <option value="all" selected>All users</option>
+            <option value="new">New</option>
+            <option value="returning">Returning</option>
+          </select>
+        </div>
+        <div class="filter-bar__actions">
+          <button class="btn btn--secondary" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v13"/><path d="M7 11l5 5 5-5"/><path d="M5 20h14"/></svg>
+            Export
+          </button>
+          <button class="btn btn--primary" type="submit">Apply filters</button>
+        </div>
+      </form>
+
+      <section class="widget-grid widget-grid--triple" aria-label="Report charts">
+        <div class="card">
+          <div class="card__head">
+            <div>
+              <h2 class="card__title">Signups by week</h2>
+              <p class="card__caption">Last 8 weeks, all channels</p>
+            </div>
+          </div>
+          <figure class="chart-figure">
+            <svg viewBox="0 0 300 220" role="img" aria-label="Bar chart of weekly signups rising from 820 in week 1 to 1,180 in week 8">
+              <line class="chart-gridline" x1="10" y1="10" x2="290" y2="10"/>
+              <line class="chart-gridline" x1="10" y1="170" x2="290" y2="170"/>
+              <g fill="var(--accent-2)">
+                <rect x="16" y="107" width="22" height="63" rx="4"/>
+                <rect x="50" y="94" width="22" height="76" rx="4"/>
+                <rect x="84" y="99" width="22" height="71" rx="4"/>
+                <rect x="118" y="88" width="22" height="82" rx="4"/>
+                <rect x="152" y="76" width="22" height="94" rx="4"/>
+                <rect x="186" y="84" width="22" height="86" rx="4"/>
+                <rect x="220" y="63" width="22" height="107" rx="4"/>
+                <rect x="254" y="52" width="22" height="118" rx="4"/>
+              </g>
+              <text class="chart-value-label" x="27" y="100" text-anchor="middle">820</text>
+              <text class="chart-value-label" x="265" y="45" text-anchor="middle">1,180</text>
+              <text class="chart-axis-label" x="27" y="190" text-anchor="middle">W1</text>
+              <text class="chart-axis-label" x="61" y="190" text-anchor="middle">W2</text>
+              <text class="chart-axis-label" x="95" y="190" text-anchor="middle">W3</text>
+              <text class="chart-axis-label" x="129" y="190" text-anchor="middle">W4</text>
+              <text class="chart-axis-label" x="163" y="190" text-anchor="middle">W5</text>
+              <text class="chart-axis-label" x="197" y="190" text-anchor="middle">W6</text>
+              <text class="chart-axis-label" x="231" y="190" text-anchor="middle">W7</text>
+              <text class="chart-axis-label" x="265" y="190" text-anchor="middle">W8</text>
+            </svg>
+          </figure>
+        </div>
+
+        <div class="card">
+          <div class="card__head">
+            <div>
+              <h2 class="card__title">Revenue by channel</h2>
+              <p class="card__caption">Trailing 30 days, $413,900 total</p>
+            </div>
+          </div>
+          <figure class="chart-figure">
+            <svg viewBox="0 0 300 220" role="img" aria-label="Bar chart of revenue by channel: Organic $142,300, Paid $168,900, Social $58,200, Referral $43,500">
+              <line class="chart-gridline" x1="10" y1="10" x2="10" y2="180"/>
+              <rect x="20" y="24" width="176" height="26" rx="6" fill="var(--chart-1)"/>
+              <text class="chart-value-label" x="204" y="42">$142.3k</text>
+              <rect x="20" y="64" width="208" height="26" rx="6" fill="var(--chart-2)"/>
+              <text class="chart-value-label" x="236" y="82">$168.9k</text>
+              <rect x="20" y="104" width="72" height="26" rx="6" fill="var(--chart-3)"/>
+              <text class="chart-value-label" x="100" y="122">$58.2k</text>
+              <rect x="20" y="144" width="54" height="26" rx="6" fill="var(--chart-4)"/>
+              <text class="chart-value-label" x="82" y="162">$43.5k</text>
+            </svg>
+          </figure>
+          <ul class="legend">
+            <li class="legend__item"><span class="legend__swatch" style="background:var(--chart-1)"></span>Organic</li>
+            <li class="legend__item"><span class="legend__swatch" style="background:var(--chart-2)"></span>Paid</li>
+            <li class="legend__item"><span class="legend__swatch" style="background:var(--chart-3)"></span>Social</li>
+            <li class="legend__item"><span class="legend__swatch" style="background:var(--chart-4)"></span>Referral</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card__head">
+            <div>
+              <h2 class="card__title">Conversion funnel</h2>
+              <p class="card__caption">Visitor to retained customer, last 30 days</p>
+            </div>
+          </div>
+          <figure class="chart-figure">
+            <svg viewBox="0 0 300 220" role="img" aria-label="Funnel chart: Visited 48,200, Signed up 18,640 (39 percent), Activated 9,820 (20 percent), Retained 6,204 (13 percent)">
+              <rect x="10" y="10" width="280" height="30" rx="6" fill="var(--chart-ord-1)"/>
+              <text x="150" y="30" text-anchor="middle" fill="#082019" font-family="var(--font-body)" font-weight="600" font-size="12">Visited — 48,200</text>
+              <rect x="45" y="60" width="210" height="30" rx="6" fill="var(--chart-ord-2)"/>
+              <text x="150" y="80" text-anchor="middle" fill="#082019" font-family="var(--font-body)" font-weight="600" font-size="12">Signed up — 18,640 (39%)</text>
+              <rect x="80" y="110" width="140" height="30" rx="6" fill="var(--chart-ord-3)"/>
+              <text x="150" y="130" text-anchor="middle" fill="#082019" font-family="var(--font-body)" font-weight="600" font-size="12">Activated — 9,820 (20%)</text>
+              <rect x="105" y="160" width="90" height="30" rx="6" fill="var(--chart-ord-4)"/>
+              <text x="150" y="180" text-anchor="middle" fill="#e9fff8" font-family="var(--font-body)" font-weight="600" font-size="12">Retained — 6,204 (13%)</text>
+            </svg>
+          </figure>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

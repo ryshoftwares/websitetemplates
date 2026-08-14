@@ -1,0 +1,1 @@
+Icons in this template are inline SVG (see the .html files) so no icon files are required here by default. Every nav icon, topbar control, badge, trend arrow, and chart mark is hand-drawn inline SVG with no icon font or external icon library. Add any custom icon assets to this folder if you extend the design.

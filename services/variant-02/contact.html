@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Fix — Contact FIXPOINT Dispatch</title>
+<meta name="description" content="Book a repair with FIXPOINT dispatch in Austin, TX. Tell us what's broken and we'll get a vetted technician moving your way.">
+<meta property="og:title" content="Contact FIXPOINT">
+<meta property="og:description" content="Book a fix and get a technician dispatched today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">FIX<span>POINT</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="btn btn--primary header__cta">Book a Fix</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" style="padding-bottom: 36px;">
+    <div class="container" style="max-width: 760px;">
+      <p class="eyebrow" data-reveal>Book a fix</p>
+      <h1 class="hero__title" data-reveal style="max-width: none; font-size: clamp(2.4rem, 5vw, 4rem);">Let's get someone headed your way.</h1>
+      <p class="hero__lead" data-reveal>Fill out the form and dispatch will confirm your technician and
+        arrival window within minutes during business hours.</p>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container contact-grid">
+
+      <div data-reveal>
+        <div class="contact-info__item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.99.36 1.97.67 2.91a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.17-1.24a2 2 0 0 1 2.11-.45c.94.31 1.92.54 2.91.67A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h3>Dispatch line</h3><p><a href="tel:+15125550192">(512) 555-0192</a></p></div>
+        </div>
+        <div class="contact-info__item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m4 6 8 7 8-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h3>Email</h3><p><a href="mailto:dispatch@fixpoint.co">dispatch@fixpoint.co</a></p></div>
+        </div>
+        <div class="contact-info__item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="2"/></svg>
+          <div><h3>Service area</h3><p>Austin, Round Rock, Cedar Park and Pflugerville.</p></div>
+        </div>
+        <div class="contact-info__item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h3>Availability</h3><p>Scheduled jobs 7am–8pm daily. Emergency dispatch available 24/7.</p></div>
+        </div>
+      </div>
+
+      <div data-reveal>
+        <div id="formSuccess" class="form__success" role="status">Request received — dispatch is matching you with a technician now. You'll get a confirmation text with an arrival window shortly.</div>
+        <form class="form" id="contactForm" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+              <small class="error">Please enter your name.</small>
+            </div>
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" required autocomplete="tel">
+              <small class="error">Please enter a phone number.</small>
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+            <small class="error">Please enter a valid email address.</small>
+          </div>
+          <div class="field">
+            <label for="service">Service type</label>
+            <select id="service" name="service" required>
+              <option value="">Select a service</option>
+              <option value="Plumbing Repair">Plumbing Repair</option>
+              <option value="Electrical Services">Electrical Services</option>
+              <option value="Appliance Repair">Appliance Repair</option>
+              <option value="Handyman & Assembly">Handyman &amp; Assembly</option>
+              <option value="HVAC Tune-Up & Repair">HVAC Tune-Up &amp; Repair</option>
+              <option value="Emergency / Other">Emergency / Other</option>
+            </select>
+            <small class="error">Please select a service type.</small>
+          </div>
+          <div class="field">
+            <label for="details">What's going on?</label>
+            <textarea id="details" name="details" required placeholder="Describe the problem, the address, and how urgent it is."></textarea>
+            <small class="error">Please describe the issue.</small>
+          </div>
+          <div class="field">
+            <label for="window">Preferred time window</label>
+            <select id="window" name="window">
+              <option value="ASAP / Emergency">ASAP / Emergency</option>
+              <option value="Today">Today</option>
+              <option value="This week">This week</option>
+              <option value="Flexible">Flexible — schedule around me</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn--primary">Book This Fix</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a href="index.html" class="logo">FIX<span>POINT</span></a>
+      <p>On-demand repair and maintenance, dispatched fast across Austin, TX.</p>
+    </div>
+    <nav class="footer__col" aria-label="Sitemap">
+      <h3>Sitemap</h3>
+      <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </nav>
+    <div class="footer__col">
+      <h3>Contact</h3>
+      <ul><li><a href="mailto:dispatch@fixpoint.co">dispatch@fixpoint.co</a></li><li><a href="tel:+15125550192">(512) 555-0192</a></li><li>Austin, TX · 24/7 dispatch</li></ul>
+    </div>
+    <div class="footer__col">
+      <h3>Follow</h3>
+      <ul><li><a href="#">Instagram</a></li><li><a href="#">X / Twitter</a></li><li><a href="#">TikTok</a></li></ul>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <p>© 2026 FIXPOINT Services, Inc. All rights reserved.</p>
+    <p><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

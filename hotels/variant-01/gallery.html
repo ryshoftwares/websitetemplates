@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Aurelia Hotel</title>
+<meta name="description" content="Browse photos of Aurelia Hotel's rooms, pool, restaurant, spa and coastline views on the Amalfi Coast.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Aurelia <span>Hotel</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+        <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+        <li><a href="gallery.html" class="nav-link" aria-current="page">Gallery</a></li>
+        <li><a href="booking.html" class="nav-link">Booking</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a href="booking.html" class="btn btn--accent btn--sm">Check Availability</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section--tight container" style="padding-bottom:0;">
+    <p class="eyebrow" data-reveal>Gallery</p>
+    <h1 style="font-size:clamp(2.2rem,4vw,3.2rem); max-width:20ch;" data-reveal>A glimpse of Aurelia.</h1>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="gallery-grid__cat" data-reveal>
+        <button type="button" class="room-filter-btn" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="room-filter-btn" data-filter="rooms" aria-pressed="false">Rooms</button>
+        <button type="button" class="room-filter-btn" data-filter="pool" aria-pressed="false">Pool &amp; Views</button>
+        <button type="button" class="room-filter-btn" data-filter="dining" aria-pressed="false">Dining</button>
+        <button type="button" class="room-filter-btn" data-filter="spa" aria-pressed="false">Spa</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid" data-reveal>
+        <div><button data-full="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1400&q=80" data-category="pool" data-caption="Infinity pool at sunset"><img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=500&q=70" alt="Infinity pool overlooking the coastline at sunset"></button></div>
+        <div><button data-full="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1400&q=80" data-category="rooms" data-caption="Deluxe suite terrace"><img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=500&q=70" alt="Sunlit suite terrace with sea view"></button></div>
+        <div><button data-full="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1400&q=80" data-category="rooms" data-caption="Deluxe Sea View room"><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=500&q=70" alt="Deluxe sea view room with balcony"></button></div>
+        <div><button data-full="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1400&q=80" data-category="dining" data-caption="Terrazza Restaurant at golden hour"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=500&q=70" alt="Restaurant terrace set for dinner at golden hour"></button></div>
+        <div><button data-full="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1400&q=80" data-category="rooms" data-caption="Classic Room"><img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=500&q=70" alt="Classic room with terracotta floor tiles"></button></div>
+        <div><button data-full="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1400&q=80" data-category="spa" data-caption="Grotto Spa treatment room"><img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=500&q=70" alt="Grotto Spa treatment room carved into the rock"></button></div>
+        <div><button data-full="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1400&q=80" data-category="rooms" data-caption="Deluxe Corner room view"><img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=500&q=70" alt="Deluxe corner room with wraparound windows"></button></div>
+        <div><button data-full="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1400&q=80&sat=-20" data-category="pool" data-caption="Sea-water thermal pool"><img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=500&q=70&sat=-20" alt="Sea-water thermal pool at the Grotto Spa"></button></div>
+        <div><button data-full="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1400&q=80&sat=-20" data-category="dining" data-caption="Breakfast on the terrace"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=500&q=70&sat=-20" alt="Breakfast table set on the restaurant terrace"></button></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+  <div class="lightbox__inner">
+    <button class="lightbox__close" aria-label="Close photo viewer">✕</button>
+    <button class="lightbox__prev" aria-label="Previous photo">‹</button>
+    <button class="lightbox__next" aria-label="Next photo">›</button>
+    <img src="" alt="">
+    <p class="lightbox__caption"></p>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">Aurelia <span>Hotel</span></a><p>A clifftop retreat on the Amalfi Coast — 64 rooms and suites, family-run since 1974.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="rooms.html">Rooms</a></li><li><a href="amenities.html">Amenities</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="booking.html">Booking</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:reservations@aureliahotel.it">reservations@aureliahotel.it</a></li><li>+39 089 555 0148</li><li>Praiano, Amalfi Coast, Italy</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">Instagram</a></li><li><a href="#">Facebook</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 Aurelia Hotel.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

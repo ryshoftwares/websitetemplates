@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Marché</title>
+<meta name="description" content="Questions about an order, a maker, or a custom request? Get in touch with Marché.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">March<span>é</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="shop.html" class="nav-link">Shop</a></li>
+        <li><a href="product.html" class="nav-link">Product</a></li>
+        <li><a href="collections.html" class="nav-link">Collections</a></li>
+        <li><a href="contact.html" class="nav-link" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a href="shop.html" class="cart-btn" id="cartBtn" aria-label="View cart, 0 items">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6h15l-1.5 9h-12z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M6 6L5 3H2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="9" cy="20" r="1.4" fill="currentColor"/><circle cx="18" cy="20" r="1.4" fill="currentColor"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="shop-hero container">
+    <p class="eyebrow" data-reveal>Get in touch</p>
+    <h1 data-reveal>Questions about an order, or a maker?</h1>
+    <p data-reveal>We reply within one business day.</p>
+  </section>
+
+  <section class="container" style="padding-bottom:100px;">
+    <div class="contact-grid">
+      <div data-reveal>
+        <div class="contact-info__item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 7l9 6 9-6M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Email</h3><a href="mailto:hello@marche-goods.com">hello@marche-goods.com</a></div></div>
+        <div class="contact-info__item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1118 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg><div><h3>Based in</h3><p>Providence, RI</p></div></div>
+        <div class="contact-info__item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><div><h3>Response time</h3><p>Within one business day.</p></div></div>
+        <div class="contact-info__item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 7h-9m0 0L8 4m3 3L8 10m9 4H8m0 0l3 3m-3-3l3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Returns</h3><p>Free returns within 30 days of delivery.</p></div></div>
+      </div>
+      <div data-reveal>
+        <form class="form" id="contactForm" novalidate>
+          <div class="form__success" id="formSuccess" role="status">Thanks — your message is in. We'll reply within one business day.</div>
+          <div class="field"><label for="name">Name</label><input type="text" id="name" name="name" required autocomplete="name"><small class="error">Please enter your name.</small></div>
+          <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" required autocomplete="email"><small class="error">Please enter a valid email.</small></div>
+          <div class="field">
+            <label for="topic">What's this about?</label>
+            <select id="topic" name="topic" required>
+              <option value="">Select one</option>
+              <option value="order">An existing order</option>
+              <option value="maker">Becoming a Marché maker</option>
+              <option value="custom">A custom request</option>
+              <option value="other">Something else</option>
+            </select>
+            <small class="error">Please select a topic.</small>
+          </div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="message" required placeholder="How can we help?"></textarea><small class="error">Please add a message.</small></div>
+          <button type="submit" class="btn btn--primary btn--block">Send message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">March<span>é</span></a><p>An upscale marketplace for home and lifestyle goods from independent makers.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li><li><a href="product.html">Product</a></li><li><a href="collections.html">Collections</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:hello@marche-goods.com">hello@marche-goods.com</a></li><li>Providence, RI</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">Instagram</a></li><li><a href="#">Pinterest</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 Marché.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

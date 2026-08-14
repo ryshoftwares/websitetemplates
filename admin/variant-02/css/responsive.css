@@ -1,0 +1,243 @@
+/* ==========================================================================
+   Nova Dash — Responsive breakpoints
+   Loaded after style.css. Mobile-first overrides at each breakpoint below.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   ~1440px — comfortable desktop, slightly tighter container padding
+   -------------------------------------------------------------------------- */
+@media (max-width: 1440px) {
+  main {
+    padding: 32px 26px 56px;
+  }
+
+  .topbar {
+    padding: 0 26px;
+  }
+
+  .metric-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   ~1200px — metric cards to 3 columns, widgets stack a little tighter
+   -------------------------------------------------------------------------- */
+@media (max-width: 1200px) {
+  .metric-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .widget-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .widget-grid--triple {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-tile-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   ~1024px — sidebar collapse breakpoint begins to feel tight; forms to 1 col
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar__search {
+    max-width: 280px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   ~900px — sidebar becomes an off-canvas drawer; hamburger appears
+   -------------------------------------------------------------------------- */
+@media (max-width: 900px) {
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: min(300px, 84vw);
+    flex-basis: min(300px, 84vw);
+    transform: translateX(-100%);
+    transition: transform 0.26s var(--ease);
+    box-shadow: var(--shadow);
+  }
+
+  .sidebar.sidebar--open {
+    transform: translateX(0);
+  }
+
+  /* Collapsed state is a desktop-only concept; ignore it below 900px */
+  .dashboard--collapsed .sidebar {
+    width: min(300px, 84vw);
+    flex-basis: min(300px, 84vw);
+  }
+
+  .dashboard--collapsed .logo,
+  .dashboard--collapsed .sidebar__nav-label,
+  .dashboard--collapsed .nav-link span {
+    display: block;
+  }
+
+  .dashboard--collapsed .nav-link {
+    justify-content: flex-start;
+    padding: 12px 14px;
+  }
+
+  .sidebar__footer .sidebar-collapse-toggle {
+    display: none;
+  }
+
+  .sidebar-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(4, 4, 8, 0.6);
+    z-index: 35;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.22s var(--ease);
+  }
+
+  .sidebar-overlay.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .metric-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-tile-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .widget-grid--triple {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   ~768px — tablet: tighter spacing, topbar reflow
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  main {
+    padding: 24px 18px 48px;
+  }
+
+  .topbar {
+    padding: 0 18px;
+    gap: 12px;
+  }
+
+  .page-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-card,
+  .filter-bar,
+  .card {
+    padding: 20px;
+  }
+
+  .user-menu__meta {
+    display: none;
+  }
+
+  .user-menu__btn {
+    padding: 6px;
+  }
+
+  .user-menu__caret {
+    display: none;
+  }
+
+  .filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-bar .field {
+    min-width: 0;
+  }
+
+  .filter-bar__actions {
+    margin-left: 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   ~375px — small phones
+   -------------------------------------------------------------------------- */
+@media (max-width: 375px) {
+  .metric-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-tile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar__search {
+    display: none;
+  }
+
+  .card__head {
+    flex-direction: column;
+  }
+
+  .profile-head {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .filter-bar__actions .btn {
+    width: auto;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   ~320px — smallest supported width
+   -------------------------------------------------------------------------- */
+@media (max-width: 320px) {
+  .container,
+  main {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .topbar {
+    padding: 0 12px;
+    gap: 8px;
+  }
+
+  .metric-card__value {
+    font-size: 1.4rem;
+  }
+
+  .sidebar__brand {
+    padding: 6px 4px 20px;
+  }
+}

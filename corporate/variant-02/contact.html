@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Forge &amp; Co.</title>
+<meta name="description" content="Start a growth strategy, operating model or M&A integration engagement with Forge & Co.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Forge<span>&amp;Co.</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
+        <li><a href="contact.html" class="nav-link" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="btn btn--primary header__cta">Start a project</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" style="padding-bottom: 40px;">
+    <div class="container">
+      <p class="eyebrow" data-reveal>Get in touch</p>
+      <h1 class="hero__title" style="max-width: 20ch;" data-reveal>Tell us the plan nobody wants to commit to.</h1>
+      <p class="hero__lead" data-reveal>We reply to every serious inquiry within one business day — usually with a point of view, not a proposal template.</p>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container contact-grid">
+
+      <div data-reveal>
+        <div class="contact-info__item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 7l9 6 9-6M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Email</h3><a href="mailto:hello@forgeandco.com">hello@forgeandco.com</a></div></div>
+        <div class="contact-info__item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.99.36 1.96.68 2.89a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.19-1.27a2 2 0 012.11-.45c.93.32 1.9.55 2.89.68A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Phone</h3><a href="tel:+16465550188">+1 (646) 555-0188</a></div></div>
+        <div class="contact-info__item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1118 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg><div><h3>Office</h3><p>New York, NY · working with clients nationwide</p></div></div>
+        <div class="contact-info__item"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><div><h3>Response time</h3><p>Within one business day.</p></div></div>
+      </div>
+
+      <div data-reveal>
+        <form class="form" id="contactForm" novalidate>
+          <div class="form__success" id="formSuccess" role="status">Thanks — your message is in. A partner will reply within one business day.</div>
+          <div class="field"><label for="name">Full name</label><input type="text" id="name" name="name" required autocomplete="name"><small class="error">Please enter your name.</small></div>
+          <div class="field"><label for="email">Work email</label><input type="email" id="email" name="email" required autocomplete="email"><small class="error">Please enter a valid email address.</small></div>
+          <div class="field">
+            <label for="topic">What do you need?</label>
+            <select id="topic" name="topic" required>
+              <option value="">Select one</option>
+              <option value="growth">Growth strategy</option>
+              <option value="operations">Operating model redesign</option>
+              <option value="ma">M&amp;A integration</option>
+              <option value="other">Something else</option>
+            </select>
+            <small class="error">Please select a topic.</small>
+          </div>
+          <div class="field"><label for="message">Project details</label><textarea id="message" name="message" required placeholder="What's the decision your team has been avoiding?"></textarea><small class="error">Please add a few details about your project.</small></div>
+          <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center;">Send message</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">Forge<span>&amp;Co.</span></a><p>A challenger consultancy for leadership teams ready to move.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:hello@forgeandco.com">hello@forgeandco.com</a></li><li><a href="tel:+16465550188">+1 (646) 555-0188</a></li><li>New York, NY · Remote</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">LinkedIn</a></li><li><a href="#">X / Twitter</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 Forge &amp; Co.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

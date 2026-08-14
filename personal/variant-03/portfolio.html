@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Sam Rivera</title>
+<meta name="description" content="Backend engineering case studies from Sam Rivera's freelance consulting work with early-stage startups.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Sam<span>Rivera</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="portfolio.html" class="nav-link" aria-current="page">Portfolio</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="btn btn--primary header__cta">Work with me</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" style="padding-bottom: 56px;">
+    <div class="container hero__grid">
+      <p class="eyebrow" data-reveal>Portfolio</p>
+      <h1 class="hero__title" data-reveal>A few engagements worth writing up.</h1>
+      <p class="hero__lead" data-reveal>Backend rebuilds, API migrations and infrastructure work for startups at various stages.</p>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container project-list" data-reveal>
+
+      <div class="project-item">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=70" alt="Fieldstone routing engine dashboard">
+        <div><span class="project-item__tag">Backend rebuild</span><h3>Fieldstone Logistics — Routing Engine V2</h3><p>Rebuilt a routing engine that had hit a scale ceiling at 10K daily routes into one that now handles 400K.</p></div>
+        <span class="project-item__link">View case study →</span>
+      </div>
+
+      <div class="project-item">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=70" alt="API dashboard interface">
+        <div><span class="project-item__tag">API migration</span><h3>Northline — REST to GraphQL Migration</h3><p>Migrated a 40-endpoint REST API to GraphQL without a single hour of client-facing downtime.</p></div>
+        <span class="project-item__link">View case study →</span>
+      </div>
+
+      <div class="project-item">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=70" alt="Cloud infrastructure architecture diagram on a whiteboard">
+        <div><span class="project-item__tag">Infrastructure</span><h3>Basecamp Labs — Cloud Cost Reduction</h3><p>Re-architected a startup's AWS footprint ahead of their Series A, cutting monthly spend by 40%.</p></div>
+        <span class="project-item__link">View case study →</span>
+      </div>
+
+      <div class="project-item">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=70" alt="Engineering team pairing on a technical due diligence review">
+        <div><span class="project-item__tag">Technical advisory</span><h3>Anchor Ventures — Technical Due Diligence</h3><p>Ran architecture reviews on six portfolio companies ahead of their next funding rounds.</p></div>
+        <span class="project-item__link">View case study →</span>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section section--surface"><div class="container"><div class="cta-banner" data-reveal><h2>Want your project on this list next?</h2><a href="contact.html" class="btn btn--ghost">Get in touch</a></div></div></section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">Sam<span>Rivera</span></a><p>Backend systems and fractional engineering for early-stage startups.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="skills.html">Skills</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:sam@samrivera.dev">sam@samrivera.dev</a></li><li>Denver, CO · Remote</li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 Sam Rivera.</p><p><a href="#">GitHub</a> · <a href="#">LinkedIn</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

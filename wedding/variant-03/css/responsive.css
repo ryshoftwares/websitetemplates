@@ -1,0 +1,50 @@
+/* ==========================================================================
+   The Wedding Studio — Minimal Professional — responsive behavior
+   Breakpoints tested: 1440 / 1024 / 768 / 375 / 320
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .countdown { grid-template-columns: repeat(2, 1fr); }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .contact-grid { grid-template-columns: 1fr; }
+  .footer__grid { grid-template-columns: 1fr 1fr; row-gap: 32px; }
+  .cta-banner { flex-direction: column; align-items: flex-start; }
+  .timeline__item { grid-template-columns: 90px 1fr; }
+}
+
+@media (max-width: 900px) {
+  .nav { display: none; position: fixed; inset: 68px 0 0 0; background: var(--background); padding: 32px 28px; z-index: 90; overflow-y: auto; }
+  .nav.is-open { display: block; }
+  .nav ul { flex-direction: column; gap: 2px; }
+  .nav-link { display: block; padding: 15px 4px; font-size: 1.05rem; border-bottom: 1px solid var(--border); }
+  .header__cta { display: none; }
+  .nav-toggle { display: flex; }
+}
+
+@media (max-width: 768px) {
+  .section { padding: 56px 0; }
+  .section--tight { padding: 44px 0; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; }
+  .gallery-item img, .gallery-item--tall img { height: 220px; }
+  .hero__figure img { height: 260px; }
+  .form-row { grid-template-columns: 1fr; }
+  .lightbox__img-wrap { max-height: 55vh; }
+  .lightbox__img-wrap img { max-height: 55vh; }
+}
+
+@media (max-width: 480px) {
+  .hero { padding: 48px 0 40px; }
+  .hero__actions .btn { width: 100%; justify-content: center; }
+  .countdown { grid-template-columns: repeat(2, 1fr); }
+  .gallery-grid { grid-template-columns: 1fr; }
+  .timeline__item { grid-template-columns: 1fr; gap: 6px; }
+  .form { padding: 22px 18px; }
+  .footer__grid { grid-template-columns: 1fr; }
+  .footer__bottom { flex-direction: column; gap: 8px; align-items: flex-start; }
+  .price-card { padding: 28px 22px; }
+}
+
+@media (max-width: 320px) {
+  .hero__title { font-size: 1.8rem; }
+  .btn { width: 100%; justify-content: center; }
+}

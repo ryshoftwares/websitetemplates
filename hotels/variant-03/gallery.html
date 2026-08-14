@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — The Stay</title>
+<meta name="description" content="Browse photos of The Stay's rooms, interiors, harbour views and Kornet restaurant in Nordhavn, Copenhagen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">The <span>Stay</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+        <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+        <li><a href="gallery.html" class="nav-link" aria-current="page">Gallery</a></li>
+        <li><a href="booking.html" class="nav-link">Booking</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a href="booking.html" class="btn btn--accent btn--sm">Check Availability</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section--tight container" style="padding-bottom:0;">
+    <p class="eyebrow" data-reveal>Gallery</p>
+    <h1 style="font-size:clamp(2rem,3.8vw,2.9rem); max-width:20ch;" data-reveal>A glimpse of The Stay.</h1>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="gallery-grid__cat" data-reveal>
+        <button type="button" class="room-filter-btn" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="room-filter-btn" data-filter="rooms" aria-pressed="false">Rooms</button>
+        <button type="button" class="room-filter-btn" data-filter="interiors" aria-pressed="false">Interiors</button>
+        <button type="button" class="room-filter-btn" data-filter="harbour" aria-pressed="false">Harbour</button>
+        <button type="button" class="room-filter-btn" data-filter="dining" aria-pressed="false">Dining</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid" data-reveal>
+        <div><button data-full="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1400&q=80" data-category="rooms" data-caption="Studio Room, oak floors"><img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=500&q=70" alt="Studio Room with oak floors and a queen bed"></button></div>
+        <div><button data-full="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80" data-category="interiors" data-caption="Ground-floor lounge"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=500&q=70" alt="Ground-floor lounge with poured concrete floors and a leather sofa"></button></div>
+        <div><button data-full="https://images.unsplash.com/photo-1521783593447-5702b9bfd267?auto=format&fit=crop&w=1400&q=80" data-category="interiors" data-caption="The original loading stair"><img src="https://images.unsplash.com/photo-1521783593447-5702b9bfd267?auto=format&fit=crop&w=500&q=70" alt="Original steel staircase kept exposed inside the warehouse"></button></div>
+        <div><button data-full="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1400&q=80" data-category="dining" data-caption="Kornet dining room at golden hour"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=500&q=70" alt="Kornet dining room set for dinner at golden hour"></button></div>
+        <div><button data-full="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1400&q=80" data-category="rooms" data-caption="Corner Suite, harbour view"><img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=500&q=70" alt="Corner Suite with wraparound windows over the harbour"></button></div>
+        <div><button data-full="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=80" data-category="interiors" data-caption="The Loading Bay workspace"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=500&q=70" alt="The Loading Bay workspace with a long communal desk"></button></div>
+        <div><button data-full="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1400&q=80" data-category="harbour" data-caption="Rooftop pool over Nordhavn"><img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=500&q=70" alt="Rooftop plunge pool overlooking Nordhavn harbour at dusk"></button></div>
+        <div><button data-full="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1400&q=80" data-category="harbour" data-caption="The warehouse exterior on Sundkrogsgade"><img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=500&q=70" alt="Exterior of the restored 1921 grain warehouse on Sundkrogsgade"></button></div>
+        <div><button data-full="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1400&q=80" data-category="dining" data-caption="The Bathhouse sauna and plunge room"><img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=500&q=70" alt="The Bathhouse sauna and cold plunge room"></button></div>
+        <div><button data-full="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1400&q=80" data-category="rooms" data-caption="Harbour Suite private terrace"><img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=500&q=70" alt="Harbour Suite private terrace overlooking the water"></button></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+  <div class="lightbox__inner">
+    <button class="lightbox__close" aria-label="Close photo viewer">✕</button>
+    <button class="lightbox__prev" aria-label="Previous photo">‹</button>
+    <button class="lightbox__next" aria-label="Next photo">›</button>
+    <img src="" alt="">
+    <p class="lightbox__caption"></p>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">The <span>Stay</span></a><p>A 42-room hotel inside a restored 1921 grain warehouse on Copenhagen's harbour, open since 2019.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="rooms.html">Rooms</a></li><li><a href="amenities.html">Amenities</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="booking.html">Booking</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:hello@thestay.dk">hello@thestay.dk</a></li><li>+45 32 12 34 56</li><li>Sundkrogsgade 8, 2150 Nordhavn</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">Instagram</a></li><li><a href="#">LinkedIn</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 The Stay.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

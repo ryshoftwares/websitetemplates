@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collections — Basic Goods</title>
+<meta name="description" content="Shop Basic Goods' curated collections of essentials, layers and basics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Basic Goods</a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul><li><a href="index.html" class="nav-link">Home</a></li><li><a href="shop.html" class="nav-link">Shop</a></li><li><a href="product.html" class="nav-link">Product</a></li><li><a href="collections.html" class="nav-link" aria-current="page">Collections</a></li><li><a href="contact.html" class="nav-link">Contact</a></li></ul>
+    </nav>
+    <div class="header__actions">
+      <a href="shop.html" class="cart-btn" id="cartBtn" aria-label="View cart, 0 items"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 6h15l-1.5 9h-12z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M6 6L5 3H2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="9" cy="20" r="1.4" fill="currentColor"/><circle cx="18" cy="20" r="1.4" fill="currentColor"/></svg><span class="cart-count" id="cartCount">0</span></a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="shop-hero container"><p class="eyebrow" data-reveal>Collections</p><h1 data-reveal>A few ways to shop fewer, better things.</h1><p data-reveal>Curated groupings from the full range.</p></section>
+
+  <section class="container">
+    <div class="collection-grid" data-reveal>
+      <a href="shop.html" class="collection-card"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=70" alt="Core essentials collection"><div class="collection-card__body"><h2>The Core Collection</h2><p>Everything you actually need in rotation, nothing you don't.</p><span class="btn btn--ghost">Shop the edit</span></div></a>
+      <a href="shop.html" class="collection-card"><img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=70" alt="Layers collection"><div class="collection-card__body"><h2>Layer Season</h2><p>Crewnecks and quarter-zips for the temperature in between.</p><span class="btn btn--ghost">Shop the edit</span></div></a>
+      <a href="shop.html" class="collection-card"><img src="https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?auto=format&fit=crop&w=800&q=70" alt="Basics collection"><div class="collection-card__body"><h2>The Underlayer</h2><p>Socks and basics you'll actually reach for every day.</p><span class="btn btn--ghost">Shop the edit</span></div></a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">Basic Goods</a><p>Minimalist essentials apparel, built to last.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li><li><a href="product.html">Product</a></li><li><a href="collections.html">Collections</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:hello@basicgoods.co">hello@basicgoods.co</a></li><li>Minneapolis, MN</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">Instagram</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 Basic Goods.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

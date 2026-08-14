@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Offers — Lumen Market</title>
+<meta name="description" content="Current offers and discount codes at Lumen Market, plus newsletter signup for early access to new arrivals.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Lumen <span>Market</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="categories.html" class="nav-link">Categories</a></li>
+        <li><a href="products.html" class="nav-link">Shop</a></li>
+        <li><a href="offers.html" class="nav-link" aria-current="page">Offers</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a href="products.html" class="cart-btn" id="cartBtn" aria-label="View cart, 0 items">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6h15l-1.5 9h-12z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M6 6L5 3H2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="9" cy="20" r="1.4" fill="currentColor"/><circle cx="18" cy="20" r="1.4" fill="currentColor"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="offers-hero container">
+    <p class="eyebrow" style="justify-content:center;" data-reveal>Offers</p>
+    <h1 data-reveal>Current promotions.</h1>
+    <p style="margin-top:14px; color:var(--ink-muted);" data-reveal>Codes apply automatically at checkout — no minimum purchase unless noted.</p>
+  </section>
+
+  <section class="section">
+    <div class="container grid-3" data-reveal>
+      <div class="offer-card">
+        <div class="offer-card__pct">15% off</div>
+        <h3>New customers</h3>
+        <p class="text-muted">Your first order, any category, no minimum.</p>
+        <div class="offer-code"><span>WELCOME15</span><button type="button" data-copy-code="WELCOME15">Copy code</button></div>
+      </div>
+      <div class="offer-card">
+        <div class="offer-card__pct">20% off</div>
+        <h3>Bed &amp; Bath</h3>
+        <p class="text-muted">All linens, towels and duvet sets this month.</p>
+        <div class="offer-code"><span>RESTWELL20</span><button type="button" data-copy-code="RESTWELL20">Copy code</button></div>
+      </div>
+      <div class="offer-card">
+        <div class="offer-card__pct">Free ship</div>
+        <h3>Orders over $75</h3>
+        <p class="text-muted">Free standard shipping, no code needed at checkout.</p>
+        <div class="offer-code"><span>SHIP75</span><button type="button" data-copy-code="SHIP75">Copy code</button></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section__head" data-reveal><p class="eyebrow">Ending soon</p><h2>Seasonal clearance.</h2></div>
+      <div class="grid-2" data-reveal>
+        <div class="card">
+          <h3>Up to 30% off outdoor</h3>
+          <p>Lounge chairs, planters and patio decor — while stock lasts. Ends August 31.</p>
+          <a href="products.html?category=outdoor" class="btn btn--ghost" style="margin-top:16px;">Shop outdoor</a>
+        </div>
+        <div class="card">
+          <h3>Last-chance decor</h3>
+          <p>Discontinued vases, candles and objects, up to 40% off. No restock.</p>
+          <a href="products.html?category=decor" class="btn btn--ghost" style="margin-top:16px;">Shop decor</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container newsletter-panel" data-reveal>
+      <p class="eyebrow" style="justify-content:center;">Newsletter</p>
+      <h2>Get offers before anyone else.</h2>
+      <p class="text-muted" style="margin-top:12px;">Twice a month: new arrivals, restocks and subscriber-only discount codes.</p>
+      <form id="newsletterForm" class="newsletter-form">
+        <label for="newsletterEmail" class="visually-hidden">Email address</label>
+        <input type="email" id="newsletterEmail" placeholder="you@email.com" required>
+        <button type="submit" class="btn btn--accent">Subscribe</button>
+      </form>
+      <p class="newsletter-note" id="newsletterNote"></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">Lumen <span>Market</span></a><p>Modern lighting, kitchen, bed &amp; bath and decor — considered design, fair prices.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="categories.html">Categories</a></li><li><a href="products.html">Shop</a></li><li><a href="offers.html">Offers</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:hello@lumenmarket.com">hello@lumenmarket.com</a></li><li>Portland, OR</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">Instagram</a></li><li><a href="#">Pinterest</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 Lumen Market.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

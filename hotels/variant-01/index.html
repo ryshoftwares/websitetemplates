@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurelia Hotel — Luxury on the Amalfi Coast</title>
+<meta name="description" content="Aurelia Hotel is a five-star clifftop retreat on the Amalfi Coast — 64 rooms and suites, a Michelin-recommended restaurant, and a spa carved into the rock.">
+<meta property="og:title" content="Aurelia Hotel — Luxury on the Amalfi Coast">
+<meta property="og:description" content="A clifftop retreat with sea-view suites, a private beach club and a Michelin-recommended table.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Aurelia <span>Hotel</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+        <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+        <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="booking.html" class="nav-link">Booking</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a href="booking.html" class="btn btn--accent btn--sm">Check Availability</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="hero__media">
+      <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1800&q=75" alt="Aurelia Hotel's clifftop infinity pool overlooking the Amalfi coastline at sunset">
+    </div>
+    <div class="container hero__content">
+      <p class="eyebrow" data-reveal>Amalfi Coast, Italy</p>
+      <h1 class="hero__title" data-reveal>A clifftop retreat, built for <em>slow mornings.</em></h1>
+      <p class="hero__lead" data-reveal>64 rooms and suites carved into the cliffside, a private beach club, and a table that's held a Michelin recommendation for six years running.</p>
+      <div class="hero__actions" data-reveal>
+        <a href="rooms.html" class="btn btn--light">View Rooms</a>
+        <a href="booking.html" class="btn btn--accent">Book Your Stay</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <form class="booking-bar" id="quickBooking" data-reveal aria-label="Quick availability search">
+      <div class="field-inline">
+        <label for="qCheckIn">Check in</label>
+        <input type="date" id="qCheckIn" name="checkIn" required>
+      </div>
+      <div class="field-inline">
+        <label for="qCheckOut">Check out</label>
+        <input type="date" id="qCheckOut" name="checkOut" required>
+      </div>
+      <div class="field-inline">
+        <label id="guestLabel">Guests</label>
+        <div class="guest-stepper" data-min="1" data-max="6" role="group" aria-labelledby="guestLabel">
+          <button type="button" data-step="down" aria-label="Decrease guests">−</button>
+          <span>2</span>
+          <button type="button" data-step="up" aria-label="Increase guests">+</button>
+        </div>
+      </div>
+      <div class="field-inline">
+        <label for="qRoomType">Room type</label>
+        <select id="qRoomType" name="roomType">
+          <option value="">Any</option>
+          <option value="classic">Classic Room</option>
+          <option value="deluxe">Deluxe Sea View</option>
+          <option value="suite">Suite</option>
+        </select>
+      </div>
+      <a href="booking.html" class="btn btn--primary">Check Availability</a>
+    </form>
+  </div>
+
+  <section class="section">
+    <div class="container intro-split">
+      <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=75" alt="Sunlit terrace suite at Aurelia Hotel with sea view" data-reveal>
+      <div data-reveal>
+        <p class="eyebrow">Welcome to Aurelia</p>
+        <h2>Where the Amalfi Coast slows down.</h2>
+        <p class="text-muted" style="margin-top:18px; font-size:1.05rem;">Aurelia opened in 1974 in a converted lemon-terrace villa above Praiano, and has stayed
+          family-run ever since. Every room faces the water. Breakfast is served until noon. Nothing here is rushed.</p>
+        <div class="intro-split__stats">
+          <div><strong data-count="64">0</strong><span>Rooms &amp; Suites</span></div>
+          <div><strong data-count="4.9" data-suffix="/5">0</strong><span>Guest Rating</span></div>
+          <div><strong data-count="50" data-suffix="yrs">0</strong><span>Family Run</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section__head section__head--split" data-reveal>
+        <div><p class="eyebrow">Rooms &amp; Suites</p><h2>A room for every kind of stay.</h2></div>
+        <a href="rooms.html" class="btn btn--ghost">View all rooms</a>
+      </div>
+      <div class="grid-3">
+        <article class="room-card" data-reveal>
+          <div class="room-card__media"><span class="room-card__badge">Most booked</span><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=500&q=75" alt="Deluxe sea view room with a balcony and king bed"></div>
+          <div class="room-card__body">
+            <h3>Deluxe Sea View</h3>
+            <div class="room-card__meta"><span>32 m²</span><span>King bed</span><span>Balcony</span></div>
+            <p>Floor-to-ceiling views of the coastline, with a private balcony for morning coffee.</p>
+            <div class="room-card__footer"><div class="room-card__price">€420 <span>/ night</span></div><a href="rooms.html" class="btn btn--ghost btn--sm">Details</a></div>
+          </div>
+        </article>
+        <article class="room-card" data-reveal>
+          <div class="room-card__media"><img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=500&q=75" alt="Classic room with a queen bed and terracotta floor tiles"></div>
+          <div class="room-card__body">
+            <h3>Classic Room</h3>
+            <div class="room-card__meta"><span>24 m²</span><span>Queen bed</span><span>Garden view</span></div>
+            <p>A quieter, garden-facing room with the same hand-tiled floors and linen bedding.</p>
+            <div class="room-card__footer"><div class="room-card__price">€290 <span>/ night</span></div><a href="rooms.html" class="btn btn--ghost btn--sm">Details</a></div>
+          </div>
+        </article>
+        <article class="room-card" data-reveal>
+          <div class="room-card__media"><span class="room-card__badge">Top rated</span><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=500&q=75&sat=-40" alt="Aurelia Suite with a private plunge pool"></div>
+          <div class="room-card__body">
+            <h3>Aurelia Suite</h3>
+            <div class="room-card__meta"><span>58 m²</span><span>King bed</span><span>Plunge pool</span></div>
+            <p>Our largest suite, with a private plunge pool and a living area open to the terrace.</p>
+            <div class="room-card__footer"><div class="room-card__price">€680 <span>/ night</span></div><a href="rooms.html" class="btn btn--ghost btn--sm">Details</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head--center" data-reveal><p class="eyebrow">Amenities</p><h2>Everything a slow stay needs.</h2></div>
+      <div class="grid-4">
+        <div class="card" data-reveal><div class="card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 17h18M5 17V9a2 2 0 012-2h10a2 2 0 012 2v8M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Private Beach Club</h3><p>Sun loungers, a bar, and direct sea access, a short walk down our own cliffside path.</p></div>
+        <div class="card" data-reveal><div class="card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3c-2 3-2 5 0 7s2 4 0 7M6 10c-2 3-2 4 0 6M18 10c2 3 2 4 0 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div><h3>Grotto Spa</h3><p>Treatment rooms carved directly into the rock, with a sea-water thermal pool.</p></div>
+        <div class="card" data-reveal><div class="card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 19h16M6 19V9l6-4 6 4v10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Terrazza Restaurant</h3><p>Michelin-recommended coastal Italian cuisine, served on a terrace above the water.</p></div>
+        <div class="card" data-reveal><div class="card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Airport Transfers</h3><p>Private boat or car transfer arranged from Naples on request, at booking or after arrival.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="container quote" data-reveal>
+      <blockquote>"We've stayed at hotels up and down this coast. Aurelia is the only one that felt like somewhere to return to, not just somewhere to see."</blockquote>
+      <cite>— Marguerite & Owen Faulkner, Guests since 2019</cite>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head--center" data-reveal><p class="eyebrow">Gallery</p><h2>A glimpse of Aurelia.</h2></div>
+      <div class="grid-4" data-reveal>
+        <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=420&q=70" alt="Infinity pool at sunset" style="border-radius:var(--radius-sm); height:180px; object-fit:cover;">
+        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=420&q=70" alt="Suite terrace" style="border-radius:var(--radius-sm); height:180px; object-fit:cover;">
+        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=420&q=70" alt="Restaurant terrace" style="border-radius:var(--radius-sm); height:180px; object-fit:cover;">
+        <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=420&q=70" alt="Spa treatment room" style="border-radius:var(--radius-sm); height:180px; object-fit:cover;">
+      </div>
+      <div style="text-align:center; margin-top:36px;"><a href="gallery.html" class="btn btn--ghost">View Full Gallery</a></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">Aurelia <span>Hotel</span></a><p>A clifftop retreat on the Amalfi Coast — 64 rooms and suites, family-run since 1974.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="rooms.html">Rooms</a></li><li><a href="amenities.html">Amenities</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="booking.html">Booking</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:reservations@aureliahotel.it">reservations@aureliahotel.it</a></li><li>+39 089 555 0148</li><li>Praiano, Amalfi Coast, Italy</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">Instagram</a></li><li><a href="#">Facebook</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 Aurelia Hotel.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+Place your own local images for this template here.
+The only photograph used by these demo pages is the Profile avatar, which hotlinks a portrait from images.unsplash.com for preview purposes — replace that <img src> URL with a file in this folder before deploying to production. Every other avatar in the template (sidebar, topbar, activity dots) is a CSS/SVG initials mark, not a photo, so no other image assets are required.

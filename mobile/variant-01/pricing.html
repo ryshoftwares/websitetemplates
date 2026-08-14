@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing — Orbit</title>
+<meta name="description" content="Orbit is free to start. Upgrade to Orbit Plus for unlimited habits, trend charts and shared habits.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Orbit</a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="features.html" class="nav-link">Features</a></li>
+        <li><a href="pricing.html" class="nav-link" aria-current="page">Pricing</a></li>
+        <li><a href="download.html" class="nav-link">Download</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="download.html" class="btn btn--primary header__cta">Get Orbit</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" style="padding-bottom: 40px; text-align:center;">
+    <div class="container">
+      <p class="eyebrow" style="justify-content:center;" data-reveal>Pricing</p>
+      <h1 style="font-size: clamp(2.2rem, 4vw, 3.4rem);" data-reveal>Free to start. Simple to upgrade.</h1>
+      <p style="margin: 18px auto 0; max-width: 56ch; color: var(--muted); font-size: 1.06rem;" data-reveal>No trial gimmicks — Orbit's free tier is genuinely usable, forever.</p>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="pricing-toggle" data-reveal>
+        <span id="labelMonthly" class="is-active">Monthly</span>
+        <button type="button" class="switch" id="pricingSwitch" role="switch" aria-checked="false" aria-label="Toggle yearly pricing"></button>
+        <span id="labelYearly">Yearly <span class="pricing-toggle__save">Save 20%</span></span>
+      </div>
+
+      <div class="grid-3" data-reveal>
+        <div class="price-card">
+          <h3>Free</h3>
+          <p class="text-muted" style="color:var(--muted); font-size:0.9rem;">For getting started with a few habits.</p>
+          <div class="price-card__amount">$0<span>/ forever</span></div>
+          <ul class="price-card__list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Up to 3 habits</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Gentle streaks</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Weekly reviews</li>
+          </ul>
+          <a href="download.html" class="btn btn--ghost">Get started</a>
+        </div>
+
+        <div class="price-card price-card--featured">
+          <span class="price-card__ribbon">Most popular</span>
+          <h3>Orbit Plus</h3>
+          <p style="font-size:0.9rem;">For people building more than a few habits.</p>
+          <div class="price-card__amount" data-period="monthly">$4<span>/ month</span></div>
+          <div class="price-card__amount" data-period="yearly" style="display:none;">$38<span>/ year</span></div>
+          <ul class="price-card__list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Unlimited habits</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 90-day trend charts</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Home-screen widgets</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Shared habits</li>
+          </ul>
+          <a href="download.html" class="btn btn--accent">Start free trial</a>
+        </div>
+
+        <div class="price-card">
+          <h3>Family</h3>
+          <p class="text-muted" style="color:var(--muted); font-size:0.9rem;">Orbit Plus for up to 5 people.</p>
+          <div class="price-card__amount" data-period="monthly">$8<span>/ month</span></div>
+          <div class="price-card__amount" data-period="yearly" style="display:none;">$76<span>/ year</span></div>
+          <ul class="price-card__list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Everything in Plus</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Up to 5 accounts</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Unlimited shared habits</li>
+          </ul>
+          <a href="download.html" class="btn btn--ghost">Get started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">Orbit</a><p>A habit tracker built around consistency, not guilt.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="download.html">Download</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:hello@orbithabits.app">hello@orbithabits.app</a></li><li>San Francisco, CA</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">Instagram</a></li><li><a href="#">X / Twitter</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 Orbit Habits, Inc.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

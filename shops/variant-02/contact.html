@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — CRATE</title>
+<meta name="description" content="Questions about an order, return or product? Contact the CRATE support team.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">CR<span>ATE</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="categories.html" class="nav-link">Categories</a></li>
+        <li><a href="products.html" class="nav-link">Shop</a></li>
+        <li><a href="offers.html" class="nav-link">Offers</a></li>
+        <li><a href="contact.html" class="nav-link" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a href="products.html" class="cart-btn" id="cartBtn" aria-label="View cart, 0 items">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6h15l-1.5 9h-12z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M6 6L5 3H2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="9" cy="20" r="1.4" fill="currentColor"/><circle cx="18" cy="20" r="1.4" fill="currentColor"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="contact-hero container">
+    <p class="eyebrow" data-reveal>Contact</p>
+    <h1 data-reveal>Questions about an order or return?</h1>
+  </section>
+
+  <section class="container contact-grid">
+    <div data-reveal>
+      <div class="contact-info__item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 7l9 6 9-6M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Email</h3><a href="mailto:hello@heycrate.com">hello@heycrate.com</a></div></div>
+      <div class="contact-info__item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1118 0z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.8"/></svg><div><h3>Warehouse &amp; returns center</h3><p>118 Bright St, Austin, TX 78702</p></div></div>
+      <div class="contact-info__item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.8"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><div><h3>Support hours</h3><p>Mon–Fri, 9am–7pm CT. Replies within one business day.</p></div></div>
+
+      <div class="faq">
+        <h2>Frequently asked</h2>
+        <div class="faq-item"><h3>What's your return policy?</h3><p>Unused items in original packaging can be returned within 30 days for a full refund.</p></div>
+        <div class="faq-item"><h3>Do you ship internationally?</h3><p>Currently we ship within the US and Canada; international shipping is in the works.</p></div>
+        <div class="faq-item"><h3>How long does shipping take?</h3><p>In-stock items ship within 2 business days and arrive in 3–7 days depending on location.</p></div>
+      </div>
+    </div>
+
+    <div data-reveal>
+      <form class="form" id="contactForm" novalidate>
+        <div class="form__success" id="formSuccess" role="status">Thanks for reaching out — we'll reply within one business day.</div>
+        <div class="field"><label for="name">Name</label><input type="text" id="name" name="name" required autocomplete="name"><small class="error">Please enter your name.</small></div>
+        <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" required autocomplete="email"><small class="error">Please enter a valid email.</small></div>
+        <div class="field"><label for="order">Order number (optional)</label><input type="text" id="order" name="order" placeholder="CR-10482"></div>
+        <div class="field">
+          <label for="topic">Reason for contact</label>
+          <select id="topic" name="topic" required>
+            <option value="">Select one</option>
+            <option value="order">Order status</option>
+            <option value="return">Return or exchange</option>
+            <option value="product">Product question</option>
+            <option value="other">Something else</option>
+          </select>
+          <small class="error">Please select a topic.</small>
+        </div>
+        <div class="field"><label for="message">Message</label><textarea id="message" name="message" required placeholder="How can we help?"></textarea><small class="error">Please add a message.</small></div>
+        <button type="submit" class="btn btn--primary btn--block">Send message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">CR<span>ATE</span></a><p>Bold lighting, kitchen, bed &amp; bath, decor and outdoor goods for rooms with personality.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="categories.html">Categories</a></li><li><a href="products.html">Shop</a></li><li><a href="offers.html">Offers</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:hello@heycrate.com">hello@heycrate.com</a></li><li>Austin, TX</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">Instagram</a></li><li><a href="#">TikTok</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 CRATE.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate — Bridge Foundation</title>
+<meta name="description" content="Support Bridge Foundation's policy research, legislative briefings and advocacy training with a one-time or monthly gift.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Bridge<span>Foundation</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="programs.html" class="nav-link">Programs</a></li>
+        <li><a href="impact.html" class="nav-link">Impact</a></li>
+        <li><a href="donate.html" class="nav-link" aria-current="page">Donate</a></li>
+      </ul>
+    </nav>
+    <a href="donate.html" class="btn btn--primary header__cta">Donate</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" style="padding-bottom: 56px;">
+    <div class="container">
+      <div class="hero__grid">
+        <p class="eyebrow" data-reveal>Donate</p>
+        <h1 class="hero__title" data-reveal>Fund the research that gets communities heard.</h1>
+        <p class="hero__lead" data-reveal>Every gift goes directly toward survey research, legislative
+          briefings and advocacy training — not overhead.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container" style="max-width: 640px;" data-reveal>
+      <form class="form" id="donateForm" data-validate novalidate>
+        <div class="form__success" id="formSuccess" role="status">Thank you — your support has been recorded. A confirmation has been sent to your email.</div>
+
+        <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:10px;">Choose an amount</label>
+        <div class="amount-grid">
+          <button type="button" class="amount-btn" data-amount="25">$25</button>
+          <button type="button" class="amount-btn is-selected" data-amount="50">$50</button>
+          <button type="button" class="amount-btn" data-amount="100">$100</button>
+          <button type="button" class="amount-btn" data-amount="250">$250</button>
+        </div>
+
+        <div class="field">
+          <label for="customAmount">Or enter a custom amount ($)</label>
+          <input type="number" id="customAmount" name="customAmount" min="1" placeholder="e.g. 75">
+        </div>
+
+        <div class="field"><label for="name">Full name</label><input type="text" id="name" name="name" required autocomplete="name"><small class="error">Please enter your name.</small></div>
+        <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" required autocomplete="email"><small class="error">Please enter a valid email address.</small></div>
+
+        <div class="field">
+          <label for="frequency">Frequency</label>
+          <select id="frequency" name="frequency" required>
+            <option value="">Select one</option>
+            <option value="once">One-time gift</option>
+            <option value="monthly">Monthly gift</option>
+          </select>
+          <small class="error">Please select a frequency.</small>
+        </div>
+
+        <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center;">Complete donation</button>
+        <p class="form-note">This is a demo template — no payment gateway is connected. In a live deployment,
+          this form would hand off to a processor such as Stripe, PayPal Giving, or your donation platform of choice.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section__head" data-reveal><span class="eyebrow">Other ways to help</span><h2>Time matters as much as money.</h2></div>
+      <div class="grid-3">
+        <div class="card" data-reveal><h3>Volunteer as a surveyor</h3><p>Help collect the community data our research depends on.</p></div>
+        <div class="card" data-reveal><h3>Join advocacy training</h3><p>Learn to testify and advocate directly on issues that affect you.</p></div>
+        <div class="card" data-reveal><h3>Spread the word</h3><p>Share our research with your own networks and representatives.</p></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">Bridge<span>Foundation</span></a><p>A nonpartisan policy and advocacy organization working for community-informed law.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="programs.html">Programs</a></li><li><a href="impact.html">Impact</a></li><li><a href="donate.html">Donate</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:info@bridgefoundation.org">info@bridgefoundation.org</a></li><li><a href="tel:+12025550171">+1 (202) 555-0171</a></li><li>Washington, D.C.</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">LinkedIn</a></li><li><a href="#">X / Twitter</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 Bridge Foundation. A 501(c)(3) nonprofit organization.</p><p><a href="#">Privacy</a> · <a href="#">Financials</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

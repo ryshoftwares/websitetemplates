@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — RAW EDIT</title>
+<meta name="description" content="Get early access to the next RAW EDIT drop, or ask a question about an order.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">RAW <em>EDIT</em></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul><li><a href="index.html" class="nav-link">Home</a></li><li><a href="collections.html" class="nav-link">Collections</a></li><li><a href="products.html" class="nav-link">Shop</a></li><li><a href="lookbook.html" class="nav-link">Lookbook</a></li><li><a href="contact.html" class="nav-link" aria-current="page">Contact</a></li></ul>
+    </nav>
+    <div class="header__actions"><a href="contact.html" class="btn btn--primary">Get in</a><button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button></div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="shop-hero container"><p class="eyebrow" data-reveal>Get in touch</p><h1 data-reveal>Want early access?</h1><p data-reveal>Sign up for drop alerts, or ask us about an order.</p></section>
+
+  <section class="container" style="padding-bottom:80px;">
+    <div class="contact-grid" data-reveal>
+      <div>
+        <div class="contact-info__item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 7l9 6 9-6M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Email</h3><a href="mailto:studio@rawedit.nyc">studio@rawedit.nyc</a></div></div>
+        <div class="contact-info__item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1118 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg><div><h3>Studio</h3><p>Brooklyn, NY</p></div></div>
+        <div class="contact-info__item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 7h-9m0 0L8 4m3 3L8 10m9 4H8m0 0l3 3m-3-3l3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Returns</h3><p>Free returns within 14 days of delivery.</p></div></div>
+      </div>
+      <div>
+        <form class="form" id="contactForm" novalidate>
+          <div class="form__success" id="formSuccess" role="status">You're in. We'll email you when Drop 05 goes live.</div>
+          <div class="field"><label for="name">Name</label><input type="text" id="name" name="name" required autocomplete="name"><small class="error">Please enter your name.</small></div>
+          <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" required autocomplete="email"><small class="error">Please enter a valid email.</small></div>
+          <div class="field"><label for="topic">What's this about?</label><select id="topic" name="topic" required><option value="">Select one</option><option value="drop">Drop alerts / early access</option><option value="order">Order question</option><option value="other">Something else</option></select><small class="error">Please select a topic.</small></div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="message" required placeholder="What's up?"></textarea><small class="error">Please add a message.</small></div>
+          <button type="submit" class="btn btn--primary" style="width:100%; justify-content:center;">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">RAW <em>EDIT</em></a><p>Experimental streetwear out of Brooklyn.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="collections.html">Collections</a></li><li><a href="products.html">Shop</a></li><li><a href="lookbook.html">Lookbook</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:studio@rawedit.nyc">studio@rawedit.nyc</a></li><li>Brooklyn, NY</li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 RAW EDIT.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

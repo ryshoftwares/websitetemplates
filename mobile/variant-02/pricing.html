@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing — Zapp</title>
+<meta name="description" content="Zapp is free forever. Zapp Plus unlocks longer voice zapps, unlimited circles and no watermarks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Zapp<span>!</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul><li><a href="index.html" class="nav-link">Home</a></li><li><a href="features.html" class="nav-link">Features</a></li><li><a href="pricing.html" class="nav-link" aria-current="page">Pricing</a></li><li><a href="download.html" class="nav-link">Download</a></li><li><a href="contact.html" class="nav-link">Contact</a></li></ul>
+    </nav>
+    <a href="download.html" class="btn btn--primary">Get Zapp</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" style="padding-bottom:40px; text-align:center;">
+    <div class="container">
+      <p class="eyebrow" style="justify-content:center;" data-reveal>Pricing</p>
+      <h1 style="font-size: clamp(2.4rem, 4.6vw, 3.6rem);" data-reveal>Free forever. Plus if you want more.</h1>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="pricing-toggle" data-reveal>
+        <span id="labelMonthly" class="is-active">Monthly</span>
+        <button type="button" class="switch" id="pricingSwitch" role="switch" aria-checked="false" aria-label="Toggle yearly pricing"></button>
+        <span id="labelYearly">Yearly <span class="pricing-toggle__save">Save 25%</span></span>
+      </div>
+      <div class="grid-3" data-reveal>
+        <div class="price-card">
+          <h3>Free</h3>
+          <div class="price-card__amount">$0<span>/ forever</span></div>
+          <ul class="price-card__list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Unlimited zapps</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Up to 3 circles</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 15-second voice zapps</li>
+          </ul>
+          <a href="download.html" class="btn btn--ghost">Get started</a>
+        </div>
+        <div class="price-card price-card--featured">
+          <span class="price-card__ribbon">Most popular</span>
+          <h3>Zapp Plus</h3>
+          <div class="price-card__amount" data-period="monthly">$3<span>/ month</span></div>
+          <div class="price-card__amount" data-period="yearly" style="display:none;">$27<span>/ year</span></div>
+          <ul class="price-card__list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Unlimited circles</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 60-second voice zapps</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Custom zapp themes</li>
+          </ul>
+          <a href="download.html" class="btn btn--accent">Start free trial</a>
+        </div>
+        <div class="price-card">
+          <h3>Zapp Pro Creator</h3>
+          <div class="price-card__amount" data-period="monthly">$8<span>/ month</span></div>
+          <div class="price-card__amount" data-period="yearly" style="display:none;">$72<span>/ year</span></div>
+          <ul class="price-card__list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Everything in Plus</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Priority delivery</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Early access to new features</li>
+          </ul>
+          <a href="download.html" class="btn btn--ghost">Get started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">Zapp<span>!</span></a><p>Social, without the feed.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="download.html">Download</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:hey@zappapp.co">hey@zappapp.co</a></li><li>Los Angeles, CA</li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 Zapp, Inc.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

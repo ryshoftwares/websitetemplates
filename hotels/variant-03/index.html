@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Stay — A Quiet Hotel in Nordhavn, Copenhagen</title>
+<meta name="description" content="The Stay is a 42-room boutique hotel inside a restored 1921 grain warehouse in Copenhagen's Nordhavn — quiet rooms, a harbour-front restaurant, and a workspace built for slower business trips.">
+<meta property="og:title" content="The Stay — A Quiet Hotel in Nordhavn, Copenhagen">
+<meta property="og:description" content="A 42-room hotel inside a restored grain warehouse on Copenhagen's harbour — concrete, oak, and very little else.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">The <span>Stay</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+        <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+        <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="booking.html" class="nav-link">Booking</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a href="booking.html" class="btn btn--accent btn--sm">Check Availability</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="hero__media">
+      <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1800&q=75" alt="The Stay's rooftop plunge pool at dusk, overlooking the cranes and water of Nordhavn harbour">
+    </div>
+    <div class="container hero__content">
+      <p class="eyebrow" data-reveal>Nordhavn, Copenhagen</p>
+      <h1 class="hero__title" data-reveal>A quiet hotel, built inside <em>a grain warehouse.</em></h1>
+      <p class="hero__lead" data-reveal>42 rooms and lofts inside a restored 1921 warehouse on Copenhagen's working harbour — poured concrete, oak, wool, and very little else.</p>
+      <div class="hero__actions" data-reveal>
+        <a href="rooms.html" class="btn btn--light">View Rooms</a>
+        <a href="booking.html" class="btn btn--accent">Book Your Stay</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <form class="booking-bar" id="quickBooking" data-reveal aria-label="Quick availability search">
+      <div class="field-inline">
+        <label for="qCheckIn">Check in</label>
+        <input type="date" id="qCheckIn" name="checkIn" required>
+      </div>
+      <div class="field-inline">
+        <label for="qCheckOut">Check out</label>
+        <input type="date" id="qCheckOut" name="checkOut" required>
+      </div>
+      <div class="field-inline">
+        <label id="guestLabel">Guests</label>
+        <div class="guest-stepper" data-min="1" data-max="6" role="group" aria-labelledby="guestLabel">
+          <button type="button" data-step="down" aria-label="Decrease guests">−</button>
+          <span>2</span>
+          <button type="button" data-step="up" aria-label="Increase guests">+</button>
+        </div>
+      </div>
+      <div class="field-inline">
+        <label for="qRoomType">Room type</label>
+        <select id="qRoomType" name="roomType">
+          <option value="">Any</option>
+          <option value="studio">Studio Room</option>
+          <option value="loft">Loft Room</option>
+          <option value="suite">Suite</option>
+        </select>
+      </div>
+      <a href="booking.html" class="btn btn--primary">Check Availability</a>
+    </form>
+  </div>
+
+  <section class="section">
+    <div class="container intro-split">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=75" alt="Ground-floor lounge at The Stay, with poured concrete floors and a single leather sofa" data-reveal>
+      <div data-reveal>
+        <p class="eyebrow">Welcome to The Stay</p>
+        <h2>Quiet is not the absence of anything.</h2>
+        <p class="text-muted" style="margin-top:18px; font-size:1.02rem;">The Stay opened in 2019 inside a decommissioned grain warehouse on Sundkrogsgade, on the harbour edge
+          of Nordhavn. We kept the steel columns, the loading doors, and the height of the ceilings, and added
+          almost nothing else. Rooms are unusually plain on purpose — good light, a good bed, and a desk you'd
+          actually want to sit at.</p>
+        <div class="intro-split__stats">
+          <div><strong data-count="42">0</strong><span>Rooms &amp; Lofts</span></div>
+          <div><strong data-count="4.8" data-suffix="/5">0</strong><span>Guest Rating</span></div>
+          <div><strong data-count="1921">0</strong><span>Original Warehouse</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section__head section__head--split" data-reveal>
+        <div><p class="eyebrow">Rooms &amp; Lofts</p><h2>A room for every kind of stay.</h2></div>
+        <a href="rooms.html" class="btn btn--ghost">View all rooms</a>
+      </div>
+      <div class="grid-3">
+        <article class="room-card" data-reveal>
+          <div class="room-card__media"><span class="room-card__badge">Most booked</span><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=500&q=75" alt="Loft Room with double-height ceiling, exposed steel beam and king bed"></div>
+          <div class="room-card__body">
+            <h3>Loft Room</h3>
+            <div class="room-card__meta"><span>30 m²</span><span>King bed</span><span>Double-height ceiling</span></div>
+            <p>The original warehouse ceiling height, kept intact, with a reading corner tucked under the steel beam.</p>
+            <div class="room-card__footer"><div class="room-card__price">1,950 kr <span>/ night</span></div><a href="rooms.html" class="btn btn--ghost btn--sm">Details</a></div>
+          </div>
+        </article>
+        <article class="room-card" data-reveal>
+          <div class="room-card__media"><img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=500&q=75" alt="Studio Room with oak floors and a queen bed facing the window"></div>
+          <div class="room-card__body">
+            <h3>Studio Room</h3>
+            <div class="room-card__meta"><span>22 m²</span><span>Queen bed</span><span>City view</span></div>
+            <p>Our smallest room — plain, well-lit, and quiet, with a bed that earns most of the compliments.</p>
+            <div class="room-card__footer"><div class="room-card__price">1,450 kr <span>/ night</span></div><a href="rooms.html" class="btn btn--ghost btn--sm">Details</a></div>
+          </div>
+        </article>
+        <article class="room-card" data-reveal>
+          <div class="room-card__media"><span class="room-card__badge">Top rated</span><img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=500&q=75" alt="Corner Suite with wraparound windows looking over the harbour"></div>
+          <div class="room-card__body">
+            <h3>Corner Suite</h3>
+            <div class="room-card__meta"><span>42 m²</span><span>King bed</span><span>Corner windows</span></div>
+            <p>Two exposures over the water, a sitting area, and the quietest corner of the building.</p>
+            <div class="room-card__footer"><div class="room-card__price">2,650 kr <span>/ night</span></div><a href="rooms.html" class="btn btn--ghost btn--sm">Details</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head--center" data-reveal><p class="eyebrow">Amenities</p><h2>Everything a quiet stay needs.</h2></div>
+      <div class="grid-4">
+        <div class="card" data-reveal><div class="card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 19h16M6 19V9l6-4 6 4v10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Kornet</h3><p>A quiet dining room and bar built into the original grain silos, serving modern Danish food.</p></div>
+        <div class="card" data-reveal><div class="card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3c-2 3-2 5 0 7s2 4 0 7M6 10c-2 3-2 4 0 6M18 10c2 3 2 4 0 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div><h3>The Bathhouse</h3><p>A wood-fired sauna, cold plunge and a small gym, open early for guests who run before meetings.</p></div>
+        <div class="card" data-reveal><div class="card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="12" rx="1" stroke="currentColor" stroke-width="1.6"/><path d="M9 20h6M12 17v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div><h3>The Loading Bay</h3><p>A quiet workspace and two meeting rooms, named for the dock this building once loaded grain from.</p></div>
+        <div class="card" data-reveal><div class="card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Concierge</h3><p>Bike rental, restaurant bookings and local guides, arranged at the front desk or before arrival.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="container quote" data-reveal>
+      <blockquote>"I've stayed here four times for work now. It's the only hotel where I actually get things done — the desk, the light, the quiet. It doesn't feel designed at you."</blockquote>
+      <cite>— Marek Jensen, Guest since 2021</cite>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head--center" data-reveal><p class="eyebrow">Gallery</p><h2>A glimpse of The Stay.</h2></div>
+      <div class="grid-4" data-reveal>
+        <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=420&q=70" alt="Rooftop pool over Nordhavn harbour" style="border-radius:var(--radius-sm); height:170px; object-fit:cover;">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=420&q=70" alt="Ground-floor lounge with concrete floors" style="border-radius:var(--radius-sm); height:170px; object-fit:cover;">
+        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=420&q=70" alt="Kornet dining room at golden hour" style="border-radius:var(--radius-sm); height:170px; object-fit:cover;">
+        <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=420&q=70" alt="The Bathhouse sauna and plunge room" style="border-radius:var(--radius-sm); height:170px; object-fit:cover;">
+      </div>
+      <div style="text-align:center; margin-top:32px;"><a href="gallery.html" class="btn btn--ghost">View Full Gallery</a></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">The <span>Stay</span></a><p>A 42-room hotel inside a restored 1921 grain warehouse on Copenhagen's harbour, open since 2019.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="rooms.html">Rooms</a></li><li><a href="amenities.html">Amenities</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="booking.html">Booking</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:hello@thestay.dk">hello@thestay.dk</a></li><li>+45 32 12 34 56</li><li>Sundkrogsgade 8, 2150 Nordhavn</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">Instagram</a></li><li><a href="#">LinkedIn</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 The Stay.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lookbook — Maison Ives</title>
+<meta name="description" content="The Maison Ives Autumn/Winter lookbook — editorial photography from the current collection.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Maison <em>Ives</em></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="collections.html" class="nav-link">Collections</a></li>
+        <li><a href="products.html" class="nav-link">Shop</a></li>
+        <li><a href="lookbook.html" class="nav-link" aria-current="page">Lookbook</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="btn btn--primary header__cta">Book a fitting</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="section">
+    <div class="container">
+      <div class="lookbook-intro" data-reveal>
+        <p class="eyebrow" style="justify-content:center;">Lookbook</p>
+        <h1 style="font-size: clamp(2rem, 3.6vw, 2.8rem); margin-bottom: 16px;">Autumn / Winter, in full.</h1>
+        <p style="color: var(--muted);">Editorial photography from the current collection, shot on location in Burgundy. Select any frame to view it in full.</p>
+      </div>
+
+      <div class="lookbook-grid" data-reveal>
+        <button class="look-item" data-caption="Look 01 — The Tailored Wool Coat, Burgundy countryside">
+          <img src="https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?auto=format&fit=crop&w=800&q=75" alt="Model wearing the Tailored Wool Coat in a stone courtyard">
+        </button>
+        <button class="look-item" data-caption="Look 02 — The Silk Bias Gown, evening light">
+          <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=500&q=75" alt="Model wearing the Silk Bias Gown at dusk">
+        </button>
+        <button class="look-item" data-caption="Look 03 — The Cashmere Turtleneck, layered styling">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=500&q=75" alt="Model wearing a cashmere turtleneck and tailored trousers">
+        </button>
+        <button class="look-item" data-caption="Look 04 — The Structured Blazer, studio portrait">
+          <img src="https://images.unsplash.com/photo-1554141733-d8a2f9cad0f7?auto=format&fit=crop&w=500&q=75" alt="Model wearing a structured wool blazer in studio light">
+        </button>
+        <button class="look-item" data-caption="Look 05 — The Leather Trench, walking portrait">
+          <img src="https://images.unsplash.com/photo-1485462537746-965f33f7f6a7?auto=format&fit=crop&w=800&q=75" alt="Model wearing a leather trench coat walking through a stone archway">
+        </button>
+        <button class="look-item" data-caption="Look 06 — Accessories detail, hand-finished leather goods">
+          <img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=500&q=75" alt="Close-up of hand-finished leather accessories">
+        </button>
+        <button class="look-item" data-caption="Look 07 — The Pleated Midi Skirt, courtyard portrait">
+          <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=500&q=75" alt="Model wearing a pleated midi skirt in a courtyard">
+        </button>
+        <button class="look-item" data-caption="Look 08 — Full collection group, closing shot">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=500&q=75" alt="Three models in the full Autumn/Winter collection">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: var(--ink); text-align:center;">
+    <div class="container" data-reveal>
+      <h2 style="color: var(--paper); font-size: clamp(1.6rem, 2.8vw, 2.2rem); margin-bottom: 20px;">See a piece you love?</h2>
+      <a href="products.html" class="btn btn--accent">Shop the collection</a>
+    </div>
+  </section>
+
+</main>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Lookbook image viewer">
+  <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous image">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <figure class="lightbox__figure">
+    <img id="lightboxImage" src="" alt="">
+    <figcaption class="lightbox__caption" id="lightboxCaption"></figcaption>
+    <button class="lightbox__close" aria-label="Close lightbox">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </figure>
+  <button class="lightbox__nav lightbox__nav--next" aria-label="Next image">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a href="index.html" class="logo">Maison <em>Ives</em></a>
+      <p>Considered luxury ready-to-wear, cut and finished by hand in Paris.</p>
+    </div>
+    <nav class="footer__col" aria-label="Sitemap">
+      <h3>Sitemap</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="products.html">Shop</a></li>
+        <li><a href="lookbook.html">Lookbook</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="footer__col">
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="mailto:atelier@maisonives.com">atelier@maisonives.com</a></li>
+        <li><a href="tel:+33142607788">+33 1 42 60 77 88</a></li>
+        <li>Paris · New York</li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h3>Follow</h3>
+      <ul class="social">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Pinterest</a></li>
+        <li><a href="#">Substack</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <p>© 2026 Maison Ives. All rights reserved.</p>
+    <p><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

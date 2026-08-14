@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lookbook — Studio Wear</title>
+<meta name="description" content="Studio Wear's current lookbook — quiet, considered styling.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,500;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Studio Wear</a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul><li><a href="index.html" class="nav-link">Home</a></li><li><a href="collections.html" class="nav-link">Collections</a></li><li><a href="products.html" class="nav-link">Products</a></li><li><a href="lookbook.html" class="nav-link" aria-current="page">Lookbook</a></li><li><a href="contact.html" class="nav-link">Contact</a></li></ul>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section">
+    <div class="container">
+      <div class="lookbook-intro" data-reveal>
+        <p class="eyebrow" style="justify-content:center;">Lookbook</p>
+        <h1 style="font-size: clamp(2rem, 3.6vw, 2.8rem); margin-bottom: 16px;">Quiet, considered styling.</h1>
+        <p style="color: var(--ink-muted);">Select any frame to view it full-size.</p>
+      </div>
+      <div class="lookbook-grid" data-reveal>
+        <button class="look-item" data-caption="Look 01 — Clay Oversized Shirt, natural light"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=75" alt="Model wearing the Clay Oversized Shirt in natural light"></button>
+        <button class="look-item" data-caption="Look 02 — Sand Wool Cardigan, layered"><img src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=500&q=75" alt="Model wearing the Sand Wool Cardigan layered over a tee"></button>
+        <button class="look-item" data-caption="Look 03 — Structured Wool Overcoat, studio"><img src="https://images.unsplash.com/photo-1554141733-d8a2f9cad0f7?auto=format&fit=crop&w=500&q=75" alt="Model wearing the Structured Wool Overcoat in studio light"></button>
+        <button class="look-item" data-caption="Look 04 — Tapered Cotton Trousers, detail"><img src="https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=500&q=75" alt="Detail of the Tapered Cotton Trousers"></button>
+        <button class="look-item" data-caption="Look 05 — Pleated Midi Skirt, walking"><img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=75" alt="Model walking in the Pleated Midi Skirt"></button>
+        <button class="look-item" data-caption="Look 06 — Waxed Canvas Tote, detail"><img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=500&q=75" alt="Detail of the Waxed Canvas Tote"></button>
+      </div>
+    </div>
+  </section>
+  <section class="section section--surface"><div class="container"><div class="cta-banner" data-reveal><h2>See a piece you like?</h2><a href="products.html" class="btn btn--ghost">Shop products</a></div></div></section>
+</main>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Lookbook image viewer">
+  <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous image"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  <figure class="lightbox__figure">
+    <img id="lightboxImage" src="" alt="">
+    <figcaption class="lightbox__caption" id="lightboxCaption"></figcaption>
+    <button class="lightbox__close" aria-label="Close lightbox"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+  </figure>
+  <button class="lightbox__nav lightbox__nav--next" aria-label="Next image"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">Studio Wear</a><p>Quality-basics apparel, made to last.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="collections.html">Collections</a></li><li><a href="products.html">Products</a></li><li><a href="lookbook.html">Lookbook</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:hello@studiowear.co">hello@studiowear.co</a></li><li>Portland, ME</li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 Studio Wear.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

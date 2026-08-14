@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Your Stay — The Stay</title>
+<meta name="description" content="Check availability and request a reservation at The Stay, a 42-room hotel inside a restored 1921 grain warehouse in Nordhavn, Copenhagen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">The <span>Stay</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="rooms.html" class="nav-link">Rooms</a></li>
+        <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="booking.html" class="nav-link" aria-current="page">Booking</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="booking-hero container">
+    <p class="eyebrow" style="justify-content:center;" data-reveal>Booking</p>
+    <h1 data-reveal>Reserve your stay.</h1>
+    <p class="text-muted" style="margin-top:12px;" data-reveal>Best-rate guarantee when you book directly with us — no third-party fees.</p>
+  </section>
+
+  <section class="container booking-layout">
+    <div data-reveal>
+      <form class="booking-form" id="bookingForm" novalidate>
+        <div class="form__success" id="formSuccess" role="status">Thank you — your request has been received. Our front desk will confirm availability by email within 24 hours.</div>
+
+        <div class="booking-form__row">
+          <div class="field">
+            <label for="checkIn">Check in</label>
+            <input type="date" id="checkIn" name="checkIn" required>
+            <small class="error">Please choose a check-in date.</small>
+          </div>
+          <div class="field">
+            <label for="checkOut">Check out</label>
+            <input type="date" id="checkOut" name="checkOut" required>
+            <small class="error">Check-out must be after check-in.</small>
+          </div>
+        </div>
+
+        <div class="booking-form__row">
+          <div class="field">
+            <label for="roomType">Room type</label>
+            <select id="roomType" name="roomType" required>
+              <option value="">Select a room</option>
+              <option value="studio">Studio Room — 1,450 kr/night</option>
+              <option value="studio-courtyard">Studio Room, Courtyard — 1,550 kr/night</option>
+              <option value="loft">Loft Room — 1,950 kr/night</option>
+              <option value="corner-loft">Corner Loft — 2,150 kr/night</option>
+              <option value="corner-suite">Corner Suite — 2,650 kr/night</option>
+              <option value="harbour-suite">Harbour Suite — 3,200 kr/night</option>
+            </select>
+            <small class="error">Please select a room type.</small>
+          </div>
+          <div class="field">
+            <label id="guestLabelBooking">Guests</label>
+            <div class="guest-stepper" data-min="1" data-max="6" role="group" aria-labelledby="guestLabelBooking">
+              <button type="button" data-step="down" aria-label="Decrease guests">−</button>
+              <span>2</span>
+              <button type="button" data-step="up" aria-label="Increase guests">+</button>
+              <input type="hidden" name="guests" value="2">
+            </div>
+          </div>
+        </div>
+
+        <div class="booking-form__row">
+          <div class="field"><label for="firstName">First name</label><input type="text" id="firstName" name="firstName" required autocomplete="given-name"><small class="error">Required.</small></div>
+          <div class="field"><label for="lastName">Last name</label><input type="text" id="lastName" name="lastName" required autocomplete="family-name"><small class="error">Required.</small></div>
+        </div>
+        <div class="booking-form__row">
+          <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" required autocomplete="email"><small class="error">Please enter a valid email.</small></div>
+          <div class="field"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" required autocomplete="tel"><small class="error">Required.</small></div>
+        </div>
+
+        <div class="field">
+          <label for="requests">Special requests (optional)</label>
+          <textarea id="requests" name="requests" placeholder="Early check-in, courtyard-facing room, dietary needs…"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--accent btn--block">Request Reservation</button>
+        <p class="text-muted" style="margin-top:16px; font-size:0.84rem;">This is a request, not an instant confirmation. No payment is collected here — our front desk will follow up by email to confirm availability and take payment details securely by phone.</p>
+      </form>
+    </div>
+
+    <aside class="booking-summary" data-reveal>
+      <h3>Why book direct</h3>
+      <div class="booking-summary__row"><span>Best rate</span><span>Guaranteed</span></div>
+      <div class="booking-summary__row"><span>Free cancellation</span><span>Up to 5 days before</span></div>
+      <div class="booking-summary__row"><span>Late check-out</span><span>Subject to availability</span></div>
+      <div class="booking-summary__row"><span>Sauna session</span><span>Included</span></div>
+      <div class="booking-summary__row total"><span>Questions?</span><span>+45 32 12 34 56</span></div>
+    </aside>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">The <span>Stay</span></a><p>A 42-room hotel inside a restored 1921 grain warehouse on Copenhagen's harbour, open since 2019.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="rooms.html">Rooms</a></li><li><a href="amenities.html">Amenities</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="booking.html">Booking</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:hello@thestay.dk">hello@thestay.dk</a></li><li>+45 32 12 34 56</li><li>Sundkrogsgade 8, 2150 Nordhavn</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">Instagram</a></li><li><a href="#">LinkedIn</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 The Stay.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

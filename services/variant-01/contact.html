@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Anchor Services — Request a Free Renovation Quote</title>
+<meta name="description" content="Request a free renovation quote from Anchor Services in Portland, Oregon. Tell us about your project and we'll schedule an in-home estimate.">
+<meta property="og:title" content="Contact Anchor Services">
+<meta property="og:description" content="Request a free in-home estimate for your renovation project.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Anchor<span>Services</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="btn btn--primary header__cta">Get a Free Quote</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" style="padding-bottom: 40px;">
+    <div class="container" style="max-width: 760px;">
+      <p class="eyebrow" data-reveal>Get in touch</p>
+      <h1 class="hero__title" data-reveal style="max-width: none;">Let's talk about your renovation.</h1>
+      <p class="hero__lead" data-reveal>Fill out the form below and we'll follow up within one business day to
+        schedule your free in-home estimate.</p>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container contact-grid">
+
+      <div data-reveal>
+        <div class="contact-info__item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.99.36 1.97.67 2.91a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.17-1.24a2 2 0 0 1 2.11-.45c.94.31 1.92.54 2.91.67A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h3>Call or text</h3><p><a href="tel:+15035550134">(503) 555-0134</a></p></div>
+        </div>
+        <div class="contact-info__item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m4 6 8 7 8-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h3>Email</h3><p><a href="mailto:hello@anchorservices.com">hello@anchorservices.com</a></p></div>
+        </div>
+        <div class="contact-info__item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="2"/></svg>
+          <div><h3>Service area</h3><p>Portland, Beaverton, Lake Oswego, Tigard, Milwaukie — within about 40 miles of downtown Portland.</p></div>
+        </div>
+        <div class="contact-info__item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h3>Availability</h3><p>Free estimates scheduled within one week. Larger renovations currently booking 6–8 weeks out.</p></div>
+        </div>
+      </div>
+
+      <div data-reveal>
+        <div id="formSuccess" class="form__success" role="status">Thanks — your request is in. A member of our team will reach out within one business day to schedule your free estimate.</div>
+        <form class="form" id="contactForm" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+              <small class="error">Please enter your name.</small>
+            </div>
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" required autocomplete="tel">
+              <small class="error">Please enter a phone number.</small>
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+            <small class="error">Please enter a valid email address.</small>
+          </div>
+          <div class="field">
+            <label for="service">Service type</label>
+            <select id="service" name="service" required>
+              <option value="">Select a service</option>
+              <option value="Kitchen Remodeling">Kitchen Remodeling</option>
+              <option value="Bathroom Renovation">Bathroom Renovation</option>
+              <option value="Whole-Home Renovation">Whole-Home Renovation</option>
+              <option value="Custom Additions & Extensions">Custom Additions &amp; Extensions</option>
+              <option value="Decks & Outdoor Living">Decks &amp; Outdoor Living</option>
+              <option value="Basement Finishing">Basement Finishing</option>
+              <option value="Other">Other / Not sure yet</option>
+            </select>
+            <small class="error">Please select a service type.</small>
+          </div>
+          <div class="field">
+            <label for="details">Tell us about your project</label>
+            <textarea id="details" name="details" required placeholder="Rough size of the space, what you're hoping to change, and your timeline."></textarea>
+            <small class="error">Please add a few details about your project.</small>
+          </div>
+          <div class="field">
+            <label for="contactMethod">Preferred contact method</label>
+            <select id="contactMethod" name="contactMethod">
+              <option value="Phone">Phone call</option>
+              <option value="Text">Text message</option>
+              <option value="Email">Email</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn--primary">Request My Free Quote</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a href="index.html" class="logo">Anchor<span>Services</span></a>
+      <p>Premium home renovation and general contracting for the Portland, Oregon metro area.</p>
+    </div>
+    <nav class="footer__col" aria-label="Sitemap">
+      <h3>Sitemap</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="footer__col">
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="mailto:hello@anchorservices.com">hello@anchorservices.com</a></li>
+        <li><a href="tel:+15035550134">(503) 555-0134</a></li>
+        <li>Portland, Oregon · Serving the metro area</li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h3>Follow</h3>
+      <ul class="social">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Houzz</a></li>
+        <li><a href="#">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <p>© 2026 Anchor Services, LLC. All rights reserved. CCB #198420.</p>
+    <p><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

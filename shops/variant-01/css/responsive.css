@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Lumen Market — responsive breakpoints
+   ========================================================================== */
+
+@media (max-width: 1180px) {
+  .featured-grid { grid-template-columns: repeat(3, 1fr); }
+  .grid-5 { grid-template-columns: repeat(3, 1fr); }
+  .related .product-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 1024px) {
+  .header__inner { padding: 18px 24px; }
+  .nav { display: none; }
+  .nav-toggle { display: flex; }
+  .nav.is-open {
+    display: block; position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--surface); border-bottom: 1px solid var(--border);
+    padding: 12px 24px 20px; box-shadow: 0 20px 30px -25px rgba(35,33,29,0.3);
+  }
+  .nav.is-open ul { flex-direction: column; gap: 4px; }
+  .nav.is-open .nav-link { display: block; padding: 12px 0; }
+
+  .hero__grid { grid-template-columns: 1fr; gap: 40px; }
+  .hero__art img { height: 340px; }
+  .hero { padding: 56px 0 70px; }
+
+  .grid-3, .grid-4, .grid-2 { grid-template-columns: repeat(2, 1fr); }
+  .featured-grid, .grid-5 { grid-template-columns: repeat(2, 1fr); }
+  .section { padding: 76px 0; }
+
+  .shop-layout { grid-template-columns: 1fr; }
+  .shop-filters { position: static; }
+  .product-grid { grid-template-columns: repeat(2, 1fr); }
+  .related .product-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .category-grid { grid-template-columns: 1fr; }
+  .category-grid > :first-child .category-tile { min-height: 280px; }
+
+  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .footer__grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+}
+
+@media (max-width: 860px) {
+  .container { padding: 0 22px; }
+}
+
+@media (max-width: 640px) {
+  .header__inner { padding: 14px 18px; }
+  .header__actions .btn { display: none; }
+  .hero__title { font-size: clamp(2rem, 8vw, 2.6rem); }
+  .hero__actions { flex-direction: column; align-items: stretch; }
+  .hero__actions .btn { justify-content: center; }
+
+  .grid-3, .grid-4, .grid-2, .featured-grid, .grid-5 { grid-template-columns: 1fr; }
+  .product-grid { grid-template-columns: 1fr; }
+  .related .product-grid { grid-template-columns: 1fr; }
+  .cta-banner { padding: 40px 24px; }
+
+  .footer__grid { grid-template-columns: 1fr; }
+  .footer__bottom { flex-direction: column; gap: 10px; text-align: center; }
+
+  .offer-card { padding: 24px; }
+  .newsletter-panel { padding: 32px 22px; }
+  .newsletter-form { flex-direction: column; }
+  .newsletter-form input { width: 100%; }
+
+  .form { padding: 26px; }
+}
+
+@media (max-width: 380px) {
+  .section { padding: 56px 0; }
+  .hero { padding: 44px 0 56px; }
+}

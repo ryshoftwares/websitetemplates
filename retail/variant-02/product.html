@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pop Pink Oversized Hoodie — POP &amp; CO</title>
+<meta name="description" content="Heavyweight oversized hoodie in Pop Pink, POP & CO's signature colorway.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">POP<span>&amp;CO</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul><li><a href="index.html" class="nav-link">Home</a></li><li><a href="shop.html" class="nav-link">Shop</a></li><li><a href="product.html" class="nav-link" aria-current="page">Product</a></li><li><a href="collections.html" class="nav-link">Collections</a></li><li><a href="contact.html" class="nav-link">Contact</a></li></ul>
+    </nav>
+    <div class="header__actions">
+      <a href="shop.html" class="cart-btn" id="cartBtn" aria-label="View cart, 0 items"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6h15l-1.5 9h-12z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M6 6L5 3H2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="9" cy="20" r="1.4" fill="currentColor"/><circle cx="18" cy="20" r="1.4" fill="currentColor"/></svg><span class="cart-count" id="cartCount">0</span></a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="product-detail container">
+    <div class="product-layout">
+      <div class="product-gallery">
+        <div class="product-gallery__main"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=75" alt="Pop Pink oversized hoodie, front view"></div>
+        <div class="thumb-row">
+          <button class="thumb is-active" aria-pressed="true" data-full="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=75"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=200&q=70" alt="Front"></button>
+          <button class="thumb" aria-pressed="false" data-full="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=75"><img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=200&q=70" alt="Detail"></button>
+          <button class="thumb" aria-pressed="false" data-full="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=75"><img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=200&q=70" alt="Styled"></button>
+        </div>
+      </div>
+      <div class="product-info">
+        <span class="product-info__category">Hoodies</span>
+        <h1>Pop Pink Oversized Hoodie</h1>
+        <div class="rating"><span class="stars">★★★★★</span> 4.8 (72 reviews)</div>
+        <div class="product-info__price">$58</div>
+        <p class="product-info__desc">Our heavyweight signature hoodie in Pop Pink — 400gsm brushed fleece, oversized fit, and a kangaroo pocket big enough for everything you actually carry.</p>
+        <ul class="product-info__details">
+          <li>400gsm brushed fleece cotton blend</li>
+          <li>Oversized unisex fit</li>
+          <li>Machine washable</li>
+          <li>Designed in Austin, TX</li>
+        </ul>
+        <div style="margin-bottom:22px;">
+          <p style="font-weight:800; font-size:0.82rem; text-transform:uppercase; margin-bottom:10px;">Size</p>
+          <div class="variant-options" role="group" aria-label="Size">
+            <button class="btn btn--ghost btn--sm variant-btn" aria-pressed="false">S</button>
+            <button class="btn btn--ghost btn--sm variant-btn" aria-pressed="true">M</button>
+            <button class="btn btn--ghost btn--sm variant-btn" aria-pressed="false">L</button>
+            <button class="btn btn--ghost btn--sm variant-btn" aria-pressed="false">XL</button>
+          </div>
+        </div>
+        <div style="display:flex; gap:14px; align-items:center; flex-wrap:wrap;">
+          <div class="qty-stepper"><button type="button" data-step="down" aria-label="Decrease quantity">−</button><input type="text" value="1" inputmode="numeric" aria-label="Quantity"><button type="button" data-step="up" aria-label="Increase quantity">+</button></div>
+          <button type="button" class="btn btn--primary add-to-cart" id="addToCartBtn">Add to cart</button>
+        </div>
+        <p id="addToCartNote" hidden style="color:var(--accent); font-weight:800; margin-top:12px;">Added to cart!</p>
+      </div>
+    </div>
+
+    <section class="related" style="margin-top:70px;">
+      <div class="section__head" data-reveal><p class="eyebrow">Pairs well with</p><h2>Complete the look.</h2></div>
+      <div class="product-grid" data-reveal>
+        <article class="product-card"><div class="product-card__media"><a href="product.html"><img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=400&q=70" alt="Electric blue graphic tee"></a></div><div class="product-card__body"><span class="product-card__category">Tees</span><h3 class="product-card__name">Electric Blue Graphic Tee</h3><div class="product-card__price">$32</div></div></article>
+        <article class="product-card"><div class="product-card__media"><a href="product.html"><img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=400&q=70" alt="Yellow bucket hat"></a></div><div class="product-card__body"><span class="product-card__category">Accessories</span><h3 class="product-card__name">Sunshine Bucket Hat</h3><div class="product-card__price">$24</div></div></article>
+        <article class="product-card"><div class="product-card__media"><a href="product.html"><img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=400&q=70" alt="Rainbow tote bag"></a></div><div class="product-card__body"><span class="product-card__category">Accessories</span><h3 class="product-card__name">Rainbow Tote Bag</h3><div class="product-card__price">$22</div></div></article>
+      </div>
+    </section>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">POP<span>&amp;CO</span></a><p>Bold apparel and accessories for people who'd rather stand out.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li><li><a href="product.html">Product</a></li><li><a href="collections.html">Collections</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:hello@popandco.shop">hello@popandco.shop</a></li><li>Austin, TX</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">Instagram</a></li><li><a href="#">TikTok</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 POP &amp; CO.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hand-Thrown Stoneware Bowl — Marché</title>
+<meta name="description" content="A hand-thrown stoneware bowl in matte cream glaze, made in small batches by studio potter Elin Voss.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">March<span>é</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="shop.html" class="nav-link">Shop</a></li>
+        <li><a href="product.html" class="nav-link" aria-current="page">Product</a></li>
+        <li><a href="collections.html" class="nav-link">Collections</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a href="shop.html" class="cart-btn" id="cartBtn" aria-label="View cart, 0 items">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6h15l-1.5 9h-12z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M6 6L5 3H2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="9" cy="20" r="1.4" fill="currentColor"/><circle cx="18" cy="20" r="1.4" fill="currentColor"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="product-detail container">
+    <div class="product-layout">
+
+      <div class="product-gallery">
+        <div class="product-gallery__main"><img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=75" alt="Hand-thrown stoneware bowl in matte cream glaze, front view"></div>
+        <div class="thumb-row">
+          <button class="thumb is-active" aria-pressed="true" data-full="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=75"><img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=200&q=70" alt="Front view"></button>
+          <button class="thumb" aria-pressed="false" data-full="https://images.unsplash.com/photo-1584589167171-541ce45f1eea?auto=format&fit=crop&w=800&q=75"><img src="https://images.unsplash.com/photo-1584589167171-541ce45f1eea?auto=format&fit=crop&w=200&q=70" alt="Side view"></button>
+          <button class="thumb" aria-pressed="false" data-full="https://images.unsplash.com/photo-1517686748843-bb60efd63d40?auto=format&fit=crop&w=800&q=75"><img src="https://images.unsplash.com/photo-1517686748843-bb60efd63d40?auto=format&fit=crop&w=200&q=70" alt="Styled on table"></button>
+        </div>
+      </div>
+
+      <div class="product-info">
+        <span class="product-info__category">Ceramics</span>
+        <h1>Hand-Thrown Stoneware Bowl</h1>
+        <div class="rating"><span class="stars">★★★★★</span> 4.9 (48 reviews)</div>
+        <div class="product-info__price">$68</div>
+        <p class="product-info__desc">Thrown by hand in small batches by studio potter Elin Voss, this bowl is
+          finished in a matte cream glaze with a subtle reactive edge where the glaze thins near the rim. No
+          two are exactly alike. Food-safe and dishwasher-safe, though hand-washing is recommended to protect
+          the glaze over time.</p>
+
+        <ul class="product-info__details">
+          <li>Stoneware clay, matte glaze finish</li>
+          <li>7.5" diameter × 3" height</li>
+          <li>Microwave and dishwasher safe</li>
+          <li>Made in Providence, RI</li>
+        </ul>
+
+        <div style="margin-bottom: 24px;">
+          <p style="font-weight:700; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:10px;">Glaze</p>
+          <div class="variant-options" role="group" aria-label="Glaze color">
+            <button class="btn btn--ghost btn--sm variant-btn" aria-pressed="true">Matte Cream</button>
+            <button class="btn btn--ghost btn--sm variant-btn" aria-pressed="false">Sage Green</button>
+            <button class="btn btn--ghost btn--sm variant-btn" aria-pressed="false">Slate Blue</button>
+          </div>
+        </div>
+
+        <div style="display:flex; gap:16px; align-items:center; flex-wrap:wrap; margin-bottom: 10px;">
+          <div class="qty-stepper">
+            <button type="button" data-step="down" aria-label="Decrease quantity">−</button>
+            <input type="text" value="1" inputmode="numeric" aria-label="Quantity">
+            <button type="button" data-step="up" aria-label="Increase quantity">+</button>
+          </div>
+          <button type="button" class="btn btn--accent add-to-cart" id="addToCartBtn">Add to cart</button>
+        </div>
+        <p id="addToCartNote" hidden style="color: var(--accent-dark); font-weight:600; font-size:0.9rem;">Added to cart.</p>
+      </div>
+    </div>
+
+    <section class="related" style="margin-top: 80px;">
+      <div class="section__head" data-reveal><p class="eyebrow">You might also like</p><h2>More from Ceramics.</h2></div>
+      <div class="product-grid" data-reveal>
+        <article class="product-card"><div class="product-card__media"><a href="product.html"><img src="https://images.unsplash.com/photo-1517686748843-bb60efd63d40?auto=format&fit=crop&w=400&q=70" alt="Set of glazed stoneware mugs in sage green"></a></div><div class="product-card__body"><span class="product-card__category">Ceramics</span><h3 class="product-card__name"><a href="product.html">Glazed Stoneware Mug Set</a></h3><div class="product-card__price">$58</div></div></article>
+        <article class="product-card"><div class="product-card__media"><a href="product.html"><img src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=400&q=70" alt="Speckled ceramic vase with narrow neck"></a></div><div class="product-card__body"><span class="product-card__category">Ceramics</span><h3 class="product-card__name"><a href="product.html">Speckled Ceramic Vase</a></h3><div class="product-card__price">$76</div></div></article>
+        <article class="product-card"><div class="product-card__media"><a href="product.html"><img src="https://images.unsplash.com/photo-1584589167171-541ce45f1eea?auto=format&fit=crop&w=400&q=70" alt="Sculptural ceramic vase in matte terracotta"></a></div><div class="product-card__body"><span class="product-card__category">Ceramics</span><h3 class="product-card__name"><a href="product.html">Terracotta Vessel</a></h3><div class="product-card__price">$52</div></div></article>
+        <article class="product-card"><div class="product-card__media"><a href="product.html"><img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=400&q=70" alt="Hand-carved oak bowl with natural finish"></a></div><div class="product-card__body"><span class="product-card__category">Objects</span><h3 class="product-card__name"><a href="product.html">Carved Oak Bowl</a></h3><div class="product-card__price">$112</div></div></article>
+      </div>
+    </section>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">March<span>é</span></a><p>An upscale marketplace for home and lifestyle goods from independent makers.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="shop.html">Shop</a></li><li><a href="product.html">Product</a></li><li><a href="collections.html">Collections</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:hello@marche-goods.com">hello@marche-goods.com</a></li><li>Providence, RI</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">Instagram</a></li><li><a href="#">Pinterest</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 Marché.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

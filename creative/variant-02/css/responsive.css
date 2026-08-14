@@ -1,0 +1,93 @@
+/* ==========================================================================
+   WILDFORM — Creative Bold — responsive behavior
+   Breakpoints tested: 1200 / 1024 / 900 / 768 / 480 / 320
+   Collage layout (mixed grid spans, overlap, rotation) is progressively
+   flattened to a calm single-column layout so the site stays usable and
+   legible on smaller screens.
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+  .container { padding: 0 24px; }
+  .stats { grid-template-columns: repeat(2, 1fr); row-gap: 40px; }
+  .hero__title { font-size: clamp(2.4rem, 7vw, 5.2rem); }
+  .hero__art > img { height: 380px; }
+}
+
+@media (max-width: 1024px) {
+  .hero__stack { grid-template-columns: 1fr; }
+  .hero__type { grid-column: auto; grid-row: auto; }
+  .hero__art { grid-column: auto; grid-row: auto; margin-top: 60px; transform: rotate(-2deg); }
+  .hero__art > img { height: 340px; }
+
+  .collage { grid-template-columns: repeat(2, 1fr); }
+  .tile--a, .tile--b, .tile--c { grid-column: auto; grid-row: auto; margin-top: 0; }
+  .tile--a { grid-column: 1 / 3; }
+
+  .values-grid, .team, .process { grid-template-columns: repeat(2, 1fr); }
+  .values-grid .tile, .team__card, .process__step { margin-top: 0 !important; }
+
+  .work-grid { grid-template-columns: repeat(2, 1fr); }
+  .work-card:nth-child(6n+1), .work-card:nth-child(6n+4) { grid-column: span 2; }
+
+  .spotlight { grid-template-columns: 1fr; }
+  .spotlight__art { margin: 0 auto 20px; max-width: 480px; }
+
+  .contact-grid { grid-template-columns: 1fr; }
+  .footer__grid { grid-template-columns: 1fr 1fr; row-gap: 40px; }
+}
+
+@media (max-width: 900px) {
+  .nav {
+    display: none; position: fixed; inset: 82px 0 0 0; background: var(--paper);
+    padding: 40px 32px; z-index: 190; overflow-y: auto; border-top: 3px solid var(--border);
+  }
+  .nav.is-open { display: block; }
+  .nav ul { flex-direction: column; gap: 4px; }
+  .nav-link { display: block; padding: 16px 4px; font-size: 1.15rem; border-bottom: 2px solid var(--border); }
+  .header__cta { display: none; }
+  .nav-toggle { display: flex; }
+
+  .quote-block__mark { font-size: 7rem; top: -40px; }
+}
+
+@media (max-width: 768px) {
+  .section { padding: 68px 0; }
+  .section--tight { padding: 52px 0; }
+  .section__head--split { flex-direction: column; align-items: flex-start; gap: 16px; }
+
+  .collage, .values-grid, .team, .process, .work-grid { grid-template-columns: 1fr; }
+  .tile--a { grid-column: auto; }
+  .work-card:nth-child(6n+1), .work-card:nth-child(6n+4) { grid-column: auto; }
+  .work-card:nth-child(6n+1) .framed > img { height: 220px; }
+
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .marquee-strip { transform: rotate(-1deg) scale(1.01); margin: 40px 0; }
+  .cta-banner { padding: 48px 28px; transform: rotate(-0.8deg); }
+
+  .tile, .values-grid .tile, .process__step, .work-card, .stat {
+    transform: none !important; margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__inner { padding: 14px 20px 0; }
+  .hero { padding: 48px 0 32px; }
+  .hero__title { max-width: none; font-size: clamp(2.1rem, 11vw, 3rem); }
+  .hero__tag { padding: 10px 14px; font-size: 0.72rem; }
+  .hero__actions .btn { width: 100%; justify-content: center; }
+  .stats { grid-template-columns: 1fr; }
+  .team, .process, .values-grid { grid-template-columns: 1fr; }
+  .spotlight__metric { flex-direction: column; gap: 16px; }
+  .form { padding: 26px 20px; }
+  .footer__grid { grid-template-columns: 1fr; }
+  .footer__bottom { flex-direction: column; gap: 8px; }
+  .filter-bar { gap: 10px; }
+  .filter-btn { padding: 10px 16px; font-size: 0.78rem; }
+  .quote-block__mark { display: none; }
+}
+
+@media (max-width: 320px) {
+  .hero__title { font-size: 1.9rem; }
+  .btn { width: 100%; justify-content: center; }
+  .eyebrow { font-size: 0.7rem; }
+}

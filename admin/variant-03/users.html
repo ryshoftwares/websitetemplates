@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clarity Admin — Users</title>
+<meta name="description" content="Manage and search users in Clarity Admin — filter by name or email and sort by any column.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div class="dashboard" id="dashboardRoot">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__brand">
+      <span class="logo-mark" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 12h4l2 6 4-14 3 8h5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span class="logo-text">Clarity <span>Admin</span></span>
+    </div>
+    <nav aria-label="Primary">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="index.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8"/></svg><span class="nav-link__label">Dashboard</span></a></li>
+        <li><a class="nav-link" href="users.html" aria-current="page"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="9" cy="8" r="3.2" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 20c0-3.3 2.7-5.6 5.5-5.6s5.5 2.3 5.5 5.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span class="nav-link__label">Users</span></a></li>
+        <li><a class="nav-link" href="reports.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 20V10M12 20V4M20 20v-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M3 20h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span class="nav-link__label">Reports</span></a></li>
+        <li><a class="nav-link" href="settings.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.8"/><path d="M12 3v2.2M12 18.8V21M4.6 6.6l1.6 1.6M17.8 15.8l1.6 1.6M3 12h2.2M18.8 12H21M4.6 17.4l1.6-1.6M17.8 8.2l1.6-1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span class="nav-link__label">Settings</span></a></li>
+        <li><a class="nav-link" href="profile.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.8"/><path d="M6.5 18.2c1-2.3 3.1-3.6 5.5-3.6s4.5 1.3 5.5 3.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span class="nav-link__label">Profile</span></a></li>
+      </ul>
+    </nav>
+    <div class="sidebar__footer">
+      <button type="button" class="sidebar-collapse-btn" id="sidebarCollapseToggle" aria-expanded="true" aria-label="Collapse sidebar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5l-6 7 6 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="sidebar-collapse-btn__label">Collapse sidebar</span></button>
+    </div>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <div class="dashboard__main">
+    <header class="topbar">
+      <button type="button" class="topbar__toggle" id="sidebarMobileToggle" aria-expanded="false" aria-controls="sidebar" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <form class="topbar__search" role="search">
+        <label for="topbarSearch" class="visually-hidden">Search anything</label>
+        <div class="search-field"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M20 20l-3.2-3.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><input type="text" id="topbarSearch" name="q" placeholder="Search anything…" autocomplete="off"></div>
+      </form>
+      <div class="topbar__actions">
+        <button type="button" class="icon-btn" aria-label="Notifications, 4 unread"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9a6 6 0 1 1 12 0c0 3.6 1.2 5.2 2 6.4a1 1 0 0 1-.8 1.6H4.8a1 1 0 0 1-.8-1.6C4.8 14.2 6 12.6 6 9z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9.5 19.5a2.5 2.5 0 0 0 5 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span class="topbar__badge">4</span></button>
+        <div class="user-menu">
+          <button type="button" class="user-menu__btn" id="userMenuToggle" aria-haspopup="menu" aria-expanded="false" aria-controls="userMenuPanel">
+            <span class="avatar-initials" aria-hidden="true">RH</span>
+            <span class="user-menu__info"><span class="user-menu__name">Rowan Hale</span><span class="user-menu__role">Operations Lead</span></span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 8l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="user-menu__panel" id="userMenuPanel" role="menu"><a href="profile.html" role="menuitem">Profile</a><a href="settings.html" role="menuitem">Settings</a><hr><button type="button" role="menuitem">Log out</button></div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <div class="page-header">
+        <div><h1>Users</h1><p>247 total users across all plans.</p></div>
+        <div class="page-actions"><button type="button" class="btn btn--ghost">Import</button><button type="button" class="btn btn--primary">Invite user</button></div>
+      </div>
+
+      <div class="toolbar">
+        <div class="toolbar__search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M20 20l-3.2-3.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <label for="userSearch" class="visually-hidden">Search users by name or email</label>
+          <input type="text" id="userSearch" placeholder="Search by name or email…" autocomplete="off">
+        </div>
+        <span class="toolbar__count" id="usersResultsCount">Showing 10 of 10 users</span>
+      </div>
+
+      <div class="table-scroll">
+        <table class="data-table" id="usersTable">
+          <thead>
+            <tr>
+              <th data-sort-key="name"><button type="button" class="th-sort-btn">Name <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></th>
+              <th data-sort-key="email"><button type="button" class="th-sort-btn">Email <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></th>
+              <th data-sort-key="role"><button type="button" class="th-sort-btn">Role <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></th>
+              <th>Status</th>
+              <th data-sort-key="joined"><button type="button" class="th-sort-btn">Joined <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-name="Nadia Fontaine" data-email="nadia.fontaine@mail.com" data-role="Admin" data-joined="2024-02-11"><td>Nadia Fontaine</td><td>nadia.fontaine@mail.com</td><td>Admin</td><td><span class="badge badge--success">Active</span></td><td>Feb 11, 2024</td></tr>
+            <tr data-name="Grant Whitfield" data-email="grant.w@mail.com" data-role="Member" data-joined="2024-05-03"><td>Grant Whitfield</td><td>grant.w@mail.com</td><td>Member</td><td><span class="badge badge--success">Active</span></td><td>May 3, 2024</td></tr>
+            <tr data-name="Sofia Marchetti" data-email="sofia.m@mail.com" data-role="Member" data-joined="2024-07-22"><td>Sofia Marchetti</td><td>sofia.m@mail.com</td><td>Member</td><td><span class="badge badge--warning">Invited</span></td><td>Jul 22, 2024</td></tr>
+            <tr data-name="Elias Brandt" data-email="elias.brandt@mail.com" data-role="Billing" data-joined="2024-09-14"><td>Elias Brandt</td><td>elias.brandt@mail.com</td><td>Billing</td><td><span class="badge badge--success">Active</span></td><td>Sep 14, 2024</td></tr>
+            <tr data-name="Wren Castellano" data-email="wren.c@mail.com" data-role="Member" data-joined="2024-11-02"><td>Wren Castellano</td><td>wren.c@mail.com</td><td>Member</td><td><span class="badge badge--danger">Suspended</span></td><td>Nov 2, 2024</td></tr>
+            <tr data-name="Marcus Iyer" data-email="marcus.iyer@mail.com" data-role="Admin" data-joined="2025-01-19"><td>Marcus Iyer</td><td>marcus.iyer@mail.com</td><td>Admin</td><td><span class="badge badge--success">Active</span></td><td>Jan 19, 2025</td></tr>
+            <tr data-name="Odalys Reyes" data-email="odalys.reyes@mail.com" data-role="Member" data-joined="2025-03-08"><td>Odalys Reyes</td><td>odalys.reyes@mail.com</td><td>Member</td><td><span class="badge badge--success">Active</span></td><td>Mar 8, 2025</td></tr>
+            <tr data-name="Callum Baptiste" data-email="callum.b@mail.com" data-role="Member" data-joined="2025-05-27"><td>Callum Baptiste</td><td>callum.b@mail.com</td><td>Member</td><td><span class="badge badge--warning">Invited</span></td><td>May 27, 2025</td></tr>
+            <tr data-name="Priya Nadar" data-email="priya.nadar@mail.com" data-role="Billing" data-joined="2025-08-15"><td>Priya Nadar</td><td>priya.nadar@mail.com</td><td>Billing</td><td><span class="badge badge--success">Active</span></td><td>Aug 15, 2025</td></tr>
+            <tr data-name="Owen Frasier" data-email="owen.frasier@mail.com" data-role="Member" data-joined="2025-12-01"><td>Owen Frasier</td><td>owen.frasier@mail.com</td><td>Member</td><td><span class="badge badge--success">Active</span></td><td>Dec 1, 2025</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

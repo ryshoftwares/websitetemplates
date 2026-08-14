@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Visit — VitalCare+</title>
+<meta name="description" content="Request a video or in-person visit with VitalCare+. Choose your provider or service, pick a preferred date, and we'll confirm your appointment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Vital<span>Care+</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="doctors.html" class="nav-link">Care Team</a></li>
+        <li><a href="appointment.html" class="nav-link" aria-current="page">Book a Visit</a></li>
+      </ul>
+    </nav>
+    <a href="appointment.html" class="btn btn--primary header__cta">Book a visit</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" style="padding-bottom: 40px;">
+    <div class="container">
+      <p class="eyebrow" data-reveal>Book a visit</p>
+      <h1 class="hero__title" style="max-width: 16ch;" data-reveal>Let's get you on the calendar.</h1>
+      <p class="hero__lead" data-reveal>Fill out the request below and our care coordination team will
+        confirm your provider, date and visit type — usually within a few hours.</p>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container contact-grid">
+
+      <div data-reveal>
+        <div class="contact-info__item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 7l9 6 9-6M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h3>Email</h3><a href="mailto:hello@vitalcareplus.com">hello@vitalcareplus.com</a></div>
+        </div>
+        <div class="contact-info__item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.99.36 1.96.68 2.89a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.19-1.27a2 2 0 012.11-.45c.93.32 1.9.55 2.89.68A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h3>Phone</h3><a href="tel:+18335550199">+1 (833) 555-0199</a></div>
+        </div>
+        <div class="contact-info__item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1118 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+          <div><h3>In-person hub</h3><p>118 Harbor Loop, Suite 200, Seattle, WA 98101</p></div>
+        </div>
+        <div class="contact-info__item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <div><h3>Availability</h3><p>Video visits daily, 7am–11pm · In-person Mon–Sat</p></div>
+        </div>
+        <p class="text-muted" style="margin-top: 24px; font-size: 0.9rem;">If you're experiencing a medical
+          emergency, call 911 or go to your nearest emergency room. This form is for scheduling non-urgent
+          visits only.</p>
+      </div>
+
+      <div data-reveal>
+        <form class="form" id="appointmentForm" novalidate>
+          <div class="form__success" id="formSuccess" role="status">Thanks — your visit request is in. A
+            care coordinator will confirm your provider, date and visit type shortly.</div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="fullName">Full name</label>
+              <input type="text" id="fullName" name="fullName" required autocomplete="name">
+              <small class="error">Please enter your full name.</small>
+            </div>
+            <div class="field">
+              <label for="dob">Date of birth</label>
+              <input type="date" id="dob" name="dob" required>
+              <small class="error">Please enter your date of birth.</small>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+              <small class="error">Please enter a valid email address.</small>
+            </div>
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="(833) 555-0100">
+              <small class="error">Please enter a valid phone number.</small>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="department">Service or provider</label>
+            <select id="department" name="department" required>
+              <option value="">Select one</option>
+              <option value="primary-care">Primary Care — Dr. Fenwick / Marcus Webb</option>
+              <option value="pediatrics">Pediatric Telehealth — Dr. Park</option>
+              <option value="mental-health">Mental Health Therapy — Dana Whitfield</option>
+              <option value="psychiatric">Psychiatric Care — Priya Chandran</option>
+              <option value="chronic-care">Chronic Condition Check-In — Dr. Batista</option>
+              <option value="urgent">Urgent Virtual Care — next available provider</option>
+              <option value="no-preference">No preference / not sure</option>
+            </select>
+            <small class="error">Please select a service or provider.</small>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="preferredDate">Preferred date</label>
+              <input type="date" id="preferredDate" name="preferredDate" required>
+              <small class="error">Please choose a preferred date.</small>
+            </div>
+            <div class="field">
+              <fieldset>
+                <legend>Preferred time</legend>
+                <div class="radio-group">
+                  <label><input type="radio" name="preferredTime" value="morning" required> Morning</label>
+                  <label><input type="radio" name="preferredTime" value="afternoon"> Afternoon</label>
+                  <label><input type="radio" name="preferredTime" value="evening"> Evening</label>
+                </div>
+              </fieldset>
+              <small class="error">Please select a preferred time of day.</small>
+            </div>
+          </div>
+
+          <div class="field">
+            <fieldset>
+              <legend>Visit type</legend>
+              <div class="radio-group">
+                <label><input type="radio" name="visitType" value="video" required checked> Video visit</label>
+                <label><input type="radio" name="visitType" value="in-person"> In-person at our Seattle hub</label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="field">
+            <label for="notes">What's going on? <span class="hint">(optional)</span></label>
+            <textarea id="notes" name="notes" placeholder="A few details help your provider prepare for your visit."></textarea>
+          </div>
+
+          <div class="field">
+            <label style="display:flex; align-items:flex-start; gap:10px; font-weight:500; font-family:var(--font-body);">
+              <input type="checkbox" id="consent" name="consent" required style="width:auto; margin-top:3px;">
+              <span>I understand this is a visit request, not a confirmed appointment, and that a VitalCare+
+                coordinator will contact me to confirm the details.</span>
+            </label>
+            <small class="error">Please confirm you understand before submitting.</small>
+          </div>
+
+          <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center;">Submit request</button>
+          <p class="form__note">Most requests are confirmed within a few hours. For same-day urgent care,
+            call us directly at (833) 555-0199.</p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a href="index.html" class="logo">Vital<span>Care+</span></a>
+      <p>Virtual and in-person care built around your schedule, not a waiting room.</p>
+    </div>
+    <nav class="footer__col" aria-label="Sitemap">
+      <h3>Sitemap</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="doctors.html">Care Team</a></li>
+        <li><a href="appointment.html">Book a Visit</a></li>
+      </ul>
+    </nav>
+    <div class="footer__col">
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="mailto:hello@vitalcareplus.com">hello@vitalcareplus.com</a></li>
+        <li><a href="tel:+18335550199">+1 (833) 555-0199</a></li>
+        <li>Seattle, WA · Serving WA, OR &amp; ID</li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h3>Follow</h3>
+      <ul class="social">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">X / Twitter</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <p>© 2026 VitalCare+, Inc. All rights reserved.</p>
+    <p><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

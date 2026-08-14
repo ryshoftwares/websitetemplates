@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact ProServe — Request a Facilities &amp; IT Support Proposal</title>
+<meta name="description" content="Request a proposal from ProServe for facilities maintenance, IT helpdesk support, or a combined multi-site services contract.">
+<meta property="og:title" content="Contact ProServe">
+<meta property="og:description" content="Request a custom facilities and IT support proposal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Pro<span>Serve</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="btn btn--primary header__cta">Request a Proposal</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" style="padding-bottom: 40px;">
+    <div class="container" style="max-width: 760px;">
+      <p class="eyebrow" data-reveal>Request a proposal</p>
+      <h1 class="hero__title" data-reveal>Let's scope your sites.</h1>
+      <p class="hero__lead" data-reveal>Tell us about your locations and current coverage. We'll follow up
+        within one business day to schedule a short audit and send a proposal.</p>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container contact-grid">
+
+      <div data-reveal>
+        <div class="contact-info__item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.99.36 1.97.67 2.91a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.17-1.24a2 2 0 0 1 2.11-.45c.94.31 1.92.54 2.91.67A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h3>Call</h3><p><a href="tel:+13125550177">(312) 555-0177</a></p></div>
+        </div>
+        <div class="contact-info__item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m4 6 8 7 8-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h3>Email</h3><p><a href="mailto:proposals@proserve.com">proposals@proserve.com</a></p></div>
+        </div>
+        <div class="contact-info__item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="2"/></svg>
+          <div><h3>Headquarters</h3><p>Chicago, IL — serving client sites across IL, WI, IN, MI and OH.</p></div>
+        </div>
+        <div class="contact-info__item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h3>Availability</h3><p>IT helpdesk staffed 24/7. Facilities response within 4 business hours in the Chicago metro.</p></div>
+        </div>
+      </div>
+
+      <div data-reveal>
+        <div id="formSuccess" class="form__success" role="status">Thank you — your request has been received. An account manager will contact you within one business day to schedule a site audit.</div>
+        <form class="form" id="contactForm" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+              <small class="error">Please enter your name.</small>
+            </div>
+            <div class="field">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" required autocomplete="organization">
+              <small class="error">Please enter your company name.</small>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+              <small class="error">Please enter a valid email address.</small>
+            </div>
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" required autocomplete="tel">
+              <small class="error">Please enter a phone number.</small>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="service">Service type</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="Facilities Maintenance">Facilities Maintenance</option>
+                <option value="IT Helpdesk & Support">IT Helpdesk &amp; Support</option>
+                <option value="Network & Infrastructure Management">Network &amp; Infrastructure Management</option>
+                <option value="Janitorial & Custodial Services">Janitorial &amp; Custodial Services</option>
+                <option value="Combined Facilities + IT">Combined Facilities + IT</option>
+              </select>
+              <small class="error">Please select a service type.</small>
+            </div>
+            <div class="field">
+              <label for="locations">Number of locations</label>
+              <input type="number" id="locations" name="locations" min="1" required placeholder="e.g. 6">
+              <small class="error">Please enter the number of locations.</small>
+            </div>
+          </div>
+          <div class="field">
+            <label for="details">Tell us about your current coverage</label>
+            <textarea id="details" name="details" required placeholder="Current vendors, pain points, and where your sites are located."></textarea>
+            <small class="error">Please add a few details about your project.</small>
+          </div>
+          <button type="submit" class="btn btn--primary">Request a Proposal</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">Pro<span>Serve</span></a><p>Combined facilities and IT support for multi-site businesses across the Midwest.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:proposals@proserve.com">proposals@proserve.com</a></li><li><a href="tel:+13125550177">(312) 555-0177</a></li><li>Chicago, IL · Serving the Midwest</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">LinkedIn</a></li><li><a href="#">X / Twitter</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 ProServe Solutions, Inc.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

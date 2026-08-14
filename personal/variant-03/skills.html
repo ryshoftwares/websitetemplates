@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills — Sam Rivera</title>
+<meta name="description" content="Languages, tools and systems experience behind Sam Rivera's backend engineering work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Sam<span>Rivera</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="skills.html" class="nav-link" aria-current="page">Skills</a></li>
+        <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="btn btn--primary header__cta">Work with me</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" style="padding-bottom: 56px;">
+    <div class="container hero__grid">
+      <p class="eyebrow" data-reveal>Skills</p>
+      <h1 class="hero__title" data-reveal>Nine years, condensed into a table.</h1>
+      <p class="hero__lead" data-reveal>Backend-focused, with enough infrastructure and frontend experience to ship a full product when needed.</p>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="skill-table" data-reveal>
+        <div class="skill-row" style="--fill: 95%;"><span class="skill-row__name">API Design (REST/GraphQL)</span><div class="skill-row__track"><div class="skill-row__fill"></div></div><span class="skill-row__pct">95%</span></div>
+        <div class="skill-row" style="--fill: 92%;"><span class="skill-row__name">PostgreSQL &amp; Database Design</span><div class="skill-row__track"><div class="skill-row__fill"></div></div><span class="skill-row__pct">92%</span></div>
+        <div class="skill-row" style="--fill: 88%;"><span class="skill-row__name">Node.js / TypeScript</span><div class="skill-row__track"><div class="skill-row__fill"></div></div><span class="skill-row__pct">88%</span></div>
+        <div class="skill-row" style="--fill: 80%;"><span class="skill-row__name">Cloud Infrastructure (AWS)</span><div class="skill-row__track"><div class="skill-row__fill"></div></div><span class="skill-row__pct">80%</span></div>
+        <div class="skill-row" style="--fill: 68%;"><span class="skill-row__name">Frontend (React)</span><div class="skill-row__track"><div class="skill-row__fill"></div></div><span class="skill-row__pct">68%</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section__head" data-reveal><span class="eyebrow">Tools I reach for</span><h2>The regulars.</h2></div>
+      <div class="chip-cloud" data-reveal>
+        <span class="chip">PostgreSQL</span><span class="chip">Node.js</span><span class="chip">TypeScript</span><span class="chip">Docker</span><span class="chip">AWS</span><span class="chip">Redis</span><span class="chip">GitHub Actions</span><span class="chip">Terraform</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section"><div class="container"><div class="cta-banner" data-reveal><h2>Need this exact toolkit on your project?</h2><a href="contact.html" class="btn btn--ghost">Get in touch</a></div></div></section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">Sam<span>Rivera</span></a><p>Backend systems and fractional engineering for early-stage startups.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="skills.html">Skills</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:sam@samrivera.dev">sam@samrivera.dev</a></li><li>Denver, CO · Remote</li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 Sam Rivera.</p><p><a href="#">GitHub</a> · <a href="#">LinkedIn</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

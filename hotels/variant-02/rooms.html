@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rooms &amp; Suites — Solara Resort</title>
+<meta name="description" content="Explore Solara Resort's rooms and suites in Tulum, Mexico — Jungle Casitas, Beach Bungalows, and rooftop Sky Suites with private plunge pools.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Solara <span>Resort</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="rooms.html" class="nav-link" aria-current="page">Rooms</a></li>
+        <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="booking.html" class="nav-link">Booking</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a href="booking.html" class="btn btn--accent btn--sm">Check Availability</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section--tight container" style="padding-bottom:0;">
+    <p class="eyebrow" data-reveal>Rooms &amp; Suites</p>
+    <h1 style="font-size:clamp(2.2rem,4vw,3.2rem); max-width:22ch;" data-reveal>28 rooms, none of them shy.</h1>
+    <p class="text-muted" style="margin-top:16px; max-width:60ch;" data-reveal>Every casita, bungalow and suite was hand-finished in 2022 — terrazzo floors, a mural by a different local artist in each room, and a hammock or plunge pool somewhere close by.</p>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="room-filters" data-reveal>
+        <button type="button" class="room-filter-btn" data-filter="all" aria-pressed="true">All Rooms</button>
+        <button type="button" class="room-filter-btn" data-filter="casita" aria-pressed="false">Jungle Casita</button>
+        <button type="button" class="room-filter-btn" data-filter="bungalow" aria-pressed="false">Beach Bungalow</button>
+        <button type="button" class="room-filter-btn" data-filter="suite" aria-pressed="false">Sky Suite</button>
+      </div>
+
+      <div class="grid-3" id="roomGrid">
+        <article class="room-card" data-type="casita" data-reveal>
+          <div class="room-card__media"><img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=500&q=75" alt="Jungle Casita Sencilla with queen bed and hand-painted mural wall"></div>
+          <div class="room-card__body">
+            <h3>Jungle Casita Sencilla</h3>
+            <div class="room-card__meta"><span>22 m²</span><span>Queen bed</span><span>Jungle view</span></div>
+            <p>Our entry-level casita, shaded by palms with a mural hand-painted by a local artist.</p>
+            <div class="room-card__footer"><div class="room-card__price">$185 <span>/ night</span></div><a href="booking.html" class="btn btn--ghost btn--sm">Book</a></div>
+          </div>
+        </article>
+        <article class="room-card" data-type="casita" data-reveal>
+          <div class="room-card__media"><img src="https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=500&q=75" alt="Jungle Casita Doble with twin beds and shuttered windows"></div>
+          <div class="room-card__body">
+            <h3>Jungle Casita Doble</h3>
+            <div class="room-card__meta"><span>24 m²</span><span>Twin beds</span><span>Courtyard view</span></div>
+            <p>Two queen beds facing our palapa-shaded courtyard — a favorite for friends traveling together.</p>
+            <div class="room-card__footer"><div class="room-card__price">$205 <span>/ night</span></div><a href="booking.html" class="btn btn--ghost btn--sm">Book</a></div>
+          </div>
+        </article>
+        <article class="room-card" data-type="bungalow" data-reveal>
+          <div class="room-card__media"><span class="room-card__badge">Most booked</span><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=500&q=75" alt="Beach Bungalow Vista with king bed and ocean-view terrace"></div>
+          <div class="room-card__body">
+            <h3>Beach Bungalow Vista</h3>
+            <div class="room-card__meta"><span>30 m²</span><span>King bed</span><span>Ocean view</span></div>
+            <p>A private terrace looking straight over the beach club, close enough to hear the waves.</p>
+            <div class="room-card__footer"><div class="room-card__price">$310 <span>/ night</span></div><a href="booking.html" class="btn btn--ghost btn--sm">Book</a></div>
+          </div>
+        </article>
+        <article class="room-card" data-type="bungalow" data-reveal>
+          <div class="room-card__media"><img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=500&q=75" alt="Beach Bungalow Frente al Mar with wraparound windows facing the sand"></div>
+          <div class="room-card__body">
+            <h3>Beach Bungalow Frente al Mar</h3>
+            <div class="room-card__meta"><span>34 m²</span><span>King bed</span><span>Steps to sand</span></div>
+            <p>The closest room to the water — walk out the door and your feet are in the sand.</p>
+            <div class="room-card__footer"><div class="room-card__price">$365 <span>/ night</span></div><a href="booking.html" class="btn btn--ghost btn--sm">Book</a></div>
+          </div>
+        </article>
+        <article class="room-card" data-type="suite" data-reveal>
+          <div class="room-card__media"><span class="room-card__badge">Top rated</span><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=500&q=75&sat=20" alt="Sky Suite Horizonte with private rooftop plunge pool"></div>
+          <div class="room-card__body">
+            <h3>Sky Suite Horizonte</h3>
+            <div class="room-card__meta"><span>46 m²</span><span>King bed</span><span>Rooftop plunge pool</span></div>
+            <p>Your own plunge pool above the treeline, with a hammock strung up for sunset.</p>
+            <div class="room-card__footer"><div class="room-card__price">$520 <span>/ night</span></div><a href="booking.html" class="btn btn--ghost btn--sm">Book</a></div>
+          </div>
+        </article>
+        <article class="room-card" data-type="suite" data-reveal>
+          <div class="room-card__media"><img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=500&q=75&sat=15" alt="Sky Suite Panorámica living area with wraparound terrace"></div>
+          <div class="room-card__body">
+            <h3>Sky Suite Panorámica</h3>
+            <div class="room-card__meta"><span>58 m²</span><span>King bed + daybed</span><span>Wraparound terrace</span></div>
+            <p>A two-room suite with a wraparound terrace and a second plunge pool — ideal for four.</p>
+            <div class="room-card__footer"><div class="room-card__price">$610 <span>/ night</span></div><a href="booking.html" class="btn btn--ghost btn--sm">Book</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--surface">
+    <div class="container" style="max-width:640px; text-align:center;" data-reveal>
+      <h2 style="margin-bottom:16px;">Not sure which room fits your trip?</h2>
+      <p class="text-muted" style="margin-bottom:26px;">Tell our reservations team what you're after — a beach view, a plunge pool, a quiet jungle corner — and we'll match you.</p>
+      <a href="booking.html" class="btn btn--accent">Check Availability</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">Solara <span>Resort</span></a><p>A design-forward beach resort in Tulum, Mexico — 28 rooms between the jungle and the sea, open since 2016.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="rooms.html">Rooms</a></li><li><a href="amenities.html">Amenities</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="booking.html">Booking</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:reservations@solararesort.mx">reservations@solararesort.mx</a></li><li>+52 984 555 0182</li><li>Zona Costera, Tulum, Quintana Roo, Mexico</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">Instagram</a></li><li><a href="#">TikTok</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 Solara Resort.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

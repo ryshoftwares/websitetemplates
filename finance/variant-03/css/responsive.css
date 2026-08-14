@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Northbridge Advisory — Minimal Professional — responsive behavior
+   Breakpoints tested: 1440 / 1024 / 768 / 375 / 320
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+  .container { padding: 0 22px; }
+}
+
+@media (max-width: 1024px) {
+  .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .process { grid-template-columns: repeat(2, 1fr); }
+  .team { grid-template-columns: repeat(2, 1fr); }
+  .spotlight { grid-template-columns: 1fr; }
+  .spotlight img { height: 260px; }
+  .insight-item { grid-template-columns: 140px 1fr; }
+  .insight-item__date { grid-column: 1 / -1; text-align: left; display: flex; gap: 10px; align-items: baseline; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .footer__grid { grid-template-columns: 1fr 1fr; row-gap: 32px; }
+}
+
+@media (max-width: 900px) {
+  .nav { display: none; position: fixed; inset: 66px 0 0 0; background: var(--background); padding: 36px 28px; z-index: 90; overflow-y: auto; }
+  .nav.is-open { display: block; }
+  .nav ul { flex-direction: column; gap: 4px; }
+  .nav-link { display: block; padding: 15px 4px; font-size: 1.1rem; border-bottom: 1px solid var(--border); }
+  .header__cta { display: none; }
+  .nav-toggle { display: flex; }
+}
+
+@media (max-width: 768px) {
+  .section { padding: 60px 0; }
+  .section--tight { padding: 46px 0; }
+  .section__head--split { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .grid-3, .grid-4, .grid-2 { grid-template-columns: 1fr; }
+  .marquee__logos { justify-content: flex-start; gap: 22px; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .insight-item { grid-template-columns: 1fr; }
+  .insight-item img { height: 170px; }
+  .cta-banner { flex-direction: column; align-items: flex-start; padding: 36px 26px; }
+}
+
+@media (max-width: 480px) {
+  .header__inner { padding: 14px 0; }
+  .hero { padding: 48px 0 52px; }
+  .hero__actions .btn { width: 100%; justify-content: center; }
+  .stats { grid-template-columns: 1fr; }
+  .team { grid-template-columns: 1fr; }
+  .spotlight__metric { flex-direction: column; gap: 14px; }
+  .form { padding: 24px 18px; }
+  .footer__grid { grid-template-columns: 1fr; }
+  .footer__bottom { flex-direction: column; gap: 8px; }
+}
+
+@media (max-width: 320px) {
+  .hero__title { font-size: 1.85rem; }
+  .btn { width: 100%; justify-content: center; }
+}

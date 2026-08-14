@@ -1,0 +1,68 @@
+/* ==========================================================================
+   Solara Resort — responsive breakpoints
+   ========================================================================== */
+
+@media (max-width: 1180px) {
+  .booking-bar { grid-template-columns: repeat(2, 1fr); }
+  .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+  .hero__sticker { width: 108px; height: 108px; font-size: 0.8rem; top: 24px; right: 24px; }
+}
+
+@media (max-width: 1024px) {
+  .header__inner { padding: 16px 24px; }
+  .nav { display: none; }
+  .nav-toggle { display: flex; }
+  .nav.is-open {
+    display: block; position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--surface); border-bottom: 3px solid var(--ink);
+    padding: 12px 24px 20px; box-shadow: 0 20px 30px -25px rgba(36,18,6,0.35);
+  }
+  .nav.is-open ul { flex-direction: column; gap: 4px; }
+  .nav.is-open .nav-link { display: block; padding: 12px 0; }
+
+  .hero { height: auto; min-height: 540px; padding-top: 90px; }
+  .booking-bar { margin-top: 32px; grid-template-columns: 1fr 1fr; }
+
+  .intro-split { grid-template-columns: 1fr; gap: 36px; }
+  .intro-split img { height: 320px; }
+
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .section { padding: 80px 0; }
+
+  .booking-layout { grid-template-columns: 1fr; }
+  .booking-summary { position: static; }
+
+  .footer__grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+}
+
+@media (max-width: 860px) {
+  .container { padding: 0 22px; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .lightbox__prev, .lightbox__next { display: none; }
+  .hero__sticker { display: none; }
+}
+
+@media (max-width: 640px) {
+  .header__inner { padding: 14px 18px; }
+  .hero__lead { font-size: 1.02rem; }
+  .booking-bar { grid-template-columns: 1fr; padding: 24px; }
+  .booking-bar .btn { width: 100%; justify-content: center; }
+
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .room-filters, .gallery-grid__cat { overflow-x: auto; flex-wrap: nowrap; padding-bottom: 6px; }
+
+  .booking-form { padding: 26px; }
+  .booking-form__row { grid-template-columns: 1fr; }
+  .booking-summary { padding: 26px; transform: none; }
+
+  .footer__grid { grid-template-columns: 1fr; }
+  .footer__bottom { flex-direction: column; gap: 10px; text-align: center; }
+
+  .marquee-strip__track span { font-size: 1rem; }
+}
+
+@media (max-width: 380px) {
+  .section { padding: 60px 0; }
+  .hero__title { font-size: 2.2rem; }
+  .card, .room-card { transform: none !important; }
+}

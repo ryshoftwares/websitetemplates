@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rooms & Lofts — The Stay</title>
+<meta name="description" content="Explore The Stay's rooms and lofts in Nordhavn, Copenhagen — Studio Rooms, Loft Rooms and Suites inside a restored 1921 grain warehouse.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">The <span>Stay</span></a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="rooms.html" class="nav-link" aria-current="page">Rooms</a></li>
+        <li><a href="amenities.html" class="nav-link">Amenities</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="booking.html" class="nav-link">Booking</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a href="booking.html" class="btn btn--accent btn--sm">Check Availability</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section--tight container" style="padding-bottom:0;">
+    <p class="eyebrow" data-reveal>Rooms &amp; Lofts</p>
+    <h1 style="font-size:clamp(2rem,3.8vw,2.9rem); max-width:20ch;" data-reveal>Six rooms. No two are trying to impress you.</h1>
+    <p class="text-muted" style="margin-top:14px; max-width:60ch;" data-reveal>All 42 rooms and lofts share the same materials — oak floors, wool blankets, unlacquered brass — in three sizes, from a plain city studio to a corner suite over the water.</p>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="room-filters" data-reveal>
+        <button type="button" class="room-filter-btn" data-filter="all" aria-pressed="true">All Rooms</button>
+        <button type="button" class="room-filter-btn" data-filter="studio" aria-pressed="false">Studio</button>
+        <button type="button" class="room-filter-btn" data-filter="loft" aria-pressed="false">Loft</button>
+        <button type="button" class="room-filter-btn" data-filter="suite" aria-pressed="false">Suite</button>
+      </div>
+
+      <div class="grid-3" id="roomGrid">
+        <article class="room-card" data-type="studio" data-reveal>
+          <div class="room-card__media"><img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=500&q=75" alt="Studio Room with oak floors and a queen bed facing the window"></div>
+          <div class="room-card__body">
+            <h3>Studio Room</h3>
+            <div class="room-card__meta"><span>22 m²</span><span>Queen bed</span><span>City view</span></div>
+            <p>Our smallest room — plain, well-lit, and quiet, on the upper floors facing the street.</p>
+            <div class="room-card__footer"><div class="room-card__price">1,450 kr <span>/ night</span></div><a href="booking.html" class="btn btn--ghost btn--sm">Book</a></div>
+          </div>
+        </article>
+        <article class="room-card" data-type="studio" data-reveal>
+          <div class="room-card__media"><img src="https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=500&q=75" alt="Studio Room with a courtyard view and shuttered windows"></div>
+          <div class="room-card__body">
+            <h3>Studio Room, Courtyard</h3>
+            <div class="room-card__meta"><span>24 m²</span><span>Queen bed</span><span>Courtyard view</span></div>
+            <p>The same plain studio, one floor down, facing our small internal courtyard instead of the street.</p>
+            <div class="room-card__footer"><div class="room-card__price">1,550 kr <span>/ night</span></div><a href="booking.html" class="btn btn--ghost btn--sm">Book</a></div>
+          </div>
+        </article>
+        <article class="room-card" data-type="loft" data-reveal>
+          <div class="room-card__media"><span class="room-card__badge">Most booked</span><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=500&q=75" alt="Loft Room with double-height ceiling, exposed steel beam and king bed"></div>
+          <div class="room-card__body">
+            <h3>Loft Room</h3>
+            <div class="room-card__meta"><span>30 m²</span><span>King bed</span><span>Double-height ceiling</span></div>
+            <p>The original warehouse ceiling height, kept intact, with a reading corner tucked under a steel beam.</p>
+            <div class="room-card__footer"><div class="room-card__price">1,950 kr <span>/ night</span></div><a href="booking.html" class="btn btn--ghost btn--sm">Book</a></div>
+          </div>
+        </article>
+        <article class="room-card" data-type="loft" data-reveal>
+          <div class="room-card__media"><img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=500&q=75" alt="Corner Loft with tall windows and a mezzanine reading nook"></div>
+          <div class="room-card__body">
+            <h3>Corner Loft</h3>
+            <div class="room-card__meta"><span>34 m²</span><span>King bed</span><span>Mezzanine nook</span></div>
+            <p>A corner room with a small raised mezzanine, built into what used to be a grain chute.</p>
+            <div class="room-card__footer"><div class="room-card__price">2,150 kr <span>/ night</span></div><a href="booking.html" class="btn btn--ghost btn--sm">Book</a></div>
+          </div>
+        </article>
+        <article class="room-card" data-type="suite" data-reveal>
+          <div class="room-card__media"><span class="room-card__badge">Top rated</span><img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=500&q=75" alt="Corner Suite with wraparound windows looking over the harbour"></div>
+          <div class="room-card__body">
+            <h3>Corner Suite</h3>
+            <div class="room-card__meta"><span>42 m²</span><span>King bed</span><span>Corner windows</span></div>
+            <p>Two exposures over the water, a small sitting area, and the quietest corner of the building.</p>
+            <div class="room-card__footer"><div class="room-card__price">2,650 kr <span>/ night</span></div><a href="booking.html" class="btn btn--ghost btn--sm">Book</a></div>
+          </div>
+        </article>
+        <article class="room-card" data-type="suite" data-reveal>
+          <div class="room-card__media"><img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=500&q=75" alt="Harbour Suite with a private terrace and daybed overlooking the water"></div>
+          <div class="room-card__body">
+            <h3>Harbour Suite</h3>
+            <div class="room-card__meta"><span>52 m²</span><span>King bed + daybed</span><span>Private terrace</span></div>
+            <p>Our largest room, with a private terrace over the harbour — the one guests ask for by name.</p>
+            <div class="room-card__footer"><div class="room-card__price">3,200 kr <span>/ night</span></div><a href="booking.html" class="btn btn--ghost btn--sm">Book</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--surface">
+    <div class="container" style="max-width:640px; text-align:center;" data-reveal>
+      <h2 style="margin-bottom:14px;">Not sure which room is right for you?</h2>
+      <p class="text-muted" style="margin-bottom:24px;">Write to the front desk and we'll match a room to your dates, floor preference, and how much quiet you need.</p>
+      <a href="booking.html" class="btn btn--accent">Check Availability</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">The <span>Stay</span></a><p>A 42-room hotel inside a restored 1921 grain warehouse on Copenhagen's harbour, open since 2019.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="rooms.html">Rooms</a></li><li><a href="amenities.html">Amenities</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="booking.html">Booking</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:hello@thestay.dk">hello@thestay.dk</a></li><li>+45 32 12 34 56</li><li>Sundkrogsgade 8, 2150 Nordhavn</li></ul></div>
+    <div class="footer__col"><h3>Follow</h3><ul><li><a href="#">Instagram</a></li><li><a href="#">LinkedIn</a></li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 The Stay.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

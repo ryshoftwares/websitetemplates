@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plainly — Budgeting Without the Spreadsheet</title>
+<meta name="description" content="Plainly is a simple budgeting app that shows exactly where your money goes each month, without a single spreadsheet.">
+<meta property="og:title" content="Plainly — Budgeting Without the Spreadsheet">
+<meta property="og:description" content="See where your money goes. Nothing else.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Plainly</a>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+        <li><a href="features.html" class="nav-link">Features</a></li>
+        <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+        <li><a href="download.html" class="nav-link">Download</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="download.html" class="btn btn--primary">Get Plainly</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero container">
+    <div class="hero__grid">
+      <div data-reveal>
+        <p class="eyebrow">Simple budgeting</p>
+        <h1 class="hero__title">See where your money goes. Nothing else.</h1>
+        <p class="hero__lead">Plainly connects to your accounts and sorts every transaction into a plain-language budget — no spreadsheets, no jargon, no upsells for features you don't need.</p>
+        <div class="hero__actions"><a href="download.html" class="btn btn--primary">Download free</a><a href="features.html" class="btn btn--ghost">See features</a></div>
+        <div class="store-badges">
+          <a href="#" class="store-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 12.5c0-2.2 1.8-3.3 1.9-3.3-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.7.8-3.4.8-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 3 2.3 1.2 0 1.6-.8 3-.8s1.8.8 3 .8 2.1-1.1 2.9-2.3c.6-.9.9-1.4 1.4-2.4-3.7-1.4-3-5.5-3-6.2z"/></svg><span><small>Download on the</small><strong>App Store</strong></span></a>
+          <a href="#" class="store-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3l11 9-11 9V3z"/></svg><span><small>Get it on</small><strong>Google Play</strong></span></a>
+        </div>
+      </div>
+      <div data-reveal>
+        <div class="phone-mockup">
+          <div class="phone-mockup__frame">
+            <div class="phone-mockup__notch"></div>
+            <div class="phone-mockup__screen">
+              <svg viewBox="0 0 260 560" role="img" aria-label="Plainly app screen showing this month's budget by category">
+                <rect width="260" height="560" fill="#ffffff"/>
+                <text x="20" y="46" font-size="13" fill="#626b76" font-family="sans-serif">September</text>
+                <text x="20" y="72" font-size="20" font-weight="700" fill="#181c22" font-family="sans-serif">$2,140 left to spend</text>
+                <rect x="20" y="96" width="220" height="10" rx="5" fill="#e3f1ee"/>
+                <rect x="20" y="96" width="140" height="10" rx="5" fill="#1c7a6e"/>
+                <rect x="20" y="132" width="220" height="58" rx="10" fill="#f6f8f8"/>
+                <text x="34" y="158" font-size="13" font-weight="600" fill="#181c22" font-family="sans-serif">Groceries</text>
+                <text x="34" y="176" font-size="11" fill="#626b76" font-family="sans-serif">$312 of $450</text>
+                <rect x="20" y="200" width="220" height="58" rx="10" fill="#f6f8f8"/>
+                <text x="34" y="226" font-size="13" font-weight="600" fill="#181c22" font-family="sans-serif">Dining out</text>
+                <text x="34" y="244" font-size="11" fill="#626b76" font-family="sans-serif">$188 of $200</text>
+                <rect x="20" y="268" width="220" height="58" rx="10" fill="#f6f8f8"/>
+                <text x="34" y="294" font-size="13" font-weight="600" fill="#181c22" font-family="sans-serif">Transport</text>
+                <text x="34" y="312" font-size="11" fill="#626b76" font-family="sans-serif">$74 of $150</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section__head" data-reveal><p class="eyebrow">Why Plainly</p><h2>Three things we kept simple on purpose.</h2></div>
+      <div class="grid-3" data-reveal>
+        <div class="card"><h3>Plain-language categories</h3><p>"Dining out" and "Groceries," not fifty subcategories you'll never use.</p></div>
+        <div class="card"><h3>One budget number</h3><p>See how much you have left to spend this month — one number, not a dashboard of charts.</p></div>
+        <div class="card"><h3>No account minimums</h3><p>Connect one account or ten. Plainly doesn't push you toward a "premium" tier for basic sync.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="stats" data-reveal>
+        <div class="stat"><div class="stat__num" data-count="310" data-suffix="K+">0</div><p class="stat__label">Budgets tracked</p></div>
+        <div class="stat"><div class="stat__num" data-count="4.6" data-suffix="/5">0</div><p class="stat__label">App Store rating</p></div>
+        <div class="stat"><div class="stat__num" data-count="72" data-suffix="%">0</div><p class="stat__label">Users who stay under budget</p></div>
+        <div class="stat"><div class="stat__num" data-count="4" data-suffix="yrs">0</div><p class="stat__label">Building Plainly</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__brand"><a href="index.html" class="logo">Plainly</a><p>Simple budgeting, without the spreadsheet.</p></div>
+    <nav class="footer__col" aria-label="Sitemap"><h3>Sitemap</h3><ul><li><a href="index.html">Home</a></li><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="download.html">Download</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div class="footer__col"><h3>Contact</h3><ul><li><a href="mailto:hello@plainlyapp.com">hello@plainlyapp.com</a></li><li>Denver, CO</li></ul></div>
+  </div>
+  <div class="container footer__bottom"><p>© 2026 Plainly, Inc.</p><p><a href="#">Privacy</a> · <a href="#">Terms</a></p></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

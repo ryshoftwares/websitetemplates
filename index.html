@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Template Library — Browse Every Website</title>
+<meta name="description" content="A library of independent, production-ready HTML/CSS/JS website templates across 17 categories, each with three distinct design variants.">
+<meta property="og:title" content="Template Library — Browse Every Website">
+<meta property="og:description" content="17 categories. 3 unique variants each. Pure HTML, CSS and vanilla JavaScript — copy, customize and deploy any template independently.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/browser.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap site-head__inner">
+    <a class="brand" href="./index.html">
+      <span class="brand__mark" aria-hidden="true">◆</span>
+      Template<span class="brand__accent">Library</span>
+    </a>
+    <p class="site-head__count"><strong id="resultCount">51</strong> templates across <strong>17</strong> categories</p>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="hero__eyebrow">Static · HTML5 · CSS3 · Vanilla JS</p>
+      <h1 class="hero__title">Every website you need, already built.</h1>
+      <p class="hero__lead">
+        17 categories, 3 independent design directions each — Premium Modern, Creative Bold and
+        Minimal Professional. Every template is a fully standalone site with its own markup,
+        styling, scripts and assets. No frameworks, no build step, no shared dependencies.
+      </p>
+
+      <div class="hero__toolbar" role="search">
+        <label class="visually-hidden" for="searchInput">Search templates</label>
+        <div class="search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <input type="text" id="searchInput" placeholder="Search by category or template name…" autocomplete="off">
+        </div>
+        <div class="chips" id="filterChips" aria-label="Filter by category"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="library">
+    <div class="wrap">
+      <div class="library__grid" id="libraryGrid"><!-- injected by browser.js --></div>
+      <p class="empty-state" id="emptyState" hidden>No templates match your search. Try another keyword.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap site-foot__inner">
+    <p>Template Library — a static, framework-free collection built with HTML5, CSS3 and vanilla JavaScript.</p>
+    <p class="site-foot__muted">Every variant is self-contained. Copy any <code>category/variant-0X/</code> folder and deploy it on its own.</p>
+  </div>
+</footer>
+
+<script src="assets/js/browser.js"></script>
+</body>
+</html>
